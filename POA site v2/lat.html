@@ -1,11 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>LabPOA</title>
+    <title>Lat</title>
     <link rel="stylesheet" href="styles/style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <link rel="icon" href="assets/img/Frame 1.svg" />
+    <script src="scripts/script.js"></script>
   </head>
   <body>
     <!-- Header -->
@@ -13,14 +15,13 @@
       <div class="container">
         <div class="header-content">
           <div>
-            <img src="assets/img/Logotipo v2.svg" alt="" class="logo" />
+            <h1>Lat</h1>
           </div>
           <button class="mobile-menu-btn">☰</button>
           <ul class="menu">
-            <li><a href="#">Home</a></li>
-            <li><a href="#contato">Contato</a></li>
-            <li><a href="#projetos">Projetos</a></li>
-            <li><a href="#publicacoes">Publicações</a></li>
+            <li><a href="#">Início</a></li>
+            <li><a href="#contato-index">Contato</a></li>
+            <li><a href="#linhasPesquisa">Pesquisas</a></li>
             <li><a href="#equipe">Equipe</a></li>
           </ul>
         </div>
@@ -34,20 +35,21 @@
         <div class="hero-content">
           <!-- Título principal -->
           <h1 class="hero-title">
-            Soluções inovadoras<br />em tratamentos de efluentes<br />e produção
-            de <span class="hero-highlight"> Hidrogênio </span> com baixa emissão de carbono
+            Soluções em análises<br /> químicas para detecção de
+            <span class="hero-highlight"> traços</span>
             <!-- ajusta a cor depois (aquela verde) -->
           </h1>
           <!-- Subtítulo -->
           <p class="ptext">
-            +10 anos desenvolvendo tecnologia de remoção de contaminantes
-            utilizando energias renováveis.
+            +10 anos de experiência em análises de traços,
+            oferecendo soluções de alta sensibilidade e precisão
+            para detecção de contaminantes em níveis ultrabaixos.
           </p>
           <!-- "Link" de scroll ou animação de seta para baixo -->
           <a
-            href="#projetos"
+            href="#linhasPesquisa"
             class="arrow-scroll"
-            aria-label="Descer para projetos"
+            aria-label="Ver linhas de pesquisa"
           >
             <img
               src="assets/img/arrow-down.svg"
@@ -64,231 +66,181 @@
       </div>
     </section>
 
-    <section id="sobre">
-      <div id="phead"><p>Sobre nós</p></div>
-      <div id="sobretitle">
-        <h2>Mais de 10 anos cuidando do meio ambiente</h2>
-      </div>
-      <div id="principal">
-        <p>
-          Nascemos do compromisso com um futuro mais limpo. O nosso laboratório
-          desenvolve tecnologias sustentáveis baseadas em Processos Oxidativos
-          Avançados para enfrentar os desafios ambientais mais urgentes. Aliamos
-          ciência de ponta à responsabilidade ecológica, transformando problemas
-          complexos em soluções eficientes.
-        </p>
-      </div>
-      <div id="buttons">
-        <span><a href="#projetos"><button>Saiba mais</button></a></span>
-        <span><a href="#contato"><button>Contate-nos</button></a></span>
-      </div>
-    </section>
-
-    <section id="contato">
+    <section id="contato-index">
       <div>
       <div id="titlecontato">
         <h2>Entre em contato</h2>
       </div>
       <div id="textcontato">
         <p>
-          Email: laboratoriopoaufc@gmail.com <br>
+          Email: ronaldo@ufc.br <br>
           Departamento de Química Analítica e Físico-Química Campus do Pici -
           Bloco 939 CEP: 60440-900 Fortaleza-CE Brasil
         </p>
     </section>
 
-    <section id="projetos">
-      <div id="titleprojetos"><h1>Projetos</h1></div>
+    <section id="linhasPesquisa">
+      <div id="titleprojetos"><h1>Linhas de Pesquisa</h1></div>
       <div id="containerposts">
-        <div id="post1" class="post" style="background-image: url(assets/img/lab_img.png);">
+        <a href="index.html"><div id="post1" class="post" style="background-image: url(assets/img/lab_img.png);">
           <!-- colocar a img como background -->
-          <span><a href="" class="linkexterno">Saiba mais</a></span>
-          <!-- pro link saiba mais -->
-        </div>
+          <span><p class="linkexterno">Grupo Cromatografia</p></span>
+          <!-- pro link Veja mais -->
+        </div></a>
 
-        <div id="post2" class="post" style="background-image: url(assets/img/lab_img.png);">
+        <a href="croma.html"><div id="post2" class="post" style="background-image: url(assets/img/lab_img.png);">
           <!-- colocar a img como background -->
-          <span><a href="" class="linkexterno">Saiba mais</a></span>
-          <!-- pro link saiba mais -->
-        </div>
+          <span><p class="linkexterno">Cromatografia</p> <br> <p class="linkexterno">LabCroma</p></span>
+          <!-- pro link Veja mais -->
+        </div></a>
 
-        <div id="post3" class="post" style="background-image: url(assets/img/lab_img.png);">
+        <a href="labpoa.html"><div id="post3" class="post" style="background-image: url(assets/img/lab_img.png);">
           <!-- colocar a img como background -->
-          <span><a href="" class="linkexterno">Saiba mais</a></span>
-          <!-- pro link saiba mais -->
-        </div>
+          <span><p class="linkexterno">POAs - LabPOA</p></span>
+          <!-- pro link Veja mais -->
+        </div></a>
+
+        <a href="lanagua.html"><div id="post4" class="post" style="background-image: url(assets/img/lab_img.png);">
+          <!-- colocar a img como background -->
+          <span><p class="linkexterno">Adsorção - Lanagua</p></span>
+          <!-- pro link Veja mais -->
+        </div></a>
       </div>
-      <span id="linkoutrosprojetos">
-        <a href="projetos.html" class="linkexterno">Veja nossos outros projetos</a></span
-      >
     </section>
 
-    <section id="publicacoes">
+
+    <!-- <section id="publicacoes">
       <div id="titlepublicacao"><h1>Publicações</h1></div>
 
       <div id="container-publicacoes">
+
       <div class="containerpublicacao">
-        <div class="publicacoes-content" id="publi-img">
-          <img src="assets/img/lab_img.png" alt="" style="width: 100%;">
-        </div>
         <div class="publicacoes-content" id="publi-title"><h2>Nossos Livros</h2></div>
-        <div class="publicacoes-content" id="publi-subtitle"><h3>Cromatografia, POAs, Adsorção...</h3></div>
-        <div class="publicacoes-content" id="publi-text">
-          <p>
-            Cada livro reflete nossas vivências, oferecendo conteúdos claros,
-            atualizados e fundamentados. Exploram desde os fundamentos até
-            aplicações práticas de processos eletrolíticos e oxidativos
-            avançados, da adsorção e da cromatografia gasosa com foco em
-            sustentabilidade e inovação. São guias valiosos para estudantes,
-            pesquisadores e profissionais que desejam impactar o meio ambiente
-            positivamente.
-          </p>
+        <div class="publicacoes-content" id="publi-subtitle"><h3>POAs, Cromatografia, Adsorção e Processos Eletrolíticos</h3></div>
+        <a href="https://repositorio.ufc.br/bitstream/riufc/32127/1/2017_liv_rfnascimento.pdf"  id="publi-link1"><div class="publicacoes-content">
+          <img src="assets/img/POAs.png" alt="Livro sobre POAs">
+        </div></a>
+        <a href="https://repositorio.ufc.br/bitstream/riufc/39260/1/2018_liv_rfnascimento.pdf" id="publi-link2"><div class="publicacoes-content">
+          <img src="assets/img/Cromatografia.png" alt="Livro sobre Cromatografia">
+        </div></a>
+        <a href="https://repositorio.ufc.br/bitstream/riufc/53271/1/2020_liv_rfnascimento.pdf" id="publi-link3"><div class="publicacoes-content">
+          <img src="assets/img/Adsorção.png" alt="Livro sobre Adsorção">
+        </div></a>
+        <a href="https://repositorio.ufc.br/bitstream/riufc/58652/1/2021_liv_rfnascimento.pdf" id="publi-link4"><div class="publicacoes-content">
+          <img src="assets/img/Processos-eletroliticos.png" alt="Livro sobre Processos Eletrolíticos">
+        </div></a>
+      </div>
+      <span id="linkoutros">
+        <a href="https://repositorio.ufc.br/simple-search?location=&query=Ronaldo+Ferreira+do+Nascimento&filtername=type&filtertype=equals&filterquery=Livro&rpp=10&sort_by=score&order=desc" class="linkexterno">Veja nossos outros livros</a>
+      </span>
+      
+      <div class="containerpublicacao">
+        <div class="publicacoes-content">
+          <h2>Artigos, Teses, Capítulos, Congressos...</h2>
         </div>
-        <div class="publicacoes-content" id="publi-link">
-          <a href="">Veja nossos livros e adquira gratuitamente</a>
+        <div class="timeline-vertical-section">
+          <div class="timeline-vertical">
+            <div class="timeline-item">
+              <div class="timeline-year">2025</div>
+              <div class="timeline-details">
+                <div class="timeline-title">Emissões veiculares: uma abordagem rápida e eficiente para a determinação de H2, CO, CH4 e CO2 por GC-BID e de BTEX por SPME-GC-BID</div>
+                <a href="https://repositorio.ufc.br/simple-search?location=%2F&query=Ronaldo+Nascimento&rpp=10&sort_by=score&order=desc&filter_field_1=dateIssued&filter_type_1=equals&filter_value_1=2025" class="timeline-btn" id="timeline-btn2025">Veja mais</a>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-year">2024</div>
+              <div class="timeline-details">
+                <div class="timeline-title">The impact of chronic and acute problems on sea turtles: The consequences of the oil spill and ingestion of anthropogenic debris on the tropical semi-arid coast of Ceará, Brazil</div>
+                <a href="https://repositorio.ufc.br/simple-search?location=%2F&query=Ronaldo+Nascimento&rpp=10&sort_by=score&order=desc&filter_field_1=dateIssued&filter_type_1=equals&filter_value_1=2024" class="timeline-btn" id="timeline-btn2024">Veja mais</a>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-year">2023</div>
+              <div class="timeline-details">
+                <div class="timeline-title">Climatic regionalization and rainfed agricultural production in the state of Maranhão, Brazil</div>
+                <a href="https://repositorio.ufc.br/simple-search?location=%2F&query=Ronaldo+Nascimento&rpp=10&sort_by=score&order=desc&filter_field_1=dateIssued&filter_type_1=equals&filter_value_1=2023" class="timeline-btn" id="timeline-btn2023">Veja mais</a>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-year">2022</div>
+              <div class="timeline-details">
+                <div class="timeline-title">A physical study to explain response differences between the BID and FID detectors for PAHs and pesticides</div>
+                <a href="https://repositorio.ufc.br/simple-search?location=%2F&query=Ronaldo+Nascimento&rpp=10&sort_by=score&order=desc&filter_field_1=dateIssued&filter_type_1=equals&filter_value_1=2022" class="timeline-btn" id="timeline-btn2022">Veja mais</a>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-year">2021</div>
+              <div class="timeline-details">
+                <div class="timeline-title">Integrated UPLC-HRMS, chemometric tools, and metabolomic analysis of forage palm (Opuntia spp. and Nopalea spp.) to define biomarkers associated with non-susceptibility to Carmine Cochineal (Dactylopius opuntiae)</div>
+                <a href="https://repositorio.ufc.br/simple-search?location=%2F&query=Ronaldo+Nascimento&rpp=10&sort_by=score&order=desc&filter_field_1=dateIssued&filter_type_1=equals&filter_value_1=2021" class="timeline-btn" id="timeline-btn2021">Veja mais</a>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-year">2020</div>
+              <div class="timeline-details">
+                <div class="timeline-title">Adsorção: aspectos teóricos e aplicações ambientais</div>
+                <a href="https://repositorio.ufc.br/simple-search?location=%2F&query=Ronaldo+Nascimento&rpp=10&sort_by=score&order=desc&filter_field_1=dateIssued&filter_type_1=equals&filter_value_1=2020" class="timeline-btn" id="timeline-btn2020">Veja mais</a>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-year">2019</div>
+              <div class="timeline-details">
+                <div class="timeline-title">Zinc ferrite nanoparticles via coprecipitation modified method: glycerol as structure directing and stabilizing agent</div>
+                <a href="https://repositorio.ufc.br/simple-search?location=%2F&query=Ronaldo+Nascimento&rpp=10&sort_by=score&order=desc&filter_field_1=dateIssued&filter_type_1=equals&filter_value_1=2019" class="timeline-btn" id="timeline-btn2019">Veja mais</a>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-year">2018</div>
+              <div class="timeline-details">
+                <div class="timeline-title">Remoção de metais tóxicos através dos resíduos de cinzas de lodo de fossa séptica.</div>
+                <a href="https://repositorio.ufc.br/simple-search?location=%2F&query=Ronaldo+Nascimento&rpp=10&sort_by=score&order=desc&filter_field_1=dateIssued&filter_type_1=equals&filter_value_1=2018" class="timeline-btn" id="timeline-btn2018">Veja mais</a>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-year">2017</div>
+              <div class="timeline-details">
+                <div class="timeline-title">Strategy for correction of matrix effect on the determination of pesticides in water bodies using SPME-GC-FID</div>
+                <a href="https://repositorio.ufc.br/simple-search?location=%2F&query=Ronaldo+Nascimento&rpp=10&sort_by=score&order=desc&filter_field_1=dateIssued&filter_type_1=equals&filter_value_1=2017" class="timeline-btn" id="timeline-btn2017">Veja mais</a>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-year">2016</div>
+              <div class="timeline-details">
+                <div class="timeline-title">Desenvolvimento e validação de metodologia para determinação de interferentes endócrinos em águas superficiais</div>
+                <a href="https://repositorio.ufc.br/simple-search?location=%2F&query=Ronaldo+Nascimento&rpp=10&sort_by=score&order=desc&filter_field_1=dateIssued&filter_type_1=equals&filter_value_1=2016" class="timeline-btn" id="timeline-btn2016">Veja mais</a>
+              </div>
+            </div>
+            <div class="timeline-item">
+              <div class="timeline-year">2015</div>
+              <div class="timeline-details">
+                <div class="timeline-title">	Carbonyl compounds from urban activities and their associated cancer risks: The influence of seasonality on air quality (Fortaleza-Ce, Brazil)</div>
+                <a href="https://repositorio.ufc.br/simple-search?location=%2F&query=Ronaldo+Nascimento&rpp=10&sort_by=score&order=desc&filter_field_1=dateIssued&filter_type_1=equals&filter_value_1=2015" class="timeline-btn" id="timeline-btn2015">Veja mais</a>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       
-      <div class="containerpublicacao">
-        <div class="publicacoes-content" id="publi-img">
-          <img src="assets/img/lab_img.png" alt="" style="width: 100%;">
-        </div>
-        <div class="publicacoes-content" id="publi-title"><h2>Artigos Científicos</h2></div>
-        <div class="publicacoes-content" id="publi-subtitle">
-          <h3>Estudos direcionados a aplicações práticas</h3>
-        </div>
-        <div class="publicacoes-content" id="publi-text">
-          <p>
-            Nossos artigos científicos representam o resultado direto de anos de
-            pesquisa aplicada com foco em temas cruciais como adsorção,
-            cromatografia gasosa, processos eletrolíticos, processos oxidativos
-            avançados e bioadsorventes. Compartilhamos descobertas que
-            impulsionam o avanço das tecnologias ambientais, sempre com o
-            objetivo de gerar impacto real.
-          </p>
-        </div>
-        <div class="publicacoes-content" id="publi-link">
-          <a href="">Veja nossas publicações</a>
-        </div>
-      </div>
-    </div>
-    </section>
+    </section> -->
 
     <section id="equipe">
-      <div><h1>Equipe</h1></div>
-      <!-- refazer imagens colocando a foto de perfil dentro de links diretos pro lattes -->
+      <div><h1>Coordenador</h1></div>
       <div id="img-container">
-        <div id="membro1">
-          <img src="" alt="" id="perfil1" />
-          <span class="nome">
-            <h3>Thiago Vasconcelos</h3>
-          </span>
-          <span class="cargo">
-            <p>Doutorando</p>
-          </span>
-        </div>
-        <div id="membro2">
-          <img src="" alt="" id="perfil2" />
-          <span class="nome">
-            <h3>Taís</h3>
-          </span>
-          <span class="cargo">
-            <p>Doutorando</p>
-          </span>
-        </div>
-        <div id="membro3">
-          <img src="" alt="" id="perfil3" />
-          <span class="nome">
-            <h3>Willon</h3>
-          </span>
-          <span class="cargo">
-            <p>Mestrando</p>
-          </span>
-        </div>
-        <div id="membro4">
-          <img src="" alt="" id="perfil4" />
-          <span class="nome">
-            <h3>João Victor S.</h3>
-          </span>
-          <span class="cargo">
-            <p>Iniciação Científica</p>
-          </span>
-        </div>
-        <div id="membro5">
-          <img src="" alt="" id="perfil5" />
-          <span class="nome">
-            <h3>Elizabeth</h3>
-          </span>
-          <span class="cargo">
-            <p>Iniciação Científica</p>
-          </span>
-        </div>
-        <div id="membro6">
-          <img src="" alt="" id="perfil6" />
-          <span class="nome">
-            <h3>João Victor C.</h3>
-          </span>
-          <span class="cargo">
-            <p>Iniciação Científica</p>
-          </span>
-        </div>
-        <div id="membro7">
-          <img src="" alt="" id="perfil7" />
-          <span class="nome">
-            <h3>Pedro J.</h3>
-          </span>
-          <span class="cargo">
-            <p>Iniciação Científica</p>
-          </span>
-        </div>
-        <div id="membro8">
-          <img src="" alt="" id="perfil8" />
-          <span class="nome">
-            <h3>Davi</h3>
-          </span>
-          <span class="cargo">
-            <p>Iniciação Científica</p>
-          </span>
-        </div>
-        <div id="membro9">
-          <img src="" alt="" id="perfil9" />
-          <span class="nome">
-            <h3>Xavier</h3>
-          </span>
-          <span class="cargo">
-            <p>Iniciação Científica</p>
-          </span>
-        </div>
-        <div id="membro10">
-          <img src="" alt="" id="perfil10" />
-          <span class="nome">
-            <h3>Letícia</h3>
-          </span>
-          <span class="cargo">
-            <p>Iniciação Científica</p>
-          </span>
-        </div>
-        <div id="membro11">
-          <img src="" alt="" id="perfil11" />
-          <span class="nome">
-            <h3>Américo</h3>
-          </span>
-          <span class="cargo">
-            <p>Iniciação Científica</p>
-          </span>
-        </div>
-        <div id="membro12">
-          <img src="" alt="" id="perfil12" />
-          <span class="nome">
-            <h3>Karolina</h3>
-          </span>
-          <span class="cargo">
-            <p>Iniciação Científica</p>
-          </span>
+        <div id="membroC" class="membroC">
+          <div id="perfilC"></div>
+          <div class="nome"><h3>Ronaldo Ferreira do Nascimento</h3></div>
+          <div>
+            <p>Formado em Química Industrial pela Universidade Federal do Maranhão (UFMA, 1991), doutor em Química Analítica pela Universidade de São Paulo (USP, 1997), Instituto de Química de São Carlos (IQSC). Atualmente é professor titular da Universidade Federal do Ceará (UFC). Publicou artigos (186) em periódicos científicos, capítulos de livros (20) e livros (09). Possui experiência na área de Química Analítica, com ênfase no Desenvolvimento de Métodos Cromatográficos (análise de resíduos de pesticidas em água e alimentos); Química Ambiental (análises de traços); Adsorção (remoção de poluentes de efluentes aquosos utilizando adsorventes naturais); Processos Oxidativos Avançados (tratamento de água e efluentes).<p></div>
+            <div class="membro-buttons">
+            <a class="btn-membro" href="mailto:ronaldo@email.com"><span class="material-symbols-outlined">stacked_email</span></a>
+            <a class="btn-membro" href="#"><span class="material-symbols-outlined">book</span></a>
+          </div>
         </div>
       </div>
+      </div>
       <div>
-        <a href="equipe.html" id="nossosmembros">Saiba mais sobre nossos membros</a>
+        <span><a href="equipe.html" id="nossosmembros">Saiba mais sobre nossos membros <span id="seta-membros"><img src="assets/img/arrow-down.svg" alt="" /></span></a></span>
+        
       </div>
     </section>
 

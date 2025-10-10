@@ -1,60 +1,41 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nossos Membros - LabPOA</title>
-    <link rel="stylesheet" href="styles/style-equipe.css">
-</head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Equipe</title>
+    <link rel="stylesheet" href="styles/style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="icon" href="assets/img/Frame 1.svg" />
+    <script src="scripts/script.js"></script>
+    <link rel="stylesheet" href="styles/style-equipe.css" />
+  </head>
 <body>
     <!-- Header -->
-    <header>
+    <header id="header-content">
+      <div class="container">
         <div class="header-content">
-            <a href="index.html"><img src="assets/img/Logotipo v2.svg" alt="" class="logo"></a>
-            <nav>
-                <ul class="menu">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="index.html/#contato">Contato</a></li>
-                    <li><a href="index.html/#projetos">Projetos</a></li>
-                    <li><a href="index.html/#publicacoes">Publicações</a></li>
-                    <li><a href="#">Equipe</a></li>
-                </ul>
-            </nav>
-            <button class="mobile-menu-btn">☰</button>
+          <div>
+            <h1>Equipe</h1>
+          </div>
+          <button class="mobile-menu-btn">☰</button>
+          <ul class="menu">
+            <li><a href="#">Coordenadores</a></li>
+            <li><a href="#Pesquisadores">Pesquisadores</a></li>
+            <li><a href="#Doutorando">Doutorando</a></li>
+            <li><a href="#Mestrando">Mestrando</a></li>
+            <li><a href="#Iniciação Científica">Iniciação Científica</a></li>
+          </ul>
         </div>
+      </div>
     </header>
-
     <!-- Seção de Membros -->
     <section class="members-section">
         <h1 class="section-title">Nossos membros</h1>
         
-        <!-- Líderes -->
-        <h2 class="category-title">Líderes</h2>
+        <!-- Coordenadores -->
+        <h2 class="category-title" id="Coordenadores">Coordenadores</h2>
         <div class="leaders-grid">
-            <div class="member-card">
-                <div class="member-photo"></div>
-                <div class="member-info">
-                    <h3 class="member-name">Thiago Vasconcelos</h3>
-                    <div class="member-contact">
-                        <div class="contact-icon email" title="Email"></div>
-                        <div class="contact-icon cv" title="CV"></div>
-                        <div class="contact-icon lattes" title="Lattes"></div>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="member-card">
-                <div class="member-photo"></div>
-                <div class="member-info">
-                    <h3 class="member-name">Jefferson Ribeiro</h3>
-                    <div class="member-contact">
-                        <div class="contact-icon email" title="Email"></div>
-                        <div class="contact-icon cv" title="CV"></div>
-                        <div class="contact-icon lattes" title="Lattes"></div>
-                    </div>
-                </div>
-            </div>
-            
             <div class="member-card">
                 <div class="member-photo"></div>
                 <div class="member-info">
@@ -70,7 +51,7 @@
             <div class="member-card">
                 <div class="member-photo"></div>
                 <div class="member-info">
-                    <h3 class="member-name">Willon</h3>
+                    <h3 class="member-name">Jhonyson Guedes</h3>
                     <div class="member-contact">
                         <div class="contact-icon email" title="Email"></div>
                         <div class="contact-icon cv" title="CV"></div>
@@ -78,11 +59,21 @@
                     </div>
                 </div>
             </div>
-            
             <div class="member-card">
                 <div class="member-photo"></div>
                 <div class="member-info">
-                    <h3 class="member-name">Tais Coutinho</h3>
+                    <h3 class="member-name">Thiago Vasconcelos</h3>
+                    <div class="member-contact">
+                        <div class="contact-icon email" title="Email"></div>
+                        <div class="contact-icon cv" title="CV"></div>
+                        <div class="contact-icon lattes" title="Lattes"></div>
+                    </div>
+                </div>
+            </div>
+                <div class="member-card">
+                <div class="member-photo"></div>
+                <div class="member-info">
+                    <h3 class="member-name">Taís Coutinho</h3>
                     <div class="member-contact">
                         <div class="contact-icon email" title="Email"></div>
                         <div class="contact-icon cv" title="CV"></div>
@@ -98,43 +89,7 @@
             <div class="member-card">
                 <div class="member-photo"></div>
                 <div class="member-info">
-                    <h3 class="member-name">João Victor S.</h3>
-                    <div class="member-contact">
-                        <div class="contact-icon email" title="Email"></div>
-                        <div class="contact-icon cv" title="CV"></div>
-                        <div class="contact-icon lattes" title="Lattes"></div>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="member-card">
-                <div class="member-photo"></div>
-                <div class="member-info">
-                    <h3 class="member-name">Elizabeth</h3>
-                    <div class="member-contact">
-                        <div class="contact-icon email" title="Email"></div>
-                        <div class="contact-icon cv" title="CV"></div>
-                        <div class="contact-icon lattes" title="Lattes"></div>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="member-card">
-                <div class="member-photo"></div>
-                <div class="member-info">
-                    <h3 class="member-name">João Victor C.</h3>
-                    <div class="member-contact">
-                        <div class="contact-icon email" title="Email"></div>
-                        <div class="contact-icon cv" title="CV"></div>
-                        <div class="contact-icon lattes" title="Lattes"></div>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="member-card">
-                <div class="member-photo"></div>
-                <div class="member-info">
-                    <h3 class="member-name">Pedro J.</h3>
+                    <h3 class="member-name">Lucas</h3>
                     <div class="member-contact">
                         <div class="contact-icon email" title="Email"></div>
                         <div class="contact-icon cv" title="CV"></div>
@@ -158,18 +113,6 @@
             <div class="member-card">
                 <div class="member-photo"></div>
                 <div class="member-info">
-                    <h3 class="member-name">Xavier</h3>
-                    <div class="member-contact">
-                        <div class="contact-icon email" title="Email"></div>
-                        <div class="contact-icon cv" title="CV"></div>
-                        <div class="contact-icon lattes" title="Lattes"></div>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="member-card">
-                <div class="member-photo"></div>
-                <div class="member-info">
                     <h3 class="member-name">Letícia</h3>
                     <div class="member-contact">
                         <div class="contact-icon email" title="Email"></div>
@@ -182,7 +125,7 @@
             <div class="member-card">
                 <div class="member-photo"></div>
                 <div class="member-info">
-                    <h3 class="member-name">Lívia</h3>
+                    <h3 class="member-name">Pedro J.</h3>
                     <div class="member-contact">
                         <div class="contact-icon email" title="Email"></div>
                         <div class="contact-icon cv" title="CV"></div>
@@ -206,7 +149,7 @@
             <div class="member-card">
                 <div class="member-photo"></div>
                 <div class="member-info">
-                    <h3 class="member-name">Karolina</h3>
+                    <h3 class="member-name">João Victor</h3>
                     <div class="member-contact">
                         <div class="contact-icon email" title="Email"></div>
                         <div class="contact-icon cv" title="CV"></div>
@@ -218,7 +161,125 @@
             <div class="member-card">
                 <div class="member-photo"></div>
                 <div class="member-info">
-                    <h3 class="member-name">Mário</h3>
+                    <h3 class="member-name">Elizabeth</h3>
+                    <div class="member-contact">
+                        <div class="contact-icon email" title="Email"></div>
+                        <div class="contact-icon cv" title="CV"></div>
+                        <div class="contact-icon lattes" title="Lattes"></div>
+                    </div>
+                </div>
+            </div>
+                <div class="member-card">
+                <div class="member-photo"></div>
+                <div class="member-info">
+                    <h3 class="member-name">Yuri
+                    <div class="member-contact">
+                        <div class="contact-icon email" title="Email"></div>
+                        <div class="contact-icon cv" title="CV"></div>
+                        <div class="contact-icon lattes" title="Lattes"></div>
+                    </div>
+                </div>
+            </div>
+             <div class="member-card">
+                <div class="member-photo"></div>
+                <div class="member-info">
+                    <h3 class="member-name">Inácio
+                    <div class="member-contact">
+                        <div class="contact-icon email" title="Email"></div>
+                        <div class="contact-icon cv" title="CV"></div>
+                        <div class="contact-icon lattes" title="Lattes"></div>
+                    </div>
+                </div>
+            </div>
+
+             <div class="member-card">
+                <div class="member-photo"></div>
+                <div class="member-info">
+                    <h3 class="member-name">Lara
+                    <div class="member-contact">
+                        <div class="contact-icon email" title="Email"></div>
+                        <div class="contact-icon cv" title="CV"></div>
+                        <div class="contact-icon lattes" title="Lattes"></div>
+                    </div>
+                </div>
+            </div>
+            
+            
+            <div class="member-card">
+                <div class="member-photo"></div>
+                <div class="member-info">
+                    <h3 class="member-name">Xavier
+                    <div class="member-contact">
+                        <div class="contact-icon email" title="Email"></div>
+                        <div class="contact-icon cv" title="CV"></div>
+                        <div class="contact-icon lattes" title="Lattes"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="member-card">
+                <div class="member-photo"></div>
+                <div class="member-info">
+                    <h3 class="member-name">Lívia</h3>
+                    <div class="member-contact">
+                        <div class="contact-icon email" title="Email"></div>
+                        <div class="contact-icon cv" title="CV"></div>
+                        <div class="contact-icon lattes" title="Lattes"></div>
+                    </div>
+                </div>
+            </div>
+             <div class="member-card">
+                <div class="member-photo"></div>
+                <div class="member-info">
+                    <h3 class="member-name">Karolina</h3>
+                    <div class="member-contact">
+                        <div class="contact-icon email" title="Email"></div>
+                        <div class="contact-icon cv" title="CV"></div>
+                        <div class="contact-icon lattes" title="Lattes"></div>
+                    </div>
+                  </div>
+                 </div>
+                </div>
+                 </div>
+                    
+            <div class="member-card">
+                <div class="member-photo"></div>
+                <div class="member-info">
+                    <h3 class="member-name">Karolina
+                    <div class="member-contact">
+                        <div class="contact-icon email" title="Email"></div>
+                        <div class="contact-icon cv" title="CV"></div>
+                        <div class="contact-icon lattes" title="Lattes"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="member-card">
+                <div class="member-photo"></div>
+                <div class="member-info">
+                    <h3 class="member-name">Lara</h3>
+                    <div class="member-contact">
+                        <div class="contact-icon email" title="Email"></div>
+                        <div class="contact-icon cv" title="CV"></div>
+                        <div class="contact-icon lattes" title="Lattes"></div>
+                    </div>
+                 </div>
+            </div>
+            </div>
+            <div class="member-card">
+                <div class="member-photo"></div>
+                <div class="member-info">
+                    <h3 class="member-name">Bruce
+                    <div class="member-contact">
+                        <div class="contact-icon email" title="Email"></div>
+                        <div class="contact-icon cv" title="CV"></div>
+                        <div class="contact-icon lattes" title="Lattes"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="member-card">
+                <div class="member-photo"></div>
+                <div class="member-info">
+                    <h3 class="member-name">Sara
                     <div class="member-contact">
                         <div class="contact-icon email" title="Email"></div>
                         <div class="contact-icon cv" title="CV"></div>

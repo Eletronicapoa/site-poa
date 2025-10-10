@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,6 +8,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <link rel="icon" href="assets/img/Frame 1.svg" />
     <script src="scripts/script.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    />
   </head>
   <body>
     <!-- Header -->
@@ -15,15 +19,15 @@
       <div class="container">
         <div class="header-content">
           <div>
-            <h1>Grupo Cromatografia</h1>
+            <h1>Grupo de Cromatografia</h1>
           </div>
           <button class="mobile-menu-btn">☰</button>
           <ul class="menu">
             <li><a href="#">Início</a></li>
-            <li><a href="#contato">Contato</a></li>
-            <li><a href="#linhasPesquisa">Pesquisas</a></li>
-            <li><a href="#publicacoes">Publicações</a></li>
-            <li><a href="#equipe">Equipe</a></li>
+            <li><a href="#contato-index">Contato</a></li>
+            <li><a href="#linhasPesquisaPainel">Pesquisas</a></li>
+            <li><a href="#publicacoesNovo">Publicações</a></li>
+            <li><a href="#equipe">Coordenador</a></li>
           </ul>
         </div>
       </div>
@@ -65,44 +69,310 @@
       </div>
     </section>
 
-    <section id="contato">
+    <section id="contato-index">
       <div>
       <div id="titlecontato">
         <h2>Entre em contato</h2>
       </div>
       <div id="textcontato">
         <p>
-          Email: ronaldo@ufc.br <br>
-          Departamento de Química Analítica e Físico-Química Campus do Pici -
-          Bloco 939 CEP: 60440-900 Fortaleza-CE Brasil
+          Email: laboratoriopoaufc@ufc.com.br <br>
+          Departamento de Química Analítica e Físico-Química <br>
+          Campus do Pici - Bloco 939 <br>
+          CEP: 60440-900 Fortaleza-CE Brasil
         </p>
     </section>
 
-    <section id="linhasPesquisa">
-      <div id="titleprojetos"><h1>Linhas de Pesquisa</h1></div>
-      <div id="containerposts">
-        <a href="lat.html"><div id="post1" class="post" style="background-image: url(assets/img/lab_img.png);">
-          <!-- colocar a img como background -->
-          <span><p class="linkexterno">Análise de Traços - LAT</p></span>
-          <!-- pro link Veja mais -->
-        </div></a>
+    <section id="linhasPesquisaPainel">
 
-        <a href="cromatografia.html"><div id="post2" class="post" style="background-image: url(assets/img/lab_img.png);">
-          <!-- colocar a img como background -->
-          <span><p class="linkexterno">Cromatografia - LabCroma</p></span>
-          <!-- pro link Veja mais -->
-        </div></a>
+      <div class="slider">
 
-        <a href="lab-poa.html"><div id="post3" class="post" style="background-image: url(assets/img/lab_img.png);">
-          <!-- colocar a img como background -->
-          <span><p class="linkexterno">POAs - LabPOA</p></span>
-          <!-- pro link Veja mais -->
-        </div></a>
+        <div class="slides">
+          <!-- Radio buttons -->
+           <input type="radio" name="radio-bnt" id="radio1">
+           <input type="radio" name="radio-bnt" id="radio2">
+           <input type="radio" name="radio-bnt" id="radio3">
+           <input type="radio" name="radio-bnt" id="radio4">
+          <!-- Fim Radio buttons -->
+
+          <!-- Slide images -->
+           <div id="slide-letra" class="slide first">
+            <h3>Ir para LabPOA</h3>
+            <a href="labpoa.html">
+              <img src="assets/img/lab_img.png" alt="slideimagem1" />
+            </a>
+           </div>
+           <div id="slide-letra" class="slide">
+            <h3>Ir para LabCroma</h3>
+            <a href="croma.html">
+              <img src="assets/img/lab_img.png" alt="slideimagem2" />
+            </a>
+           </div>
+           <div id="slide-letra" class="slide">
+            <h3>Ir para LAT</h3>
+            <a href="lat.html">
+                <img src="assets/img/lab_img.png" alt="slideimagem3" />
+            </a>
+           </div>
+           <div id="slide-letra" class="slide">
+            <h3>Ir para Lanagua</h3>
+            <a href="lanagua.html">
+              <img src="assets/img/lab_img.png" alt="slideimagem4" />
+            </a>
+           </div>
+           <!-- Fim Slide images -->
+
+           <!-- Navigation auto -->
+            <div class="navigation-auto">
+              <div class="auto-btn1"></div>
+              <div class="auto-btn2"></div>
+              <div class="auto-btn3"></div>
+              <div class="auto-btn4"></div>
+            </div>
+
+        </div>
+
+
+        <div class="manual-navigation">
+          <label for="radio1" class="manual-btn"></label>
+          <label for="radio2" class="manual-btn"></label>
+          <label for="radio3" class="manual-btn"></label>
+          <label for="radio4" class="manual-btn"></label>
+        </div>
+
+
+      </div>
+
+      <script src="scripts/script.js"></script>
+
+    </section>
+    
+    <!-- seção publicações -->
+    <section id="publicacoesNovo">
+      <h2>Nossos Livros</h2>
+      <div class="swiper-container">
+        <div class="swiper">
+          <div class="swiper-wrapper"> 
+            <div class="swiper-slide">
+              <div class="slide-content">
+                <img src="assets/img/POAs.png" alt="Livro sobre POAs">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="slide-content">
+                <img src="assets/img/Cromatografia.png" alt="Livro sobre Cromatografia">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="slide-content">
+                <img src="assets/img/Adsorção.png" alt="Livro sobre Adsorção">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="slide-content">
+                <img src="assets/img/Processos-eletroliticos.png" alt="Livro sobre Processos Eletrolíticos">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-prev">
+          <i class="bx bx-left-arrow-alt"></i>
+        </div>
+        <div class="swiper-button-next">
+          <i class="bx bx-right-arrow-alt"></i>
+        </div>
       </div>
     </section>
 
+    <!-- seção timeline -->
+    <section id="timeline-wrapper">
+        <ul  class="timeline">
+          <li data-date="2025">
+            <span class="title">Tese</span>
+            <div class="data">
+                <h3>Principal de 2025</h3>
+                <small>2025</small>
+                <p>Emissões veiculares: uma abordagem rápida e
+                eficiente para a determinação de H2, CO, CH4 e 
+                CO2 por GC-BID e de BTEX por SPME-GC-BID</p>
+                <span class="close">Clique para fechar.</span>
+            </div>
+          </li>
+          <li data-date="2024">
+            <span class="title">Artigo de Periódico</span>
+            <div class="data">
+                <h3>Principal de 2024</h3>
+                <small>2024</small>
+                <p>The impact of chronic and acute problems on 
+                sea turtles: The consequences of the oil spill 
+                and ingestion of anthropogenic debris on the tropical
+                semi-arid coast of Ceará, Brazil</p>
+                <span class="close">Clique para fechar.</span>
+            </div>
+          </li>
+          <li data-date="2023">
+            <span class="title">Artigo de Periódico</span>
+            <div class="data">
+                <h3>Principal de 2023</h3>
+                <small>2023</small>
+                <p>Climatic regionalization and rainfed agricultural
+                production in the state of Maranhão, Brazil</p>
+                <span class="close">Clique para fechar.</span>
+            </div>
+          </li>
+          <li data-date="2022">
+            <span class="title">Artigo de Periódico</span>
+            <div class="data">
+                <h3>Principal de 2022</h3>
+                <small>2022</small>
+                <p>A physical study to explain response differences
+                between the BID and FID detectors for PAHs and pesticides</p>
+                <span class="close">Clique para fechar.</span>
+            </div>
+          </li>
+          <li data-date="2021">
+            <span class="title">Artigo de Periódico</span>
+            <div class="data">
+                <h3>Principal de 2021</h3>
+                <small>2021</small>
+                <p>Integrated UPLC-HRMS, chemometric tools, and
+                metabolomic analysis of forage palm (Opuntia spp. and
+                Nopalea spp.) to define biomarkers associated with
+                non-susceptibility to Carmine Cochineal (Dactylopius opuntiae)</p>
+                <span class="close">Clique para fechar.</span>
+            </div>
+          </li>
+          <li data-date="2020">
+            <span class="title">Livro</span>
+            <div class="data">
+                <h3>Principal de 2020</h3>
+                <small>2020</small>
+                <p>Adsorção: aspectos teóricos e aplicações ambientais</p>
+                <span class="close">Clique para fechar.</span>
+            </div>
+          </li>
+          <li data-date="2019">
+            <span class="title">Artigo de Periódico</span>
+            <div class="data">
+                <h3>Principal de 2019</h3>
+                <small>2019</small>
+                <p>Zinc ferrite nanoparticles via coprecipitation
+                modified method: glycerol as structure directing
+                and stabilizing agent</p>
+                <span class="close">Clique para fechar.</span>
+            </div>
+          </li>
+          <li data-date="2018">
+            <span class="title">Artigo de Evento</span>
+            <div class="data">
+                <h3>Principal de 2018</h3>
+                <small>2018</small>
+                <p>Remoção de metais tóxicos através dos resíduos
+                de cinzas de lodo de fossa séptica</p>
+                <span class="close">Clique para fechar.</span>
+            </div>
+          </li>
+          <li data-date="2017">
+            <span class="title">Artigo de Periódico</span>
+            <div class="data">
+                <h3>Principal de 2017</h3>
+                <small>2017</small>
+                <p>Strategy for correction of matrix effect
+                on the determination of pesticides in water
+                bodies using SPME-GC-FID</p>
+                <span class="close">Clique para fechar.</span>
+            </div>
+          </li>
+          <li data-date="2016">
+            <span class="title">Artigo de Evento</span>
+            <div class="data">
+                <h3>Principal de 2016</h3>
+                <small>2016</small>
+                <p>Desenvolvimento e validação de metodologia
+                para determinação de interferentes endócrinos
+                em águas superficiais</p>
+                <span class="close">Clique para fechar.</span>
+            </div>
+          </li>
+          <li data-date="2015">
+            <span class="title">Artigo de Periódico</span>
+            <div class="data">
+                <h3>Principal de 2015</h3>
+                <small>2015</small>
+                <p>Carbonyl compounds from urban activities and
+                their associated cancer risks: The influence of
+                seasonality on air quality (Fortaleza-Ce, Brazil)</p>
+                <span class="close">Clique para fechar.</span>
+            </div>
+          </li>
+        </ul>
+          <!-- setinha da timeline usando vanilla css -->
+        <div id="timeline-arrow">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </section>
 
-    <section id="publicacoes">
+    <!-- js da secção timeline -->
+    <script>
+      const timeline = document.querySelectorAll('.timeline li .data');
+      for(const time of timeline) {
+        time.onclick = () => time.classList.toggle('show');{
+
+        }
+      }
+      
+    </script>
+
+    <!-- js da secçao publicações -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
+    <script type="text/javascript">
+      var swiper = new Swiper(".swiper",{
+        effect: "coverflow",
+        grabCursor: true,
+        centeredSlides: true,
+        coverflowEffect: {
+          rotate: 2,
+          stretch: 20,
+          depth: 80,
+          modifier: 7.2,
+          slideShadows: true,
+        },
+        slidesPerView: 2,
+        spaceBetween: 30,
+        loop: true,
+        loopedSlides: 4,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        autoplay: {
+          delay: 3000,
+          disableOnInteraction: true,
+        },
+        keyboard:{
+          enable: true,
+        },
+        mousewheel:{
+          thresholdDelta: 70
+        },
+        /* breakpoints:{
+          560:{
+            slidesPerView: 3
+          },
+          768:{
+            slidesPerView: 3
+          },
+          1024: {
+            slidesPerView: 2
+          }
+        } */
+      });
+    </script>
+
+    <!-- <section id="publicacoes">
       <div id="titlepublicacao"><h1>Publicações</h1></div>
 
       <div id="container-publicacoes">
@@ -136,199 +406,106 @@
             <div class="timeline-item">
               <div class="timeline-year">2025</div>
               <div class="timeline-details">
-                <div class="timeline-title">Título da publicação principal de 2025</div>
+                <div class="timeline-title">Emissões veiculares: uma abordagem rápida e eficiente para a determinação de H2, CO, CH4 e CO2 por GC-BID e de BTEX por SPME-GC-BID</div>
                 <a href="https://repositorio.ufc.br/simple-search?location=%2F&query=Ronaldo+Nascimento&rpp=10&sort_by=score&order=desc&filter_field_1=dateIssued&filter_type_1=equals&filter_value_1=2025" class="timeline-btn" id="timeline-btn2025">Veja mais</a>
               </div>
             </div>
             <div class="timeline-item">
               <div class="timeline-year">2024</div>
               <div class="timeline-details">
-                <div class="timeline-title">Título da publicação principal de 2024</div>
-                <a href="#" class="timeline-btn">Veja mais</a>
+                <div class="timeline-title">The impact of chronic and acute problems on sea turtles: The consequences of the oil spill and ingestion of anthropogenic debris on the tropical semi-arid coast of Ceará, Brazil</div>
+                <a href="https://repositorio.ufc.br/simple-search?location=%2F&query=Ronaldo+Nascimento&rpp=10&sort_by=score&order=desc&filter_field_1=dateIssued&filter_type_1=equals&filter_value_1=2024" class="timeline-btn" id="timeline-btn2024">Veja mais</a>
               </div>
             </div>
             <div class="timeline-item">
               <div class="timeline-year">2023</div>
               <div class="timeline-details">
-                <div class="timeline-title">Título da publicação principal de 2023</div>
-                <a href="#" class="timeline-btn">Veja mais</a>
+                <div class="timeline-title">Climatic regionalization and rainfed agricultural production in the state of Maranhão, Brazil</div>
+                <a href="https://repositorio.ufc.br/simple-search?location=%2F&query=Ronaldo+Nascimento&rpp=10&sort_by=score&order=desc&filter_field_1=dateIssued&filter_type_1=equals&filter_value_1=2023" class="timeline-btn" id="timeline-btn2023">Veja mais</a>
               </div>
             </div>
             <div class="timeline-item">
               <div class="timeline-year">2022</div>
               <div class="timeline-details">
-                <div class="timeline-title">Título da publicação principal de 2022</div>
-                <a href="#" class="timeline-btn">Veja mais</a>
+                <div class="timeline-title">A physical study to explain response differences between the BID and FID detectors for PAHs and pesticides</div>
+                <a href="https://repositorio.ufc.br/simple-search?location=%2F&query=Ronaldo+Nascimento&rpp=10&sort_by=score&order=desc&filter_field_1=dateIssued&filter_type_1=equals&filter_value_1=2022" class="timeline-btn" id="timeline-btn2022">Veja mais</a>
               </div>
             </div>
             <div class="timeline-item">
               <div class="timeline-year">2021</div>
               <div class="timeline-details">
-                <div class="timeline-title">Título da publicação principal de 2021</div>
-                <a href="#" class="timeline-btn">Veja mais</a>
+                <div class="timeline-title">Integrated UPLC-HRMS, chemometric tools, and metabolomic analysis of forage palm (Opuntia spp. and Nopalea spp.) to define biomarkers associated with non-susceptibility to Carmine Cochineal (Dactylopius opuntiae)</div>
+                <a href="https://repositorio.ufc.br/simple-search?location=%2F&query=Ronaldo+Nascimento&rpp=10&sort_by=score&order=desc&filter_field_1=dateIssued&filter_type_1=equals&filter_value_1=2021" class="timeline-btn" id="timeline-btn2021">Veja mais</a>
               </div>
             </div>
             <div class="timeline-item">
               <div class="timeline-year">2020</div>
               <div class="timeline-details">
-                <div class="timeline-title">Título da publicação principal de 2020</div>
-                <a href="#" class="timeline-btn">Veja mais</a>
+                <div class="timeline-title">Adsorção: aspectos teóricos e aplicações ambientais</div>
+                <a href="https://repositorio.ufc.br/simple-search?location=%2F&query=Ronaldo+Nascimento&rpp=10&sort_by=score&order=desc&filter_field_1=dateIssued&filter_type_1=equals&filter_value_1=2020" class="timeline-btn" id="timeline-btn2020">Veja mais</a>
               </div>
             </div>
             <div class="timeline-item">
               <div class="timeline-year">2019</div>
               <div class="timeline-details">
-                <div class="timeline-title">Título da publicação principal de 2019</div>
-                <a href="#" class="timeline-btn">Veja mais</a>
+                <div class="timeline-title">Zinc ferrite nanoparticles via coprecipitation modified method: glycerol as structure directing and stabilizing agent</div>
+                <a href="https://repositorio.ufc.br/simple-search?location=%2F&query=Ronaldo+Nascimento&rpp=10&sort_by=score&order=desc&filter_field_1=dateIssued&filter_type_1=equals&filter_value_1=2019" class="timeline-btn" id="timeline-btn2019">Veja mais</a>
               </div>
             </div>
             <div class="timeline-item">
               <div class="timeline-year">2018</div>
               <div class="timeline-details">
-                <div class="timeline-title">Título da publicação principal de 2018</div>
-                <a href="#" class="timeline-btn">Veja mais</a>
+                <div class="timeline-title">Remoção de metais tóxicos através dos resíduos de cinzas de lodo de fossa séptica.</div>
+                <a href="https://repositorio.ufc.br/simple-search?location=%2F&query=Ronaldo+Nascimento&rpp=10&sort_by=score&order=desc&filter_field_1=dateIssued&filter_type_1=equals&filter_value_1=2018" class="timeline-btn" id="timeline-btn2018">Veja mais</a>
               </div>
             </div>
             <div class="timeline-item">
               <div class="timeline-year">2017</div>
               <div class="timeline-details">
-                <div class="timeline-title">Título da publicação principal de 2017</div>
-                <a href="#" class="timeline-btn">Veja mais</a>
+                <div class="timeline-title">Strategy for correction of matrix effect on the determination of pesticides in water bodies using SPME-GC-FID</div>
+                <a href="https://repositorio.ufc.br/simple-search?location=%2F&query=Ronaldo+Nascimento&rpp=10&sort_by=score&order=desc&filter_field_1=dateIssued&filter_type_1=equals&filter_value_1=2017" class="timeline-btn" id="timeline-btn2017">Veja mais</a>
               </div>
             </div>
             <div class="timeline-item">
               <div class="timeline-year">2016</div>
               <div class="timeline-details">
-                <div class="timeline-title">Título da publicação principal de 2016</div>
-                <a href="#" class="timeline-btn">Veja mais</a>
+                <div class="timeline-title">Desenvolvimento e validação de metodologia para determinação de interferentes endócrinos em águas superficiais</div>
+                <a href="https://repositorio.ufc.br/simple-search?location=%2F&query=Ronaldo+Nascimento&rpp=10&sort_by=score&order=desc&filter_field_1=dateIssued&filter_type_1=equals&filter_value_1=2016" class="timeline-btn" id="timeline-btn2016">Veja mais</a>
               </div>
             </div>
             <div class="timeline-item">
               <div class="timeline-year">2015</div>
               <div class="timeline-details">
-                <div class="timeline-title">Título da publicação principal de 2015</div>
-                <a href="#" class="timeline-btn">Veja mais</a>
+                <div class="timeline-title">	Carbonyl compounds from urban activities and their associated cancer risks: The influence of seasonality on air quality (Fortaleza-Ce, Brazil)</div>
+                <a href="https://repositorio.ufc.br/simple-search?location=%2F&query=Ronaldo+Nascimento&rpp=10&sort_by=score&order=desc&filter_field_1=dateIssued&filter_type_1=equals&filter_value_1=2015" class="timeline-btn" id="timeline-btn2015">Veja mais</a>
               </div>
             </div>
           </div>
         </div>
       </div>
       
-    </section>
+    </section> -->
 
-    <section id="equipe">
-      <div><h1>Equipe</h1></div>
+    <section id="coordenador">
+      <div><h1>Coordenador</h1></div>
       <div id="img-container">
-        <div id="membro1" class="membro">
-          <div id="perfil1"></div>
-          <div class="nome"><h3>Thiago Vasconcelos</h3></div>
-          <div class="cargo"><p>Doutorando</p></div>
+        <div id="membroC" class="membroC">
+          <div id="perfilC"></div>
+          <div class="nome"><h3>Ronaldo Ferreira do Nascimento</h3></div>
+          <div class="cargo"><p>Coordenador do Laboratório de Processos Oxidativos Avançados (LabPOA); Laboratório de Análise de Traços (LAT); Laboratório de Análise de Água (Lanágua); Laboratório de Cromatografia (LabCroma).</p><p>Formado em Química Industrial pela Universidade Federal do Maranhão (UFMA, 1991), doutor em Química Analítica pela Universidade de São Paulo (USP, 1997), Instituto de Química de São Carlos (IQSC). Atualmente é professor titular da Universidade Federal do Ceará (UFC). Publicou artigos (186) em periódicos científicos, capítulos de livros (20) e livros (09). Possui experiência na área de Química Analítica, com ênfase no Desenvolvimento de Métodos Cromatográficos (análise de resíduos de pesticidas em água e alimentos); Química Ambiental (análises de traços); Adsorção (remoção de poluentes de efluentes aquosos utilizando adsorventes naturais); Processos Oxidativos Avançados (tratamento de água e efluentes).</p></div>
           <div class="membro-buttons">
-            <a class="btn-membro" href="mailto:thiago@email.com"><span class="material-symbols-outlined">stacked_email</span></a>
-            <a class="btn-membro" href="#"><span class="material-symbols-outlined">book</span></a>
-          </div>
-        </div>
-        <div id="membro2" class="membro">
-          <div id="perfil2"></div>
-          <div class="nome"><h3>Taís</h3></div>
-          <div class="cargo"><p>Doutorando</p></div>
-          <div class="membro-buttons">
-            <a class="btn-membro" href="mailto:tais@email.com"><span class="material-symbols-outlined">stacked_email</span></a>
-            <a class="btn-membro" href="#"><span class="material-symbols-outlined">book</span></a>
-          </div>
-        </div>
-        <div id="membro3" class="membro">
-          <div id="perfil3"></div>
-          <div class="nome"><h3>Willon</h3></div>
-          <div class="cargo"><p>Mestrando</p></div>
-          <div class="membro-buttons">
-            <a class="btn-membro" href="mailto:willon@email.com"><span class="material-symbols-outlined">stacked_email</span></a>
-            <a class="btn-membro" href="#"><span class="material-symbols-outlined">book</span></a>
-          </div>
-        </div>
-        <div id="membro4" class="membro">
-          <div id="perfil4"></div>
-          <div class="nome"><h3>João Victor S.</h3></div>
-          <div class="cargo"><p>Iniciação Científica</p></div>
-          <div class="membro-buttons">
-            <a class="btn-membro" href="mailto:joaovictors@email.com"><span class="material-symbols-outlined">stacked_email</span></a>
-            <a class="btn-membro" href="#"><span class="material-symbols-outlined">book</span></a>
-          </div>
-        </div>
-        <div id="membro5" class="membro">
-          <div id="perfil5"></div>
-          <div class="nome"><h3>Elizabeth</h3></div>
-          <div class="cargo"><p>Iniciação Científica</p></div>
-          <div class="membro-buttons">
-            <a class="btn-membro" href="mailto:elizabeth@email.com"><span class="material-symbols-outlined">stacked_email</span></a>
-            <a class="btn-membro" href="#"><span class="material-symbols-outlined">book</span></a>
-          </div>
-        </div>
-        <div id="membro6" class="membro">
-          <div id="perfil6"></div>
-          <div class="nome"><h3>João Victor C.</h3></div>
-          <div class="cargo"><p>Iniciação Científica</p></div>
-          <div class="membro-buttons">
-            <a class="btn-membro" href="mailto:joaovictorc@email.com"><span class="material-symbols-outlined">stacked_email</span></a>
-            <a class="btn-membro" href="#"><span class="material-symbols-outlined">book</span></a>
-          </div>
-        </div>
-        <div id="membro7" class="membro">
-          <div id="perfil7"></div>
-          <div class="nome"><h3>Pedro J.</h3></div>
-          <div class="cargo"><p>Iniciação Científica</p></div>
-          <div class="membro-buttons">
-            <a class="btn-membro" href="mailto:pedroj@email.com"><span class="material-symbols-outlined">stacked_email</span></a>
-            <a class="btn-membro" href="#"><span class="material-symbols-outlined">book</span></a>
-          </div>
-        </div>
-        <div id="membro8" class="membro">
-          <div id="perfil8"></div>
-          <div class="nome"><h3>Davi</h3></div>
-          <div class="cargo"><p>Iniciação Científica</p></div>
-          <div class="membro-buttons">
-            <a class="btn-membro" href="mailto:davi@email.com"><span class="material-symbols-outlined">stacked_email</span></a>
-            <a class="btn-membro" href="#"><span class="material-symbols-outlined">book</span></a>
-          </div>
-        </div>
-        <div id="membro9" class="membro">
-          <div id="perfil9"></div>
-          <div class="nome"><h3>Xavier</h3></div>
-          <div class="cargo"><p>Iniciação Científica</p></div>
-          <div class="membro-buttons">
-            <a class="btn-membro" href="mailto:xavier@email.com"><span class="material-symbols-outlined">stacked_email</span></a>
-            <a class="btn-membro" href="#"><span class="material-symbols-outlined">book</span></a>
-          </div>
-        </div>
-        <div id="membro10" class="membro">
-          <div id="perfil10"></div>
-          <div class="nome"><h3>Letícia</h3></div>
-          <div class="cargo"><p>Iniciação Científica</p></div>
-          <div class="membro-buttons">
-            <a class="btn-membro" href="mailto:leticia@email.com"><span class="material-symbols-outlined">stacked_email</span></a>
-            <a class="btn-membro" href="#"><span class="material-symbols-outlined">book</span></a>
-          </div>
-        </div>
-        <div id="membro11" class="membro">
-          <div id="perfil11"></div>
-          <div class="nome"><h3>Américo</h3></div>
-          <div class="cargo"><p>Iniciação Científica</p></div>
-          <div class="membro-buttons">
-            <a class="btn-membro" href="mailto:americo@email.com"><span class="material-symbols-outlined">stacked_email</span></a>
-            <a class="btn-membro" href="#"><span class="material-symbols-outlined">book</span></a>
-          </div>
-        </div>
-        <div id="membro12" class="membro">
-          <div id="perfil12"></div>
-          <div class="nome"><h3>Karolina</h3></div>
-          <div class="cargo"><p>Iniciação Científica</p></div>
-          <div class="membro-buttons">
-            <a class="btn-membro" href="mailto:karolina@email.com"><span class="material-symbols-outlined">stacked_email</span></a>
+          <a class="btn-membro" href="mailto:ronaldo@email.com">
+          <span  class="material-symbols-outlined">stacked_email</span></a>
             <a class="btn-membro" href="#"><span class="material-symbols-outlined">book</span></a>
           </div>
         </div>
       </div>
+      <div>
+        <span><a href="equipe.html" id="nossosmembros">Saiba mais sobre nossos membros <span id="seta-membros"><img src="assets/img/arrow-down.svg" alt="" /></span></a></span>
+        
+      </div>
     </section>
+
 
     <footer>
       <div> 
