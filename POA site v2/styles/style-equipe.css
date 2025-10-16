@@ -246,6 +246,12 @@ body {
     margin-bottom: 0.5rem;
 }
 
+.member-description {
+    font-size: 1.0rem;
+    margin-bottom: 0.8rem;
+    line-height: 1.4rem;
+}
+
 .member-contact {
     display: flex;
     gap: 0.8rem;

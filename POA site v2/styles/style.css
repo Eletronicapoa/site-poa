@@ -1330,8 +1330,8 @@ hr {
 }
 
 [id^="perfil"] {
-    width: 80px;
-    height: 80px;
+    width: 120px;
+    height: 120px;
     border-radius: 50%;
     margin-bottom: 1rem;
     background: linear-gradient(135deg, #e0e0e0 0%, #f5f5f5 100%);
@@ -1343,6 +1343,7 @@ hr {
     height: 100%;
     border-radius: 50%;
     object-fit: cover;
+    object-position: 80% 15%;
 }
 
 .nome{
@@ -1434,6 +1435,7 @@ hr {
     width: 32px;  
     height: auto;
 }
+
 
 /* Animações */
 @keyframes fadeInLeft {
