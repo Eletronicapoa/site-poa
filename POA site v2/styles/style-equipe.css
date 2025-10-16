@@ -121,6 +121,12 @@ body {
     margin-top: 0;
 }
 
+.member-info h4{
+    font-size: 0.8rem;
+    margin-bottom: 0.5rem;
+    margin-top: -0.6rem;
+}
+
 /* Grid de membros */
 .members-grid {
     display: grid;
@@ -130,8 +136,35 @@ body {
     padding: 0 20px;
 }
 
-/* Grid específico para líderes (3 colunas) */
-.leaders-grid {
+/* Grid específico para coordenadores (3 colunas) */
+.c-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-bottom: 3rem;
+    padding: 0 20px;
+}
+
+/* Grid específico para pesquisadores (4 colunas) */
+.p-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-bottom: 3rem;
+    padding: 0 20px;
+}
+
+/* Grid específico para doutorando (3 colunas) */
+.d-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-bottom: 3rem;
+    padding: 0 20px;
+}
+
+/* Grid específico para mestrando (3 colunas) */
+.m-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
@@ -140,12 +173,32 @@ body {
 }
 
 /* Grid específico para iniciação científica (4 colunas) */
-.scientific-grid {
+.ic-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 2rem;
     margin-bottom: 3rem;
     padding: 0 20px;
+}
+
+.alumni-grid .member-photo{
+    width: 50px;
+    height: 50px;
+    border-radius: 100px;
+    background: linear-gradient(135deg, #1e88e5, #42a5f5);
+    position: relative;
+    overflow: hidden;
+}
+.info-grid .member-info{
+    padding-top: 0.0rem;
+    text-align: left;
+}
+.info-grid {
+    grid-template-rows: repeat(2, 1fr);
+    flex-direction: row;
+    justify-content: flex-start;
+    display: flex;
+    align-items: flex-start;
 }
 
 /* Card de membro */

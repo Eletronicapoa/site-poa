@@ -1043,8 +1043,8 @@ hr {
 .data {
     width: 1.3rem;
     height: 1.3rem;
-    background-color: #f5f7ff;
-    color: #fff;
+    background: #fff;
+    color: #476bce;
     border-radius: 50%;
     display: flex;
     flex-direction: column;
@@ -1054,7 +1054,7 @@ hr {
 }
 
 .timeline li:hover .show {
-    background-color: var(--primary-color);
+    background-color: #ffffff;
     --scale: 1.2;
     cursor: pointer;
      z-index: 200;
@@ -1065,7 +1065,7 @@ hr {
     height: 22rem;
     border-radius: 3rem;
     padding: 1rem;
-    background-image: linear-gradient(45deg, var(--primary-color), #00c853);
+    background-image: linear-gradient(45deg, #2d65ad #3bb873);
 
     box-shadow: 0 .1rem .4rem #f5f7ff;
 
@@ -1074,10 +1074,11 @@ hr {
 
 .data h3 {
     text-transform: capitalize;
+    margin-left: 1.3rem;
 }
 
 .data p {
-    background: #f5f7ff;
+    background: #f5f7ff2d;
     padding: 1rem;
     border-radius: 1rem;
 
@@ -1085,7 +1086,7 @@ hr {
 }
 
 .data .show p{
-    margin-left: 0;
+    margin-left: 0px;
 }
 
 .data .close {
