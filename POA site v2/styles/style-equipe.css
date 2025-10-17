@@ -121,10 +121,21 @@ body {
     margin-top: 0;
 }
 
-.member-info h4{
-    font-size: 0.8rem;
-    margin-bottom: 0.5rem;
-    margin-top: -0.6rem;
+.alumni-grid .member-info {
+    padding: 1.5rem;
+    padding-bottom: 3.2rem; /* espaço para os contatos posicionados */
+    text-align: left;
+    margin-left: 50px;
+}
+
+.members-section .member-contact{
+    position: absolute;
+    left: 1.5rem;
+    bottom: 1rem;
+    display: flex;
+    gap: 0.8rem;
+    align-items: center;
+    width: auto;
 }
 
 /* Grid de membros */
@@ -181,12 +192,18 @@ body {
     padding: 0 20px;
 }
 
+.alumni-grid{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
 .alumni-grid .member-photo{
     width: 50px;
     height: 50px;
     border-radius: 100px;
     background: linear-gradient(135deg, #1e88e5, #42a5f5);
-    position: relative;
+    position: absolute;
     overflow: hidden;
 }
 .info-grid .member-info{
@@ -203,12 +220,14 @@ body {
 
 /* Card de membro */
 .member-card {
+    position: relative;
     background: white;
     border-radius: 15px;
     overflow: hidden;
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
     border: 1px solid rgba(30, 136, 229, 0.1);
+    height: 22rem;
 }
 
 .member-card:hover {
@@ -247,12 +266,14 @@ body {
 }
 
 .member-description {
-    font-size: 1.0rem;
-    margin-bottom: 0.8rem;
+    font-size: 1.0rem; 
+    margin-bottom: 1rem;
     line-height: 1.4rem;
+    margin-top: -0.5rem;
 }
 
 .member-contact {
+    width:100%;
     display: flex;
     gap: 0.8rem;
     align-items: center;
@@ -265,6 +286,7 @@ body {
     border-radius: 3px;
     display: inline-block;
     transition: background-color 0.3s ease;
+    flex-shrink:0;
 }
 
 .contact-icon:hover {
