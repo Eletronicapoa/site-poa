@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lanagua</title>
+    <link rel="stylesheet" href="styles/style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="icon" href="assets/img/Frame 1.svg" />
+    <script src="scripts/script.js"></script>
+  </head>
+  <body class="lanagua-page"> >
+    <!-- Header -->
+    <header id="header-content">
+      <div class="container">
+        <div class="header-content">
+          <div>
+            <h1>Lanagua</h1>
+          </div>
+          <button class="mobile-menu-btn">☰</button>
+          <ul class="menu">
+            <li><a href="#">Início</a></li>
+            <li><a href="#contato-index">Contato</a></li>
+            <li><a href="#linhasPesquisa">Pesquisas</a></li>
+            <li><a href="#publicacoes">Publicações</a></li>
+            <li><a href="#equipe">Equipe</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <!-- adicionar um border bottom pro efeito de separação e tirar o hr -->
+    <hr />
+
+    <section id="hero">
+      <div class="hero-container">
+        <div class="hero-content">
+          <!-- Título principal -->
+          <h1 class="hero-title">
+            Análises químicas precisas para garantir a qualidade e segurança da
+            <span class="hero-highlight"> água</span>
+            <!-- ajusta a cor depois (aquela verde) -->
+          </h1>
+          <!-- Subtítulo -->
+          <p class="ptext">
+           +10 anos de experiência em análises de água,
+            oferecendo soluções confiáveis e de alta precisão para 
+            monitoramento da qualidade e detecção de 
+            contaminantes em diferentes matrizes.
+          </p>
+          <!-- "Link" de scroll ou animação de seta para baixo -->
+          <a
+            href="#linhasPesquisa"
+            class="arrow-scroll"
+            aria-label="Ver linhas de pesquisa"
+          >
+            <img
+              src="assets/img/arrow-down.svg"
+              alt=""
+              role="presentation"
+              id="headerdownarrow"
+            />
+          </a>
+        </div>
+        <!-- imagem -->
+        <div class="hero-img">
+          <img src="assets/img/lab_img.png" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <section id="contato-index">
+      <div>
+      <div id="titlecontato">
+        <h2>Entre em contato</h2>
+      </div>
+      <div id="textcontato">
+        <p>
+          Email: ronaldo@ufc.br <br>
+          Departamento de Química Analítica e Físico-Química Campus do Pici -
+          Bloco 939 CEP: 60440-900 Fortaleza-CE Brasil
+        </p>
+    </section>
+
+    <section id="linhasPesquisaPainel">
+
+      <div class="slider">
+
+        <div class="slides">
+          <!-- Radio buttons -->
+           <input type="radio" name="radio-bnt" id="radio1">
+           <input type="radio" name="radio-bnt" id="radio2">
+           <input type="radio" name="radio-bnt" id="radio3">
+           <input type="radio" name="radio-bnt" id="radio4">
+          <!-- Fim Radio buttons -->
+
+          <!-- Slide images -->
+           <div id="slide-letra" class="slide first">
+            <h3>Equipamento</h3>
+              <img src="assets/img/lab_img.png" alt="slideimagem1" />
+            </a>
+           </div>
+           <div id="slide-letra" class="slide">
+            <h3>Equipamento</h3>
+              <img src="assets/img/lab_img.png" alt="slideimagem2" />
+            </a>
+           </div>
+           <div id="slide-letra" class="slide">
+            <h3>Equipamento</h3>
+                <img src="assets/img/lab_img.png" alt="slideimagem3" />
+            </a>
+           </div>
+           <div id="slide-letra" class="slide">
+            <h3>Equipamento</h3>
+              <img src="assets/img/lab_img.png" alt="slideimagem4" />
+            </a>
+           </div>
+           <!-- Fim Slide images -->
+
+           <!-- Navigation auto -->
+            <div class="navigation-auto">
+              <div class="auto-btn1"></div>
+              <div class="auto-btn2"></div>
+              <div class="auto-btn3"></div>
+              <div class="auto-btn4"></div>
+            </div>
+
+        </div>
+
+
+        <div class="manual-navigation">
+          <label for="radio1" class="manual-btn"></label>
+          <label for="radio2" class="manual-btn"></label>
+          <label for="radio3" class="manual-btn"></label>
+          <label for="radio4" class="manual-btn"></label>
+        </div>
+
+
+      </div>
+
+      <script src="scripts/script.js"></script>
+
+    </section>
+
+
+    <section id="coordenador">
+      <div><h1>Coordenadores</h1></div>
+      <div id="img-container">
+        <div id="membroC" class="membroC">
+          <div id="perfilC">
+            <img src="assets/img/ronaldo.jpg" alt="Foto de Ronaldo Ferreira do Nascimento">
+          </div>
+          <div class="nome"><h3>Ronaldo Ferreira do Nascimento</h3></div>
+          <div>
+            <p>Formado em Química Industrial pela Universidade Federal do Maranhão (UFMA, 1991), doutor em Química Analítica pela Universidade de São Paulo (USP, 1997), Instituto de Química de São Carlos (IQSC). Atualmente é professor titular da Universidade Federal do Ceará (UFC). Publicou artigos (186) em periódicos científicos, capítulos de livros (20) e livros (09). Possui experiência na área de Química Analítica, com ênfase no Desenvolvimento de Métodos Cromatográficos (análise de resíduos de pesticidas em água e alimentos); Química Ambiental (análises de traços); Adsorção (remoção de poluentes de efluentes aquosos utilizando adsorventes naturais); Processos Oxidativos Avançados (tratamento de água e efluentes).<p></div>
+            <div class="membro-buttons">
+            <a class="btn-membro" href="mailto:ronaldo@email.com"><span class="material-symbols-outlined">stacked_email</span></a>
+            <a class="btn-membro" href="#"><span class="material-symbols-outlined">book</span></a>
+          </div>
+        </div>
+
+        <div id="membroC" class="membroC">
+          <div id="perfilC"></div>
+          <div class="nome"><h3>Francisco Belmino Romero</h3></div>
+          <div class="cargo"><p>Graduado em Química Industrial (1970) e em Engenharia Química (1971) - Universidade Federal do Ceará(UFC). Mestre em Ciência dos Materiais e Engenharia Metalúrgica - Pontifícia Universidade Católica do Rio de Janeiro (1974). Livre Docente em Físico-Química - Universidade Federal do Ceará (2005). Professor de Físico-Química. Pesquisador de corrosão - proteção à corrosão e de processos oxidativos avançados do Laboratório de Processos Oxidativos Avançados-LabPOA no Departamento de Química Analítica e Físico-Química do Centro de Ciências da UFC. Atualmente é Professor Associado IV aposentado e continuando como Professor Voluntário da Universidade Federal do Ceará. </p></div>
+          <div class="membro-buttons">
+            <a class="btn-membro" href="mailto:belmino@email.com"><span class="material-symbols-outlined">stacked_email</span></a>
+            <a class="btn-membro" href="#"><span class="material-symbols-outlined">book</span></a>
+          </div>
+        </div>
+      </div>
+      <div>
+          <span><a href="equipe.html" id="nossosmembros">Saiba mais sobre nossos membros <span id="seta-membros"><img src="assets/img/arrow-down.svg" alt="" /></span></a></span>
+      </div>
+    </section>
+
+    <footer>
+      <div> 
+        <span class="footer-container"><img src="assets/img/Logotipo v2.svg" alt="" class="footer-content" /></span>
+        <!-- logo poa -->
+        <span class="footer-container"><p>Todos os direitos reservados</p></span>
+        <span class="footer-container"><img src="assets/img/ufc_logo.svg" alt="" /></span>
+        <!-- logo ufc -->
+      </div>
+    </footer>
+
+    <!-- botão flutuante de ir para o header -->
+    <!-- colocar um border radius -->
+    <div>
+      <a href="#hero" class="devolta" aria-label="Retornar ao início da página">
+        <img src="assets/img/arrow-down.svg" alt="" />
+      </a>
+    </div>
+  </body>
+</html>
+
+
+
