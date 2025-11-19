@@ -7,7 +7,8 @@
     <link rel="stylesheet" href="styles/style.css" />
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <link rel="icon" href="assets/img/Frame 1.svg" />
-    <script src="scripts/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script defer src="scripts/script.js"></script>
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
@@ -80,14 +81,34 @@
         <p class="maps"><a href="https://maps.app.goo.gl/mKpCmsMdut5kbHBh7">Veja no Google Maps</a></p>
     </section>
 
-    <section id="linhasPesquisaPainel">
+
+    <!-- Seção de linhas de pesquisa v2 -->
+
+    <!-- Slider main container -->
+  <div class="swiper-slides">
+    <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div class="swiper-slide"><img class="overlay-bg" src="assets/img/gc-ms.png" alt="Linhas de pesquisa — GC-MS">
+          <div class="content-overlay">
+            <h2 class="carousel-title">Linhas de pesquisa</h2></div>
+      <div class="swiper-slide">LAT</div>
+      <div class="swiper-slide">Lanagua</div>
+      <div class="swiper-slide">Croma</div>
+    </div>
+    <!-- If we need pagination -->
+    <div class="swiper-pagination"></div>
+  </div>
+
+    <!-- Seção de linhas de pesquisa v1 (deprecated) -->
+    <!-- <section id="linhasPesquisaPainel">
     <div class="lab-carousel-container" role="region" aria-label="Linhas de pesquisa">
       <div class="lab-carousel">
         <div class="lab-carousel-item" aria-live="polite">
           <img class="overlay-bg" src="assets/img/gc-ms.png" alt="Linhas de pesquisa — GC-MS">
           <div class="content-overlay">
             <h2 class="carousel-title">Linhas de pesquisa</h2>
-            <!-- <p class="carousel-subtitle">Resumo curto ou chamada que complementa o título.</p> -->
+             <p class="carousel-subtitle">Resumo curto ou chamada que complementa o título.</p>
 
             <div class="bottom-left-area">
               <div class="pagination-dots" role="tablist" aria-label="Navegação do carrossel">
@@ -117,49 +138,37 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
 
-  <!-- ...existing code... -->
+  
 
   <!-- coloque o script apenas uma vez, aqui no final da página -->
-  <script src="scripts/script.js"></script>
+  <!-- <script src="scripts/script.js"></script> -->
     
-    <!-- seção publicações -->
-    <!-- <section id="publicacoesNovo">
+    <!-- seção publicações (livros) v1 (deprecated mas não vai ser mexido agora) -->
+    <section id="publicacoesNovo">
       <h2>Nossos Livros</h2>
       <div class="swiper-container">
-        <div class="swiper">
+        <div class="swiper-livros">
+          <div class="swiper-button-prev"></div>
           <div class="swiper-wrapper"> 
             <div class="swiper-slide">
-              <div class="slide-content">
-                <img src="assets/img/POAs.png" alt="Livro sobre POAs">
-              </div>
+              <div class="slide-content"><img src="assets/img/POAs.png" alt="Livro sobre POAs"></div>
             </div>
             <div class="swiper-slide">
-              <div class="slide-content">
-                <img src="assets/img/Cromatografia.png" alt="Livro sobre Cromatografia">
-              </div>
+              <div class="slide-content"><img src="assets/img/Cromatografia.png" alt="Livro sobre Cromatografia"></div>
             </div>
             <div class="swiper-slide">
-              <div class="slide-content">
-                <img src="assets/img/Adsorção.png" alt="Livro sobre Adsorção">
-              </div>
+              <div class="slide-content"><img src="assets/img/Adsorção.png" alt="Livro sobre Adsorção"></div>
             </div>
             <div class="swiper-slide">
-              <div class="slide-content">
-                <img src="assets/img/Processos-eletroliticos.png" alt="Livro sobre Processos Eletrolíticos">
-              </div>
+              <div class="slide-content"><img src="assets/img/Processos-eletroliticos.png" alt="Livro sobre Processos Eletrolíticos"></div>
             </div>
           </div>
         </div>
-        <div class="botoes-prev-next">
-          <div class="swiper-button-prev">
-          </div>
-          <div class="swiper-button-next">
-          </div>
-        </div>
+        <div class="swiper-button-next"></div>
       </div>
-    </section> -->
+    </section>
 
     <!-- seção timeline -->
     <section class="timeline-publi">
@@ -275,55 +284,9 @@
         <h3><a id="ver-publi" href="http://lattes.cnpq.br/6345440666273561">Veja nossas publicações</a></h3>
       </section>
 
-    <!-- js da secçao publicações -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
-
-    <script type="text/javascript">
-      var swiper = new Swiper(".swiper",{
-        effect: "coverflow",
-        grabCursor: true,
-        centeredSlides: true,
-        coverflowEffect: {
-          rotate: 2,
-          stretch: 20,
-          depth: 80,
-          modifier: 7.2,
-          slideShadows: true,
-        },
-        slidesPerView: 2,
-        spaceBetween: 30,
-        loop: true,
-        loopedSlides: 4,
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-        autoplay: {
-          delay: 3000,
-          disableOnInteraction: true,
-        },
-        keyboard:{
-          enable: true,
-        },
-        mousewheel:{
-          thresholdDelta: 990
-        },
-         /* breakpoints:{
-          560:{
-            slidesPerView: 2
-          },
-          768:{
-            slidesPerView: 2
-          },
-          1024: {
-            slidesPerView: 3
-          }
-        }  */
-      });
-    </script>
 
 
-
+<!-- Seção do coordenador -->
     <section id="coordenador">
       <div><h1>Coordenador</h1></div>
       <div id="img-container">
@@ -359,7 +322,6 @@
     </footer>
 
     <!-- botão flutuante de ir para o header -->
-    <!-- colocar um border radius -->
     <div>
       <a href="#hero" class="devolta" aria-label="Retornar ao início da página">
         <img src="assets/img/arrow-down.svg" alt="" />

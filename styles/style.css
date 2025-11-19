@@ -268,6 +268,8 @@ hr {
     transform: translateY(-2px);
 }
 
+
+
 /* Seção Contato */
 #contato {
     padding: 240px;
@@ -364,18 +366,15 @@ hr {
     box-shadow: 0 0 0 3px rgba(30, 136, 229, 0.1);
 }
 
-/* Seção linhasPesquisa */
-/* #linhasPesquisaPainel {
-    padding: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: linear-gradient(135deg, #f5f7ff 0%, #e8f4fd 100%);
-} */
+
+/* Seção linhasPesquisa v2 */
 
 
 
-#linhasPesquisaPainel {
+
+/* Seção linhasPesquisa v1 (deprecated) */
+
+/*  #linhasPesquisaPainel {
     padding-top: 100px;
     padding-bottom: 70px;
 }
@@ -430,8 +429,6 @@ hr {
     z-index: 3;
 }
 
-
-
 .content-overlay h2{
     position: relative;
     z-index: 2;
@@ -441,8 +438,8 @@ hr {
 }
 .content-overlay .overlay-content{
     position: relative;
-    z-index: 1; /* conteúdo acima da imagem */
-    color: white; /* ajustar conforme necessário */
+    z-index: 1; /* conteúdo acima da imagem 
+    color: white; /* ajustar conforme necessário 
 }
 .carousel-title {
     color: var(--text-white);
@@ -593,29 +590,11 @@ hr {
 }
 #radio4:checked ~ .navigation-auto .auto-btn4{
     background: #ffffff;
-}
+} */
 
-#LIVROSG{
-    background-color: #205a81e0;
-}
 
-#livros{
-    display: flex;
-    flex-direction: row;
-    gap: 10rem;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    padding: 50px;
-    margin-top: -50px;
-}
 
-#livros img{
-    width: 20rem;
-    height: auto;
-    border-radius: 10px;
-}
-
+/* Seção de publicações (livros) v2 (deprecated - mas não vai ser mexido agora) */
 #publicacoesNovo h2 {
     font-family: "Montserrat", sans-serif;
     font-size: clamp(2rem, 4vw, 3rem);
@@ -709,6 +688,8 @@ hr {
     line-height: 1;
 }
 
+ /* !!!!!!!!!!!!!!Adiciona os botões na parte de baixo dos livros (não me agrada, vou fazer ficar dos dois lados) */
+
 /* .botoes-prev-next .swiper-button-prev::after { 
     content: "‹"; 
 }
@@ -741,7 +722,9 @@ hr {
     }
 } */
 
-#linhasPesquisa {
+
+/* Quase certeza que isso não tá servindo pra nada!!!!! */
+/* #linhasPesquisa {
     background: white;
     margin: 0px 0px 240px 0px;
 }
@@ -762,7 +745,7 @@ hr {
 
 #containerposts {
     display: grid;
-    grid-template-columns: repeat(1, 1fr); /* agora são 2 colunas */
+    grid-template-columns: repeat(1, 1fr); /* agora são 2 colunas *
     gap: 2rem;
     max-width: 1200px;
     margin: 0 auto;
@@ -832,223 +815,11 @@ hr {
     margin-left: -10px;
     background: rgba(255, 255, 255, 0.3);
 }
-
-
-/* Seção Publicações */
-#publicacoes {
-    background: linear-gradient(135deg, #f5f7ff 0%, #e8f4fd 100%);
-    padding: 100px;
-}
-
-#container-publicacoes {
-    display: flex;
-    flex-direction: column;
-    align-items: center; 
-    justify-content: center;
-}
-
-.post-title {
-    display: inline;
-}
-
-#titlepublicacao {
-    text-align: center;
-    
-}
-
-#titlepublicacao h1 {
-    font-family: "Outfit", sans-serif;
-    font-size: clamp(2rem, 4vw, 3rem);
-    color: #0B5D9C;
-    font-weight: 400;
-}
-
-.containerpublicacao {
-    width: 80%;
-    height: auto;
-    display: grid;
-    gap: 3px 30px;
-    background: white;
-    padding: 2rem;
-    margin: 2em;
-}
-
-.publicacoes-content {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-/*     border: red 1px solid; */
-}
-
-.croma-page .publicacoes-content{
-    width: 200px;
-    height: auto;
-}
-
-.labpoa-page .publicacoes-content{
-    width: 200px;
-    height: auto;
-}
-
-.lanagua-page .publicacoes-content{
-    width: 200px;
-    height: auto;
-}
-
-
-#publicacoes a {
-    text-decoration: none;
-}
-
-
-#publi-title {
-    grid-row: 1 / span 1;
-    grid-column: 1 / span 4;
-}
-
-.croma-page #publi-title.publicacoes-content {
-    margin-left: 350px;
-    white-space: nowrap;
-}
-
-.labpoa-page #publi-title.publicacoes-content {
-    margin-left: 350px;
-    white-space: nowrap;
-}
-
-.lanagua-page #publi-title.publicacoes-content {
-    margin-left: 350px;
-    white-space: nowrap;
-}
-
-
-#publi-subtitle {
-    grid-row: 2 / span 1;
-    grid-column: 1 / span 4;
-}
-
-.croma-page #publi-subtitle.publicacoes-content {
-    margin-left: 350px;
-    white-space: nowrap;
-}
-
-.labpoa-page #publi-subtitle.publicacoes-content {
-    margin-left: 350px;
-    white-space: nowrap;
-}
-
-.lanagua-page #publi-subtitle.publicacoes-content {
-    margin-left: 350px;
-    white-space: nowrap;
-}
-
-
-#publi-link1 {
-    grid-column: 1 / span 1;
-}
-
-.labpoa-page #publi-link1{
-    margin-left: 206px;
-}
-
-#publi-link2 {
-    grid-column: 2 / span 1;
-}
-
-.croma-page #publi-link2{
-    margin-left: 215px;
-}
-
-
-#publi-link3 {
-    grid-column: 3 / span 1;
-}
-
-.lanagua-page #publi-link3{
-    margin-right: 91px;
-}
-
-#publi-link4 {
-    grid-column: 4 / span 1;
-}
-
-.labpoa-page #publi-link4{
-    margin-right: 215px;
-}
-
-#linkoutros {
-    text-align: center;
-    margin-top: 1rem;
-    margin-bottom: 5rem;
-    display: block;
-}
-
-#linkoutros .linkexterno {
-    color: #1e88e5;
-    background: transparent;
-    border: 1px solid #1e88e5;
-    padding: 1rem 2rem;
-    border-radius: 6px;
-    transition: all 0.3s ease;
-}
-
-#linkoutros .linkexterno:hover {
-    background: #1e88e5;
-    color: white;
-}
-
-/* timeline vertical
-.timeline {
-  position: relative;
-  margin: 2rem auto;
-  padding: 2rem 0;
-  max-width: 600px;
-}
-
-.timeline::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 30px;
-  width: 4px;
-  height: 100%;
-  background: #0B5D9C;
-}
-
-.timeline-item {
-  position: relative;
-  margin-left: 60px;
-  margin-bottom: 2rem;
-}
-
-.timeline-year {
-  font-weight: bold;
-  font-size: 1.2rem;
-  color: #0B5D9C;
-  margin-bottom: 0.5rem;
-}
-
-.timeline-content {
-  background: #f0f8ff;
-  padding: 1rem;
-  border-radius: 10px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  position: relative;
-}
-
-.timeline-content::before {
-  content: '';
-  position: absolute;
-  left: -32px;
-  top: 0.5rem;
-  width: 12px;
-  height: 12px;
-  background: #0B5D9C;
-  border-radius: 50%;
-}
  */
 
-/* timelineNOVO */
+
+
+/* timelinev3 */
 :root {
     --primary-color: #d4d5d8;
 }
@@ -1078,7 +849,6 @@ hr {
 }
 
 /* setinha da timeline */
-
 
 #timeline-arrow span:nth-child(2) {
     animation-delay: -0.2s;
@@ -1215,178 +985,6 @@ hr {
 }
 
 
-/* timeline horizontal */
-.timeline-horizontal {
-  display: flex;
-  overflow-x: auto;
-  white-space: nowrap;
-  scroll-behavior: smooth;
-}
-
-.timeline-horizontal::-webkit-scrollbar {
-  display: none; /* Esconde a barra de rolagem */
-}
-
-.timeline-vertical-section::-webkit-scrollbar {
-  display: none; /* Esconde a barra de rolagem */
-}
-
-.timeline-item {
-  flex: 0 0 180px;
-  scroll-snap-align: start;
-  background: #f0f8ff;
-  border-radius: 6px;
-  padding: 1rem;
-  margin: 1rem;
-  position: relative;
-  border: #1e88e5 1px solid;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.timeline-year {
-  font-weight: bold;
-  font-size: 1.2rem;
-  color: #0B5D9C;
-}
-
-.timeline-content {
-  font-size: 0.95rem;
-  color: #f5f7ff;
-  text-align: center;
-  white-space: normal; /* Permite quebra de linha */
-}
-
-/* Timeline vertical */
-.timeline-vertical-section {
-  width: 100%;
-  margin: 0 auto 2rem auto;
-  height: 480px; /* ajuste conforme necessário */
-  overflow-y: auto;
-  padding: 0 0.5rem;
-  background: transparent;
-  /* Opcional: borda ou sombra para destacar a seção */
-}
-
-.timeline-vertical {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-  min-width: 0;
-  width: 100%;
-  margin: 2rem 0;
-  position: relative;
-  padding-left: 2rem;
-  box-sizing: border-box;
-  /* Remove max-width para ocupar toda a largura da seção */
-}
-
-.timeline-vertical::before {
-  content: '';
-  position: absolute;
-  left: 1rem;
-  top: 0;
-  bottom: 0;
-  width: 6px;
-  background: #1e88e5;
-  border-radius: 2px;
-}
-
-.timeline-item {
-  display: flex;
-  align-items: flex-start;
-  width: 90%;
-  min-width: 0;
-  /* Garante que o item ocupe toda a largura da timeline */
-}
-
-.timeline-year {
-  flex-shrink: 0;
-  width: 60px;
-  font-weight: bold;
-  font-size: 1.3rem;
-  color: #1e88e5;
-/*   background: #fff; */
-  z-index: 1;
-  text-align: right;
-  margin-right: 1.5rem;
-  position: relative;
-}
-
-.timeline-item::before {
-  content: '';
-  position: absolute;
-  left: -1.25rem;
-  top: 0.5rem;
-  width: 16px;
-  height: 16px;
-  background: #1e88e5;
-  border-radius: 50%;
-  border: 3px solid #fff;
-  z-index: 2;
-}
-
-.timeline-details {
-  background: #f9f9f9;
-  border-radius: 8px;
-  padding: 1rem 1.5rem;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.04);
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-  min-width: 0;
-  width: 100%;
-  box-sizing: border-box;
-}
-
-.timeline-title {
-  font-size: 1.1rem;
-  font-weight: 500;
-  color: #f5f7ff;
-}
-
-.timeline-btn {
-  align-self: flex-start;
-  margin-top: 0.5rem;
-  background: #1e88e5;
-  color: #fff;
-  padding: 0.4rem 1.2rem;
-  border-radius: 6px;
-  text-decoration: none;
-  font-weight: 500;
-  font-size: 1rem;
-  transition: background 0.2s;
-}
-
-.timeline-btn:hover {
-  background: #1e88e5;
-}
-
-/* seção dos livros (?) */
-
-#publicacoes img{
-    width: 80%;
-    height: auto;
-}
-
-#publicacoes h2 {
-    font-size: 2rem;
-    color: #f5f7ff;
-    margin-bottom: 1rem;
-}
-
-#publicacoes h3 {
-    color: #f5f7ff;
-    margin-bottom: 1.5rem;
-    font-weight: 400;
-}
-
-#publicacoes p{
-    margin-bottom: 2rem;
-}
 
 /* Seção Coordenador */
 #coordenador {
@@ -1402,8 +1000,6 @@ hr {
     font-weight: 400;
     margin-bottom: 4rem;
 }
-
-
 
 #img-container {
     display: grid;
