@@ -21,13 +21,7 @@ html {
 }
 
 body {
-    font-family: "Montserrat", sans-serif;
-    line-height: 1.6;
-    color: #333;
-    overflow-x: hidden;
-}
-
-body {
+    
     font-family: "Montserrat", sans-serif;
     line-height: 1.6;
     color: #333;
@@ -38,7 +32,6 @@ body {
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 20px;
 }
 
 /* Header */
@@ -52,6 +45,7 @@ body {
     z-index: 1000;
     transition: all 0.3s ease;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+
 }
 
 .header-content {
@@ -115,23 +109,25 @@ hr {
 #hero {
     display: flex;
     align-items: center;
-    margin-top: -125px;
 }
 
 .hero-container {
     max-width: 100%;
     margin: 0 auto;
-    padding-left: 5%;
+    padding-left: 4%;
+    padding-top: 7vh;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 4rem;
-    align-items: center;
+    align-items: start;
+    min-height: 100vh;
+    
 }
 
 .hero-content {
     min-width: 500px;
     animation: fadeInLeft 1s ease-out;
-    margin-left: -55px;
+    
 }
 
 .hero-title {
@@ -140,7 +136,7 @@ hr {
     font-weight: 400;
     line-height: 1;
     margin-bottom: 1.5rem;
-    margin-top: 1.5rem;
+    margin-top: 8rem;
     color: #0B5D9C;
 }
 
@@ -824,6 +820,7 @@ hr {
     scrollbar-color: #cacaca #f5f7ff;
     scroll-behavior: smooth;
     overflow-x: auto;
+    min-height: 88.5vh;
 }
 
 #timeline-wrapper {
@@ -831,10 +828,8 @@ hr {
     margin-bottom: 100px; */
     width: 100%;
     max-width: 100%;
-    
     display: flex;
     align-items: center;
-
     transition: .3s ease;
     padding-top: 12.5rem;
     padding-bottom: 14rem;
