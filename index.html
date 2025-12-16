@@ -7,11 +7,9 @@
     <link rel="stylesheet" href="styles/style.css" />
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <link rel="icon" href="assets/img/Frame 1.svg" />
-    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
-    <script defer src="scripts/script.js"></script>
     <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
     />
   </head>
   <body>
@@ -30,13 +28,13 @@
             <li><a href="#publicacoesNovo">Publicações</a></li>
             <li><a href="#coordenador">Coordenador</a></li>
           </ul>
-          </header>
-        </div>
+        </header>
       </div>
+    </div>
     
     <!-- adicionar um border bottom pro efeito de separação e tirar o hr -->
     <hr />
-
+    
     <section id="hero">
       <div class="hero-container">
         <div class="hero-content">
@@ -48,28 +46,28 @@
             +10 anos produzindo conhecimento e divulgando ciência de ponta.
           </p>
           <a
-            href="#linhasPesquisaPainel"
-            class="arrow-scroll"
-            aria-label="Ver linhas de pesquisa"
+          href="#linhasPesquisaPainel"
+          class="arrow-scroll"
+          aria-label="Ver linhas de pesquisa"
           >
             <img
               src="assets/img/arrow-down.svg"
               alt=""
               role="presentation"
               id="headerdownarrow"
-            />
-          </a>
+              />
+            </a>
+          </div>
+          <div class="hero-img">
+            <img src="assets/img/toc2.png" alt="" />
+          </div>
         </div>
-        <div class="hero-img">
-          <img src="assets/img/toc2.png" alt="" />
-        </div>
-      </div>
-    </section>
-
-    <section id="contato-index">
-      <div>
-      <div id="titlecontato">
-        <h2>Entre em contato</h2>
+      </section>
+      
+      <section id="contato-index">
+        <div>
+          <div id="titlecontato">
+            <h2>Entre em contato</h2>
       </div>
       <div id="textcontato">
         <p>
@@ -79,37 +77,37 @@
           CEP: 60440-900 Fortaleza-CE Brasil
         </p>
         <p class="maps"><a href="https://maps.app.goo.gl/mKpCmsMdut5kbHBh7">Veja no Google Maps</a></p>
-    </section>
+      </section>
 
-
-    <!-- Seção de linhas de pesquisa v2 -->
-
-    <!-- Slider main container -->
-  <div class="swiper-slides">
-    <!-- Additional required wrapper -->
+      
+      <!-- Seção de linhas de pesquisa v2 -->
+      
+      <!-- Slider main container -->
+      <div class="swiper-slides">
+        <!-- Additional required wrapper -->
     <div class="swiper-wrapper">
       <!-- Slides -->
       <div class="swiper-slide"><img class="overlay-bg" src="assets/img/gc-ms.png" alt="Linhas de pesquisa — GC-MS">
-          <div class="content-overlay">
-            <h2 class="carousel-title">Linhas de pesquisa</h2></div>
-      <div class="swiper-slide">LAT</div>
-      <div class="swiper-slide">Lanagua</div>
-      <div class="swiper-slide">Croma</div>
-    </div>
-    <!-- If we need pagination -->
-    <div class="swiper-pagination"></div>
-  </div>
-
-    <!-- Seção de linhas de pesquisa v1 (deprecated) -->
-    <!-- <section id="linhasPesquisaPainel">
-    <div class="lab-carousel-container" role="region" aria-label="Linhas de pesquisa">
-      <div class="lab-carousel">
-        <div class="lab-carousel-item" aria-live="polite">
-          <img class="overlay-bg" src="assets/img/gc-ms.png" alt="Linhas de pesquisa — GC-MS">
+        <div class="content-overlay">
+          <h2 class="carousel-title">Linhas de pesquisa</h2></div>
+          <div class="swiper-slide">LAT</div>
+          <div class="swiper-slide">Lanagua</div>
+          <div class="swiper-slide">Croma</div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+      </div>
+      
+      <!-- Seção de linhas de pesquisa v1 (deprecated) -->
+      <!-- <section id="linhasPesquisaPainel">
+        <div class="lab-carousel-container" role="region" aria-label="Linhas de pesquisa">
+          <div class="lab-carousel">
+            <div class="lab-carousel-item" aria-live="polite">
+              <img class="overlay-bg" src="assets/img/gc-ms.png" alt="Linhas de pesquisa — GC-MS">
           <div class="content-overlay">
             <h2 class="carousel-title">Linhas de pesquisa</h2>
-             <p class="carousel-subtitle">Resumo curto ou chamada que complementa o título.</p>
-
+            <p class="carousel-subtitle">Resumo curto ou chamada que complementa o título.</p>
+            
             <div class="bottom-left-area">
               <div class="pagination-dots" role="tablist" aria-label="Navegação do carrossel">
                 <button class="dot" type="button" data-index="0" aria-label="Slide 1"></button>
@@ -118,58 +116,52 @@
                 <button class="dot" type="button" data-index="3" aria-label="Slide 4"></button>
               </div>
             </div>
-
+            
             <a class="cta-link" href="labpoa.html" target="_self" rel="noopener">Ir para LabPOA</a>
           </div>
         </div>
-
+        
         <div class="navigation-controls" aria-hidden="false">
           <button class="nav-arrow" id="prev-btn">
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
             <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
             </svg>
           </button>
-
+          
           <button class="nav-arrow" id="next-btn">
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
-            <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
+              <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
             </svg>
           </button>
         </div>
       </div>
     </div>
   </section> -->
-
   
-
+  
+  
   <!-- coloque o script apenas uma vez, aqui no final da página -->
   <!-- <script src="scripts/script.js"></script> -->
-    
-    <!-- seção publicações (livros) v1 (deprecated mas não vai ser mexido agora) -->
-    <section id="publicacoesNovo">
+  
+  <!-- seção publicações (livros) v1 (deprecated mas não vai ser mexido agora) -->
+  <section id="publicacoes">
       <h2>Nossos Livros</h2>
-      <div class="swiper-container">
-        <div class="swiper-livros">
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-wrapper"> 
-            <div class="swiper-slide">
-              <div class="slide-content"><img src="assets/img/POAs.png" alt="Livro sobre POAs"></div>
-            </div>
-            <div class="swiper-slide">
-              <div class="slide-content"><img src="assets/img/Cromatografia.png" alt="Livro sobre Cromatografia"></div>
-            </div>
-            <div class="swiper-slide">
-              <div class="slide-content"><img src="assets/img/Adsorção.png" alt="Livro sobre Adsorção"></div>
-            </div>
-            <div class="swiper-slide">
-              <div class="slide-content"><img src="assets/img/Processos-eletroliticos.png" alt="Livro sobre Processos Eletrolíticos"></div>
-            </div>
-          </div>
+      <div class="swiper">
+        <div class="swiper-wrapper"> 
+          <div class="swiper-slide"><img src="assets/img/POAs.png" alt="Livro sobre POAs"></div>
+          <div class="swiper-slide"><img src="assets/img/Cromatografia.png" alt="Livro sobre Cromatografia"></div>
+          <div class="swiper-slide"><img src="assets/img/Adsorção.png" alt="Livro sobre Adsorção"></div>
+          <div class="swiper-slide"><img src="assets/img/Processos-eletroliticos.png" alt="Livro sobre Processos Eletrolíticos"></div>
         </div>
+
+        <div class="swiper-pagination"></div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
         <div class="swiper-button-next"></div>
       </div>
     </section>
-
+    
     <!-- seção timeline -->
     <section class="timeline-publi">
       <div>
@@ -177,17 +169,17 @@
         <h3 id="subtitle">Estudos direcionados a aplicações práticas</h3>
       </div>
       <div id="timeline-wrapper">
-          <ul  class="timeline">
-            <li>
-              <h6></h6>
-              <div class="data" id="cima">  
-                  <h3>2025</h3>
+        <ul  class="timeline">
+          <li>
+            <h6></h6>
+            <div class="data" id="cima">  
+              <h3>2025</h3>
                   <p>Emissões veiculares: uma abordagem rápida e
-                  eficiente para a determinação de H2, CO, CH4 e 
-                  CO2 por GC-BID e de BTEX por SPME-GC-BID</p>
-              </div>
-            </li>
-            <li>
+                    eficiente para a determinação de H2, CO, CH4 e 
+                    CO2 por GC-BID e de BTEX por SPME-GC-BID</p>
+                  </div>
+                </li>
+                <li>
               <h6></h6>
               <div class="data" id="baixo">
                   <h3>2024</h3>
@@ -195,40 +187,40 @@
                   sea turtles: The consequences of the oil spill 
                   and ingestion of anthropogenic debris on the tropical
                   semi-arid coast of Ceará, Brazil</p>
-              </div>
+                </div>
             </li>
             <li>
               <h6></h6>
               <div class="data" id="cima">
-                  <h3>2023</h3>
-                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta alias eaque voluptatum ipsa dignissimos magnam recusandae quidem quod voluptatibus veritatis incidunt quis voluptatem voluptate dolorem illo temporibus numquam, nulla repellendus.</p>
+                <h3>2023</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Soluta alias eaque voluptatum ipsa dignissimos magnam recusandae quidem quod voluptatibus veritatis incidunt quis voluptatem voluptate dolorem illo temporibus numquam, nulla repellendus.</p>
               </div>
             </li>
             <li>
               <h6></h6>
               <div class="data" id="baixo">
-                  <h3>2022</h3>
-                  <p>A physical study to explain response differences
+                <h3>2022</h3>
+                <p>A physical study to explain response differences
                   between the BID and FID detectors for PAHs and pesticides</p>
-              </div>
-            </li>
-            <li>
-              <h6></h6>
+                </div>
+              </li>
+              <li>
+                <h6></h6>
               <div class="data" id="cima">
-                  <h3>2021</h3>
-                  <p>Integrated UPLC-HRMS, chemometric tools, and
+                <h3>2021</h3>
+                <p>Integrated UPLC-HRMS, chemometric tools, and
                   metabolomic analysis of forage palm (Opuntia spp. and
                   Nopalea spp.) to define biomarkers associated with
                   non-susceptibility to Carmine Cochineal (Dactylopius opuntiae)</p>
-              </div>
-            </li>
-            <li>
-              <h6></h6>
-              <div class="data" id="baixo">
+                </div>
+              </li>
+              <li>
+                <h6></h6>
+                <div class="data" id="baixo">
                   <h3>2020</h3>
                   <p>Adsorção: aspectos teóricos e aplicações ambientais</p>
-              </div>
-            </li>
+                </div>
+              </li>
             <li>
               <h6></h6>
               <div class="data" id="cima">
@@ -236,30 +228,30 @@
                   <p>Zinc ferrite nanoparticles via coprecipitation
                   modified method: glycerol as structure directing
                   and stabilizing agent</p>
-              </div>
+                </div>
             </li>
             <li>
               <h6></h6>
               <div class="data" id="baixo">
-                  <h3>2018</h3>
-                  <p>"Remoção de metais tóxicos através dos resíduos
+                <h3>2018</h3>
+                <p>"Remoção de metais tóxicos através dos resíduos
                   de cinzas de lodo de fossa séptica</p>
-              </div>
+                </div>
             </li>
             <li>
               <h6></h6>
               <div class="data" id="cima">
-                  <h3>2017</h3>
-                  <p>Strategy for correction of matrix effect
+                <h3>2017</h3>
+                <p>Strategy for correction of matrix effect
                   on the determination of pesticides in water
                   bodies using SPME-GC-FID</p>
-              </div>
-            </li>
-            <li>
+                </div>
+              </li>
+              <li>
               <h6></h6>
               <div class="data" id="baixo">
-                  <h3>2016</h3>
-                  <p>Desenvolvimento e validação de metodologia
+                <h3>2016</h3>
+                <p>Desenvolvimento e validação de metodologia
                   para determinação de interferentes endócrinos
                   em águas superficiais</p>
               </div>
@@ -267,12 +259,12 @@
             <li>
               <h6></h6>
               <div class="data" id="cima">
-                  <h3>2015</h3>
-                  <p>Carbonyl compounds from urban activities and
+                <h3>2015</h3>
+                <p>Carbonyl compounds from urban activities and
                   their associated cancer risks: The influence of
                   seasonality on air quality (Fortaleza-Ce, Brazil)</p>
-              </div>
-            </li>
+                </div>
+              </li>
           </ul>
           <div id="timeline-arrow">
             <span></span>
@@ -280,46 +272,46 @@
             <span></span>
         </div>
             <!-- setinha da timeline usando vanilla css -->
-        </div>
+          </div>
         <h3><a id="ver-publi" href="http://lattes.cnpq.br/6345440666273561">Veja nossas publicações</a></h3>
       </section>
 
-
-
-<!-- Seção do coordenador -->
-    <section id="coordenador">
-      <div><h1>Coordenador</h1></div>
-      <div id="img-container">
-        <div id="membroC" class="membroC">
-          <div id="perfilC">
-            <img src="assets/img/ronaldo.jpg" alt="Foto de Ronaldo Ferreira do Nascimento">
-          </div>
-          
+      
+      
+      <!-- Seção do coordenador -->
+      <section id="coordenador">
+        <div><h1>Coordenador</h1></div>
+        <div id="img-container">
+          <div id="membroC" class="membroC">
+            <div id="perfilC">
+              <img src="assets/img/ronaldo.jpg" alt="Foto de Ronaldo Ferreira do Nascimento">
+            </div>
+            
           <div class="nome"><h3>Ronaldo Ferreira do Nascimento</h3></div>
           <div class="cargo"><p>Coordenador do Laboratório de Processos Oxidativos Avançados (LabPOA); Laboratório de Análise de Traços (LAT); Laboratório de Análise de Água (Lanágua); Laboratório de Cromatografia (LabCroma).</p><p>Formado em Química Industrial pela Universidade Federal do Maranhão (UFMA, 1991), doutor em Química Analítica pela Universidade de São Paulo (USP, 1997), Instituto de Química de São Carlos (IQSC). Atualmente é professor titular da Universidade Federal do Ceará (UFC). Publicou artigos (186) em periódicos científicos, capítulos de livros (20) e livros (09). Possui experiência na área de Química Analítica, com ênfase no Desenvolvimento de Métodos Cromatográficos (análise de resíduos de pesticidas em água e alimentos); Química Ambiental (análises de traços); Adsorção (remoção de poluentes de efluentes aquosos utilizando adsorventes naturais); Processos Oxidativos Avançados (tratamento de água e efluentes).</p></div>
           <div class="membro-buttons">
-          <a class="btn-membro" href="mailto:ronaldo@email.com">
-          <span  class="material-symbols-outlined">stacked_email</span></a>
-            <a class="btn-membro" href="#"><span class="material-symbols-outlined">book</span></a>
+            <a class="btn-membro" href="mailto:ronaldo@email.com">
+              <span  class="material-symbols-outlined">stacked_email</span></a>
+              <a class="btn-membro" href="#"><span class="material-symbols-outlined">book</span></a>
+            </div>
           </div>
         </div>
-      </div>
-      <div>
-        <span><a href="equipe.html" id="nossosmembros">Saiba mais sobre nossos membros <span id="seta-membros"><img src="assets/img/arrow-down.svg" alt="" /></span></a></span>
-        
-      </div>
-    </section>
-
-
-    <footer>
-      <div> 
-        <span class="footer-container"><img src="assets/img/Logotipo v2.svg" alt="" class="footer-content" /></span>
-        <!-- logo poa -->
-        <span class="footer-container"><p>Todos os direitos reservados</p></span>
-        <span class="footer-container"><img src="assets/img/ufc_logo.svg" alt="" /></span>
-        <!-- logo ufc -->
-      </div>
-    </footer>
+        <div>
+          <span><a href="equipe.html" id="nossosmembros">Saiba mais sobre nossos membros <span id="seta-membros"><img src="assets/img/arrow-down.svg" alt="" /></span></a></span>
+          
+        </div>
+      </section>
+      
+      
+      <footer>
+        <div> 
+          <span class="footer-container"><img src="assets/img/Logotipo labpoa.svg" alt="" class="footer-content" /></span>
+          <!-- logo poa -->
+          <span class="footer-container"><p>Todos os direitos reservados</p></span>
+          <span class="footer-container"><img src="assets/img/ufc_logo.svg" alt="" /></span>
+          <!-- logo ufc -->
+        </div>
+      </footer>
 
     <!-- botão flutuante de ir para o header -->
     <div>
@@ -327,6 +319,8 @@
         <img src="assets/img/arrow-down.svg" alt="" />
       </a>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script defer src="scripts/script.js"></script>
   </body>
 </html>
 

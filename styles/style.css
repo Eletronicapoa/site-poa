@@ -372,230 +372,12 @@ hr {
 
 
 
-/* Seção linhasPesquisa v1 (deprecated) */
 
-/*  #linhasPesquisaPainel {
-    padding-top: 100px;
-    padding-bottom: 70px;
-}
-
-:root {
-    --primary-blue: #007bff; 
-    --text-white: #ffffff;
-    --dot-inactive: rgba(255, 255, 255, 0.4);
-}
-.lab-carousel-container{
-    width: 100%;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    font-family: "Montserrat", sans-serif;
-}
-
-.lab-carousel-item {
-    height: 500px;
-    position: relative;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    overflow: hidden;
-}
-
-.lab-carousel-item img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
-}
-
-.lab-carousel-item::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(46, 80, 143, 0.267);
-  z-index: 2;
-}
-
-.content-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    padding: 30px;
-    box-sizing: border-box;
-    z-index: 3;
-}
-
-.content-overlay h2{
-    position: relative;
-    z-index: 2;
-    color: #fff;
-    font-family: "Montserrat", sans-serif;
-    font-weight: bold;
-}
-.content-overlay .overlay-content{
-    position: relative;
-    z-index: 1; /* conteúdo acima da imagem 
-    color: white; /* ajustar conforme necessário 
-}
-.carousel-title {
-    color: var(--text-white);
-    font-size: 2em; 
-    font-weight: 400;
-    margin: 0;
-}
-
-.cta-link {
-    position: absolute;
-    bottom: 30px;
-    right: 30px;
-    color: var(--text-white);
-    font-size: 1em;
-    opacity: 0.9;
-    text-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.bottom-left-area {
-    position: absolute;
-    bottom: 30px;
-    left: 30px;
-}
-
-.pagination-dots {
-    display: flex;
-    gap: 10px;
-}
-
-.pagination-dots .dot{
-    appearance: none;
-    -webkit-appearance: none;
-    background-color: var(--dot-inactive);
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    border: none;
-    cursor: pointer;
-    transition: transform 0.18s ease, background-color 0.18s ease;
-    box-shadow: 0 0 0 4px transparent;
-}
-
-.pagination-dots .dot:focus {
-    outline: none;
-    box-shadow: 0 0 0 4px rgba(30,136,229,0.15);
-}
-
-.pagination-dots .dot.active {
-    background-color: var(--text-white);
-    transform: scale(1.15);
-}
-
-.navigation-controls {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    margin-top: 20px;
-}
-
-.nav-arrow {
-    background-color: transparent;
-    color: rgba(0, 0, 0, 0.815);
-    border: 1px solid var(--primary-blue);
-    border-radius: 50%;
-    width: 45px;
-    height: 45px;
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: all 0.2s;
-}
-
-.nav-arrow:hover {
-    background-color: var(--primary-blue);
-    color: var(--text-white);
-}
-
-.manual-navigation{
-    position: absolute;
-    width: 1420px;
-    margin-top: -40px;
-    display: flex;
-    justify-content: center;
-}
-
-.manual-btn{
-    border: 2px solid #ffffff;
-    padding: 5px;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: background 0.3s ease;
-    margin: 0 10px;
-}
-
-.manual-btn:not(:last-child){
-    margin-right: 20px;
-}
-
-.manual-btn:hover{
-    background: #ffffff;
-}
-
-#radio1:checked ~ .first{
-    margin-left: 0;
-}
-#radio2:checked ~ .first{
-    margin-left: -25%;
-}
-#radio3:checked ~ .first{
-    margin-left: -50%;
-}
-#radio4:checked ~ .first{
-    margin-left: -75%;
-}
-
-.navigation-auto div{
-    border: 2px solid #ffffff;
-    padding: 5px;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: 1s;
-    margin: 0 -10px;
-}
-
-.navigation-auto{
-    position: absolute;
-    width: 1420px;
-    margin-top: 560px;
-    display: flex;
-    justify-content: center;
-}
-
-.navigation-auto div:not(:last-child){
-    margin-right: 40px;
-}
-
-#radio1:checked ~ .navigation-auto .auto-btn1{
-    background: #ffffff;
-}
-#radio2:checked ~ .navigation-auto .auto-btn2{
-    background: #ffffff;
-}
-#radio3:checked ~ .navigation-auto .auto-btn3{
-    background: #ffffff;
-}
-#radio4:checked ~ .navigation-auto .auto-btn4{
-    background: #ffffff;
-} */
 
 
 
 /* Seção de publicações (livros) v2 (deprecated - mas não vai ser mexido agora) */
-#publicacoesNovo h2 {
+#publicacoes h2 {
     font-family: "Montserrat", sans-serif;
     font-size: clamp(2rem, 4vw, 3rem);
     color: #0B5D9C;
@@ -604,14 +386,10 @@ hr {
     margin-top: 50px;
 }
 
-#publicacoesNovo{
-
+#publicacoes{
     position: relative;
-    width: calc(min(40rem, 90%));
-    margin: 0 auto;
-    min-height: 100vh;
-    column-gap: 3rem;
-    padding-block: min(20vh, 3rem);
+    width: 100%;
+    height: auto;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -620,37 +398,32 @@ hr {
 
 .swiper{
     width: 100%;
-    padding: 60px 0 95px 0;
+    height: 100vh;
+    display: flex;
 }
 
 .swiper-wrapper{
     width: 100%;
-    padding: 40px 0 95px 0;
-    grid-template-columns: repeat(3, 3fr);
+    height: 100vh;
 }
 
 .swiper-slide{
-    width: 10rem;
-    height: 21rem;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+    width: auto;
+    height: 100vh;
     position: relative;
-
-}
-
-.swiper-slide .slide-content img{ width: 100%; border-radius: 10px; 
-} 
-
-.botoes-prev-next{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 700px; /* ajusta espaço entre slider e botões */
 }
 
-.botoes-prev-next .swiper-button-prev,
-.botoes-prev-next .swiper-button-next{
+.swiper-slide img{ 
+    width: auto; 
+    height: 50vh;
+    border-radius: 10px; 
+} 
+
+
+.swiper-button-prev, .swiper-button-next{
     padding: 10px;
     width: 44px;
     height: 44px;
@@ -658,164 +431,41 @@ hr {
     border: 1px solid #007bff;
     background: #ffffff;
     color: #000000;
-    display: inline-grid;
-    place-items: center;
     cursor: pointer;
-    box-shadow: 0 6px 16px rgba(255, 255, 255, 0.18);
     transition: all 0.2s;
-     /* caso sejam botões */
 }
 
-.botoes-prev-next .swiper-button-prev,
-.botoes-prev-next .swiper-button-next,
-.nav-arrow {
+.swiper-button-prev, .swiper-button-next {
     transition: background 0.2s, box-shadow 0.2s, transform 0.2s;
     transform-origin: center;
     will-change: transform;
 }
 
-.botoes-prev-next .swiper-button-prev:hover,
-.botoes-prev-next .swiper-button-next:hover,
-.nav-arrow:hover {
+.swiper-button-prev:hover, .swiper-button-next:hover {
     background-color: #007bff;
     color: #ffffff;
 }
 
-.botoes-prev-next .swiper-button-prev::after,
-.botoes-prev-next .swiper-button-next::after{
+.swiper-button-prev::after, .swiper-button-next::after {
     font-size: 10px;
     color: #111111;
     line-height: 1;
 }
 
+.swiper-button-prev img{
+    width: 16px;
+    height: auto;
+    color: #111111;
+    rotate: 90deg;
+}
+
+.swiper-button-next img{
+    width: 16px;
+    height: auto;
+    color: #111111;
+    rotate: -90deg;
+}
  /* !!!!!!!!!!!!!!Adiciona os botões na parte de baixo dos livros (não me agrada, vou fazer ficar dos dois lados) */
-
-/* .botoes-prev-next .swiper-button-prev::after { 
-    content: "‹"; 
-}
-.botoes-prev-next .swiper-button-next::after { 
-    content: "›"; 
-} */
-
-/* #publicacoesNovo .swiper-button-next::after,
-#publicacoesNovo .swiper-button-prev::after {
-  content: none !important; 
-} */
-
-/* #publicacoesNovo .swiper-button-next,
-#publicacoesNovo .swiper-button-prev {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-} */
-
-/* .swiper-button-next .bx,
-.swiper-button-prev .bx {
-  
-  font-size: 25px !important; 
-  color: #000000 !important; } */
-
-/* @media(min-width: 760px){
-    .swiper-button-prev,
-    .swiper-button-next{
-        display: flex;
-    }
-} */
-
-
-/* Quase certeza que isso não tá servindo pra nada!!!!! */
-/* #linhasPesquisa {
-    background: white;
-    margin: 0px 0px 240px 0px;
-}
-
-#titleprojetos {
-    text-align: center;
-    margin-bottom: 4rem;
-    padding: 100px;
-
-}
-
-#titleprojetos h1 {
-    font-family: "Outfit", sans-serif;
-    font-size: clamp(2rem, 4vw, 3rem);
-    color: #0B5D9C;
-    font-weight: 400;
-}
-
-#containerposts {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr); /* agora são 2 colunas *
-    gap: 2rem;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-    margin-bottom: 70px;
-}
-
-.post {
-    height: 300px;
-    border-radius: 12px;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    position: relative;
-    overflow: hidden;
-    transition: transform 0.3s ease;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 2rem;
-    color: white;
-}
-
-.post:hover {
-    transform: translateY(-10px);
-}
-
-.post:nth-child(2) {
-    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
-}
-
-.post:nth-child(3) {
-    background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
-}
-
-.linkexterno {
-    color: white;
-    text-decoration: none;
-    font-weight: 600;
-    padding: 0.2rem 0.4rem;
-    background: rgba(255, 255, 255, 0.2);
-    border-radius: 6px;
-    transition: all 0.3s ease;
-    backdrop-filter: blur(10px);
-    align-self: flex-start;
-    display: inline;
-}
-
-#linhasPesquisa a {
-    text-decoration: none;
-}
-
-.linkexterno:hover {
-    background: rgba(255, 255, 255, 0.3);
-    transform: scale(1.05);
-}
-
-.perfilcolaboradores {
-    display: flex;
-    gap: -10px;
-    align-self: flex-end;
-}
-
-.perfilcolaboradores img {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    border: 1px solid white;
-    margin-left: -10px;
-    background: rgba(255, 255, 255, 0.3);
-}
- */
 
 
 
