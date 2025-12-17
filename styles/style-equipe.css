@@ -39,6 +39,16 @@ body {
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
 }
 
+#eq-voltar{
+    font-family: "Montserrat", sans-serif;
+    display: block;
+    font-size: 1.5em;
+    font-weight: bold;
+    unicode-bidi: isolate;
+    text-decoration: none;
+    color: #333;
+}
+
 .header-content {
     display: flex;
     justify-content: space-between;
@@ -192,10 +202,15 @@ body {
     padding: 0 20px;
 }
 
+#alumni{
+    text-align: center;
+}
+
 .alumni-grid{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    padding: 1rem;
 }
 
 .alumni-grid .member-photo{

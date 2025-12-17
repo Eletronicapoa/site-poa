@@ -7,10 +7,9 @@
     <link rel="stylesheet" href="styles/style.css" />
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <link rel="icon" href="assets/img/Frame 1.svg" />
-    <script src="scripts/script.js"></script>
     <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
     />
   </head>
   <body>
@@ -29,50 +28,46 @@
             <li><a href="#publicacoesNovo">Publicações</a></li>
             <li><a href="#coordenador">Coordenador</a></li>
           </ul>
-        </div>
+        </header>
       </div>
-    </header>
+    </div>
+    
     <!-- adicionar um border bottom pro efeito de separação e tirar o hr -->
     <hr />
-
+    
     <section id="hero">
       <div class="hero-container">
         <div class="hero-content">
-          <!-- Título principal -->
           <h1 class="hero-title">
             Análises poderosas em cromatografia e produção
             <span class="hero-highlight"> científica </span> de alta qualidade
-            <!-- ajusta a cor depois (aquela verde) -->
           </h1>
-          <!-- Subtítulo -->
           <p class="ptext">
             +10 anos produzindo conhecimento e divulgando ciência de ponta.
           </p>
-          <!-- "Link" de scroll ou animação de seta para baixo -->
           <a
-            href="#linhasPesquisa"
-            class="arrow-scroll"
-            aria-label="Ver linhas de pesquisa"
+          href="#linhasPesquisaPainel"
+          class="arrow-scroll"
+          aria-label="Ver linhas de pesquisa"
           >
             <img
               src="assets/img/arrow-down.svg"
               alt=""
               role="presentation"
               id="headerdownarrow"
-            />
-          </a>
+              />
+            </a>
+          </div>
+          <div class="hero-img">
+            <img src="assets/img/toc2.png" alt="" />
+          </div>
         </div>
-        <!-- imagem -->
-        <div class="hero-img">
-          <img src="assets/img/lab_img.png" alt="" />
-        </div>
-      </div>
-    </section>
-
-    <section id="contato-index">
-      <div>
-      <div id="titlecontato">
-        <h2>Entre em contato</h2>
+      </section>
+      
+      <section id="contato-index">
+        <div>
+          <div id="titlecontato">
+            <h2>Entre em contato</h2>
       </div>
       <div id="textcontato">
         <p>
@@ -81,110 +76,49 @@
           Campus do Pici - Bloco 939 <br>
           CEP: 60440-900 Fortaleza-CE Brasil
         </p>
-    </section>
-
-    <section id="linhasPesquisaPainel">
-
-      <div class="slider">
-
-        <div class="slides">
-          <!-- Radio buttons -->
-           <input type="radio" name="radio-bnt" id="radio1">
-           <input type="radio" name="radio-bnt" id="radio2">
-           <input type="radio" name="radio-bnt" id="radio3">
-           <input type="radio" name="radio-bnt" id="radio4">
-          <!-- Fim Radio buttons -->
-
-          <!-- Slide images -->
-           <div id="slide-letra" class="slide first">
-            <h3>Ir para LabPOA</h3>
-            <a href="labpoa.html">
-              <img src="assets/img/lab_img.png" alt="slideimagem1" />
-            </a>
-           </div>
-           <div id="slide-letra" class="slide">
-            <h3>Ir para LabCroma</h3>
-            <a href="croma.html">
-              <img src="assets/img/lab_img.png" alt="slideimagem2" />
-            </a>
-           </div>
-           <div id="slide-letra" class="slide">
-            <h3>Ir para LAT</h3>
-            <a href="lat.html">
-                <img src="assets/img/lab_img.png" alt="slideimagem3" />
-            </a>
-           </div>
-           <div id="slide-letra" class="slide">
-            <h3>Ir para Lanagua</h3>
-            <a href="lanagua.html">
-              <img src="assets/img/lab_img.png" alt="slideimagem4" />
-            </a>
-           </div>
-           <!-- Fim Slide images -->
-
-           <!-- Navigation auto -->
-            <div class="navigation-auto">
-              <div class="auto-btn1"></div>
-              <div class="auto-btn2"></div>
-              <div class="auto-btn3"></div>
-              <div class="auto-btn4"></div>
-            </div>
-
-        </div>
-
-
-        <div class="manual-navigation">
-          <label for="radio1" class="manual-btn"></label>
-          <label for="radio2" class="manual-btn"></label>
-          <label for="radio3" class="manual-btn"></label>
-          <label for="radio4" class="manual-btn"></label>
-        </div>
-
-
+          <p class="maps"><a href="https://maps.app.goo.gl/mKpCmsMdut5kbHBh7">Veja no Google Maps</a></p>
       </div>
+      </section>
 
-      <script src="scripts/script.js"></script>
+      <!-- Seção de linhas de pesquisa -->
+      
+      <!-- Slider main container -->
+      <div class="swiper-slides">
+        <!-- Additional required wrapper -->
+    <div class="swiper-wrapper">
+      <!-- Slides -->
+      <div class="swiper-slide"><img class="overlay-bg" src="assets/img/gc-ms.png" alt="Linhas de pesquisa — GC-MS">
+        <div class="content-overlay">
+          <h2 class="carousel-title">Linhas de pesquisa</h2></div>
+          <div class="swiper-slide">LAT</div>
+          <div class="swiper-slide">Lanagua</div>
+          <div class="swiper-slide">Croma</div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+      </div>
+      
+  
+  <!-- seção publicações (livros) -->
+  <section id="publicacoes">
+      <h2>Nossos Livros</h2>
+      <div class="swiper">
+        <div class="swiper-wrapper"> 
+          <div class="swiper-slide"><img src="assets/img/POAs.png" alt="Livro sobre POAs"></div>
+          <div class="swiper-slide"><img src="assets/img/Cromatografia.png" alt="Livro sobre Cromatografia"></div>
+          <div class="swiper-slide"><img src="assets/img/Adsorção.png" alt="Livro sobre Adsorção"></div>
+          <div class="swiper-slide"><img src="assets/img/Processos-eletroliticos.png" alt="Livro sobre Processos Eletrolíticos"></div>
+        </div>
 
+        <div class="swiper-pagination"></div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
     </section>
     
-    <!-- seção publicações -->
-    <section id="publicacoesNovo">
-      <h2>Nossos Livros</h2>
-      <div class="swiper-container">
-        <div class="swiper">
-          <div class="swiper-wrapper"> 
-            <div class="swiper-slide">
-              <div class="slide-content">
-                <img src="assets/img/POAs.png" alt="Livro sobre POAs">
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="slide-content">
-                <img src="assets/img/Cromatografia.png" alt="Livro sobre Cromatografia">
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="slide-content">
-                <img src="assets/img/Adsorção.png" alt="Livro sobre Adsorção">
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="slide-content">
-                <img src="assets/img/Processos-eletroliticos.png" alt="Livro sobre Processos Eletrolíticos">
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="swiper-button-prev">
-          <i class="bx bx-left-arrow-alt"></i>
-        </div>
-        <div class="swiper-button-next">
-          <i class="bx bx-right-arrow-alt"></i>
-        </div>
-      </div>
-    </section>
-
-    <!-- seção timeline -->
+<!-- seção timeline -->
     <section id="timeline-wrapper">
         <ul  class="timeline">
           <li data-date="2025">
@@ -307,7 +241,7 @@
           </li>
         </ul>
           <!-- setinha da timeline usando vanilla css -->
-        <div id="timeline-arrow">
+          <div id="timeline-arrow">
             <span></span>
             <span></span>
             <span></span>
@@ -325,166 +259,7 @@
       
     </script>
 
-    <!-- js da secçao publicações -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
-
-    <script type="text/javascript">
-      var swiper = new Swiper(".swiper",{
-        effect: "coverflow",
-        grabCursor: true,
-        centeredSlides: true,
-        coverflowEffect: {
-          rotate: 2,
-          stretch: 20,
-          depth: 80,
-          modifier: 7.2,
-          slideShadows: true,
-        },
-        slidesPerView: 2,
-        spaceBetween: 30,
-        loop: true,
-        loopedSlides: 4,
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-        autoplay: {
-          delay: 3000,
-          disableOnInteraction: true,
-        },
-        keyboard:{
-          enable: true,
-        },
-        mousewheel:{
-          thresholdDelta: 70
-        },
-        /* breakpoints:{
-          560:{
-            slidesPerView: 3
-          },
-          768:{
-            slidesPerView: 3
-          },
-          1024: {
-            slidesPerView: 2
-          }
-        } */
-      });
-    </script>
-
-    <!-- <section id="publicacoes">
-      <div id="titlepublicacao"><h1>Publicações</h1></div>
-
-      <div id="container-publicacoes">
-
-      <div class="containerpublicacao">
-        <div class="publicacoes-content" id="publi-title"><h2>Nossos Livros</h2></div>
-        <div class="publicacoes-content" id="publi-subtitle"><h3>POAs, Cromatografia, Adsorção e Processos Eletrolíticos</h3></div>
-        <a href="https://repositorio.ufc.br/bitstream/riufc/32127/1/2017_liv_rfnascimento.pdf"  id="publi-link1"><div class="publicacoes-content">
-          <img src="assets/img/POAs.png" alt="Livro sobre POAs">
-        </div></a>
-        <a href="https://repositorio.ufc.br/bitstream/riufc/39260/1/2018_liv_rfnascimento.pdf" id="publi-link2"><div class="publicacoes-content">
-          <img src="assets/img/Cromatografia.png" alt="Livro sobre Cromatografia">
-        </div></a>
-        <a href="https://repositorio.ufc.br/bitstream/riufc/53271/1/2020_liv_rfnascimento.pdf" id="publi-link3"><div class="publicacoes-content">
-          <img src="assets/img/Adsorção.png" alt="Livro sobre Adsorção">
-        </div></a>
-        <a href="https://repositorio.ufc.br/bitstream/riufc/58652/1/2021_liv_rfnascimento.pdf" id="publi-link4"><div class="publicacoes-content">
-          <img src="assets/img/Processos-eletroliticos.png" alt="Livro sobre Processos Eletrolíticos">
-        </div></a>
-      </div>
-      <span id="linkoutros">
-        <a href="https://repositorio.ufc.br/simple-search?location=&query=Ronaldo+Ferreira+do+Nascimento&filtername=type&filtertype=equals&filterquery=Livro&rpp=10&sort_by=score&order=desc" class="linkexterno">Veja nossos outros livros</a>
-      </span>
-      
-      <div class="containerpublicacao">
-        <div class="publicacoes-content">
-          <h2>Artigos, Teses, Capítulos, Congressos...</h2>
-        </div>
-        <div class="timeline-vertical-section">
-          <div class="timeline-vertical">
-            <div class="timeline-item">
-              <div class="timeline-year">2025</div>
-              <div class="timeline-details">
-                <div class="timeline-title">Emissões veiculares: uma abordagem rápida e eficiente para a determinação de H2, CO, CH4 e CO2 por GC-BID e de BTEX por SPME-GC-BID</div>
-                <a href="https://repositorio.ufc.br/simple-search?location=%2F&query=Ronaldo+Nascimento&rpp=10&sort_by=score&order=desc&filter_field_1=dateIssued&filter_type_1=equals&filter_value_1=2025" class="timeline-btn" id="timeline-btn2025">Veja mais</a>
-              </div>
-            </div>
-            <div class="timeline-item">
-              <div class="timeline-year">2024</div>
-              <div class="timeline-details">
-                <div class="timeline-title">The impact of chronic and acute problems on sea turtles: The consequences of the oil spill and ingestion of anthropogenic debris on the tropical semi-arid coast of Ceará, Brazil</div>
-                <a href="https://repositorio.ufc.br/simple-search?location=%2F&query=Ronaldo+Nascimento&rpp=10&sort_by=score&order=desc&filter_field_1=dateIssued&filter_type_1=equals&filter_value_1=2024" class="timeline-btn" id="timeline-btn2024">Veja mais</a>
-              </div>
-            </div>
-            <div class="timeline-item">
-              <div class="timeline-year">2023</div>
-              <div class="timeline-details">
-                <div class="timeline-title">Climatic regionalization and rainfed agricultural production in the state of Maranhão, Brazil</div>
-                <a href="https://repositorio.ufc.br/simple-search?location=%2F&query=Ronaldo+Nascimento&rpp=10&sort_by=score&order=desc&filter_field_1=dateIssued&filter_type_1=equals&filter_value_1=2023" class="timeline-btn" id="timeline-btn2023">Veja mais</a>
-              </div>
-            </div>
-            <div class="timeline-item">
-              <div class="timeline-year">2022</div>
-              <div class="timeline-details">
-                <div class="timeline-title">A physical study to explain response differences between the BID and FID detectors for PAHs and pesticides</div>
-                <a href="https://repositorio.ufc.br/simple-search?location=%2F&query=Ronaldo+Nascimento&rpp=10&sort_by=score&order=desc&filter_field_1=dateIssued&filter_type_1=equals&filter_value_1=2022" class="timeline-btn" id="timeline-btn2022">Veja mais</a>
-              </div>
-            </div>
-            <div class="timeline-item">
-              <div class="timeline-year">2021</div>
-              <div class="timeline-details">
-                <div class="timeline-title">Integrated UPLC-HRMS, chemometric tools, and metabolomic analysis of forage palm (Opuntia spp. and Nopalea spp.) to define biomarkers associated with non-susceptibility to Carmine Cochineal (Dactylopius opuntiae)</div>
-                <a href="https://repositorio.ufc.br/simple-search?location=%2F&query=Ronaldo+Nascimento&rpp=10&sort_by=score&order=desc&filter_field_1=dateIssued&filter_type_1=equals&filter_value_1=2021" class="timeline-btn" id="timeline-btn2021">Veja mais</a>
-              </div>
-            </div>
-            <div class="timeline-item">
-              <div class="timeline-year">2020</div>
-              <div class="timeline-details">
-                <div class="timeline-title">Adsorção: aspectos teóricos e aplicações ambientais</div>
-                <a href="https://repositorio.ufc.br/simple-search?location=%2F&query=Ronaldo+Nascimento&rpp=10&sort_by=score&order=desc&filter_field_1=dateIssued&filter_type_1=equals&filter_value_1=2020" class="timeline-btn" id="timeline-btn2020">Veja mais</a>
-              </div>
-            </div>
-            <div class="timeline-item">
-              <div class="timeline-year">2019</div>
-              <div class="timeline-details">
-                <div class="timeline-title">Zinc ferrite nanoparticles via coprecipitation modified method: glycerol as structure directing and stabilizing agent</div>
-                <a href="https://repositorio.ufc.br/simple-search?location=%2F&query=Ronaldo+Nascimento&rpp=10&sort_by=score&order=desc&filter_field_1=dateIssued&filter_type_1=equals&filter_value_1=2019" class="timeline-btn" id="timeline-btn2019">Veja mais</a>
-              </div>
-            </div>
-            <div class="timeline-item">
-              <div class="timeline-year">2018</div>
-              <div class="timeline-details">
-                <div class="timeline-title">Remoção de metais tóxicos através dos resíduos de cinzas de lodo de fossa séptica.</div>
-                <a href="https://repositorio.ufc.br/simple-search?location=%2F&query=Ronaldo+Nascimento&rpp=10&sort_by=score&order=desc&filter_field_1=dateIssued&filter_type_1=equals&filter_value_1=2018" class="timeline-btn" id="timeline-btn2018">Veja mais</a>
-              </div>
-            </div>
-            <div class="timeline-item">
-              <div class="timeline-year">2017</div>
-              <div class="timeline-details">
-                <div class="timeline-title">Strategy for correction of matrix effect on the determination of pesticides in water bodies using SPME-GC-FID</div>
-                <a href="https://repositorio.ufc.br/simple-search?location=%2F&query=Ronaldo+Nascimento&rpp=10&sort_by=score&order=desc&filter_field_1=dateIssued&filter_type_1=equals&filter_value_1=2017" class="timeline-btn" id="timeline-btn2017">Veja mais</a>
-              </div>
-            </div>
-            <div class="timeline-item">
-              <div class="timeline-year">2016</div>
-              <div class="timeline-details">
-                <div class="timeline-title">Desenvolvimento e validação de metodologia para determinação de interferentes endócrinos em águas superficiais</div>
-                <a href="https://repositorio.ufc.br/simple-search?location=%2F&query=Ronaldo+Nascimento&rpp=10&sort_by=score&order=desc&filter_field_1=dateIssued&filter_type_1=equals&filter_value_1=2016" class="timeline-btn" id="timeline-btn2016">Veja mais</a>
-              </div>
-            </div>
-            <div class="timeline-item">
-              <div class="timeline-year">2015</div>
-              <div class="timeline-details">
-                <div class="timeline-title">	Carbonyl compounds from urban activities and their associated cancer risks: The influence of seasonality on air quality (Fortaleza-Ce, Brazil)</div>
-                <a href="https://repositorio.ufc.br/simple-search?location=%2F&query=Ronaldo+Nascimento&rpp=10&sort_by=score&order=desc&filter_field_1=dateIssued&filter_type_1=equals&filter_value_1=2015" class="timeline-btn" id="timeline-btn2015">Veja mais</a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      
-    </section> -->
+    <!-- Seção do coordenador -->
 
     <section id="coordenador">
       <div><h1>Coordenador</h1></div>
@@ -521,12 +296,13 @@
     </footer>
 
     <!-- botão flutuante de ir para o header -->
-    <!-- colocar um border radius -->
     <div>
       <a href="#hero" class="devolta" aria-label="Retornar ao início da página">
         <img src="assets/img/arrow-down.svg" alt="" />
       </a>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script defer src="scripts/script.js"></script>
   </body>
 </html>
 
