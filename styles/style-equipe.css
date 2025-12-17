@@ -196,7 +196,7 @@ body {
 /* Grid específico para iniciação científica (4 colunas) */
 .ic-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
     margin-bottom: 3rem;
     padding: 0 20px;
@@ -243,6 +243,8 @@ body {
     transition: all 0.3s ease;
     border: 1px solid rgba(30, 136, 229, 0.1);
     height: 22rem;
+    width: 22rem;
+    
 }
 
 .member-card:hover {
@@ -250,12 +252,83 @@ body {
     box-shadow: 0 15px 40px rgba(30, 136, 229, 0.2);
 }
 
-.member-photo {
-    width: 100%;
+.c-grid .member-photo {
+    /* width: 200px;
     height: 200px;
+    /* background: linear-gradient(135deg, #1e88e5, #42a5f5); 
+    display: block;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%; */
+
+     width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    display: flex;
+    margin: 20px;
+    margin-left: 100px;
+    justify-content: center;
+}
+
+.p-grid .member-photo {
+     width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    display: flex;
+    margin: 20px;
+    margin-left: 100px;
+    justify-content: center;
+}
+
+.d-grid .member-photo {
+     width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    display: flex;
+    margin: 20px;
+    margin-left: 100px;
+    justify-content: center;
+}
+
+.m-grid .member-photo {
+     width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    display: flex;
+    margin: 20px;
+    margin-left: 100px;
+    justify-content: center;
+}
+
+.ic-grid .member-photo {
+     width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    display: flex;
+    margin: 20px;
+    margin-left: 100px;
+    justify-content: center;
+}
+
+.member-photo img{
+   /*  width: 100%;
+    height: 100%;
     background: linear-gradient(135deg, #1e88e5, #42a5f5);
     position: relative;
     overflow: hidden;
+    border-radius: 50%; */
+
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: 80% 15%;
+    
 }
 
 .member-photo::before {

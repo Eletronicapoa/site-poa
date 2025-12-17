@@ -21,13 +21,7 @@ html {
 }
 
 body {
-    font-family: "Montserrat", sans-serif;
-    line-height: 1.6;
-    color: #333;
-    overflow-x: hidden;
-}
-
-body {
+    
     font-family: "Montserrat", sans-serif;
     line-height: 1.6;
     color: #333;
@@ -38,7 +32,6 @@ body {
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 0 20px;
 }
 
 /* Header */
@@ -132,7 +125,7 @@ hr {
 .hero-content {
     min-width: 500px;
     animation: fadeInLeft 1s ease-out;
-    margin-left: -55px;
+    
 }
 
 .hero-title {
@@ -141,7 +134,7 @@ hr {
     font-weight: 400;
     line-height: 1;
     margin-bottom: 1.5rem;
-    margin-top: 1.5rem;
+    margin-top: 8rem;
     color: #0B5D9C;
 }
 
@@ -177,15 +170,14 @@ hr {
 
 .hero-img {
     height: 100%;
-    display: flex;
-    justify-content: center;
+    display: grid;
+    align-items: center;
     animation: fadeInRight 1s ease-out;
 }
 
 .hero-img img {
-    display: flex;
-    max-height: 100%;
-    width:  none;
+    height: 100%;
+    object-fit: cover;
     /* filter: drop-shadow(0 20px 40px rgba(0, 0, 0, 0.15)); */
 }
 
@@ -271,15 +263,9 @@ hr {
 
 
 /* Seção Contato */
-#contato {
-    padding: 240px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: -60px;
-}
 #contato-index{
-    padding: 275px;
+    padding-top: 11rem;
+    padding-bottom: 9rem;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -368,7 +354,6 @@ hr {
 
 
 /* Seção linhasPesquisa v2 */
-
 
 
 
@@ -482,6 +467,7 @@ hr {
     scrollbar-color: #cacaca #f5f7ff;
     scroll-behavior: smooth;
     overflow-x: auto;
+    min-height: 88.5vh;
 }
 
 #timeline-wrapper {
@@ -489,12 +475,10 @@ hr {
     margin-bottom: 100px; */
     width: 100%;
     max-width: 100%;
-    
     display: flex;
     align-items: center;
-
     transition: .3s ease;
-    padding-top: 15rem;
+    padding-top: 12.5rem;
     padding-bottom: 14rem;
 }
 
@@ -551,7 +535,7 @@ hr {
 .timeline-publi #title{
     color: #fff;
     margin-left: 3rem;
-    padding-top: 3rem;
+    padding-top: 1rem;
 }
 
 .timeline-publi #subtitle{
@@ -945,7 +929,7 @@ footer div {
 }
 
 footer img {
-    height: 40px;
+    height: 3rem;
     filter: brightness(0) invert(1);
 }
 
