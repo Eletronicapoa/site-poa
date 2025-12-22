@@ -102,19 +102,27 @@
   <!-- seção publicações (livros) -->
   <section id="publicacoes">
       <h2>Nossos Livros</h2>
-      <div class="swiper">
+      <div class="swiper galeria-livros"> <!-- classe dupla -->
         <div class="swiper-wrapper"> 
-          <div class="swiper-slide"><img src="assets/img/POAs.png" alt="Livro sobre POAs"></div>
-          <div class="swiper-slide"><img src="assets/img/Cromatografia.png" alt="Livro sobre Cromatografia"></div>
-          <div class="swiper-slide"><img src="assets/img/Adsorção.png" alt="Livro sobre Adsorção"></div>
-          <div class="swiper-slide"><img src="assets/img/Processos-eletroliticos.png" alt="Livro sobre Processos Eletrolíticos"></div>
+          <div class="swiper-slide">
+            <div class="card-livro"><img src="assets/img/POAs.png" alt="Livro sobre POAs"></div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card-livro"><img src="assets/img/Cromatografia.png" alt="Livro sobre Cromatografia"></div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card-livro"><img src="assets/img/Adsorção.png" alt="Livro sobre Adsorção"></div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card-livro"><img src="assets/img/Processos-eletroliticos.png" alt="Livro sobre Processos Eletrolíticos"></div>
+          </div>
         </div>
-
-        <div class="swiper-pagination"></div>
-
-        <!-- If we need navigation buttons -->
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
+        
+        <div id="previous-next-livros"> <!-- div por fora pra manter botões embaixo -->
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
       </div>
     </section>
     
@@ -301,6 +309,8 @@
         <img src="assets/img/arrow-down.svg" alt="" />
       </a>
     </div>
+
+    <!-- Script do swiper e da página -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
     <script defer src="scripts/script.js"></script>
   </body>

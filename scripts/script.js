@@ -1,25 +1,27 @@
 /* js da seçao publicações (livros) */
-const swiper = new Swiper(".swiper", {
-  effect: 'cards',
+const swiper = new Swiper(".galeria-livros", {
+  effect: 'coverflow',
   grabCursor: true,
   centeredSlides: true,
   direction: 'horizontal',
   loop: true,
-  // If we need pagination
-  pagination: {
-    el: ".swiper-pagination",
+  /* Ajuste fino do efeito coverflow do swiper */
+  coverflowEffect: {
+    rotate: 0,
+    stretch: 250,
+    depth: 250,
+    modifier: 1,
+    slideShadows: false,
   },
-  slidesPerView: 3,
-  spaceBetween: 0,
-  loop: true,
-  loopedSlides: 4,
+  slidesPerView: 4,
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
   autoplay: {
     delay: 3000,
-    disableOnInteraction: true,
+    disableOnInteraction: false,
+    pauseOnMouseEnter: true,
   },
   keyboard: {
     enable: true,
