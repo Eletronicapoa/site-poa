@@ -4,19 +4,17 @@ const swiper = new Swiper(".galeria-livros", {
   grabCursor: true,
   centeredSlides: true,
   direction: 'horizontal',
-  loop: true,
   /* Ajuste fino do efeito coverflow do swiper */
-  coverflowEffect: {
-    rotate: 0,
-    stretch: 250,
-    depth: 250,
-    modifier: 1,
-    slideShadows: false,
-  },
-  slidesPerView: 4,
+  slidesPerView: 'auto',
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
+  },
+  coverflowEffect: {
+    rotate: 0,
+    depth: 250,
+    modifier: 1,
+    slideShadows: false,
   },
   autoplay: {
     delay: 3000,
