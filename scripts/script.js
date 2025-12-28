@@ -32,6 +32,7 @@ const swiperPesquisa = new Swiper(".swiper-pesquisa", {
   grabCursor: true,
   centeredSlides: true,
   direction: 'horizontal',
+  loop: true,
   /* Ajuste fino do efeito slide do swiper */
   slidesPerView: 'auto',
   pagination: {
