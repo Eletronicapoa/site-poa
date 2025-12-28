@@ -1,5 +1,5 @@
 /* js da seçao publicações (livros) */
-const swiper = new Swiper(".galeria-livros", {
+const swiperLivros = new Swiper(".galeria-livros", {
   effect: 'coverflow',
   grabCursor: true,
   centeredSlides: true,
@@ -17,11 +17,33 @@ const swiper = new Swiper(".galeria-livros", {
     slideShadows: false,
   },
   autoplay: {
-    delay: 3000,
+    delay: 1500,
     disableOnInteraction: false,
     pauseOnMouseEnter: true,
   },
   keyboard: {
     enable: true,
   },
+});
+
+/* js da seção linhas de pesquisa */
+const swiperPesquisa = new Swiper(".swiper-pesquisa", {
+  effect: 'slide',
+  grabCursor: true,
+  centeredSlides: true,
+  direction: 'horizontal',
+  /* Ajuste fino do efeito slide do swiper */
+  slidesPerView: 'auto',
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  autoplay: {
+    delay: 2000,
+    disableOnInteraction: false,
+    pauseOnMouseEnter: true,
+  },
+  keyboard: {
+    enable: true,
+  }
 });

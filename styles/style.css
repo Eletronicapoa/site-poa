@@ -251,10 +251,9 @@ hr {
   transform: translateY(-2px);
 }
 
-/* Seção Contato */
+/* Seção Contato - tem que ajustar o tamanho da seção hero*/
 #contato-index {
-  padding-top: 11rem;
-  padding-bottom: 9rem;
+  padding: 6rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -262,7 +261,7 @@ hr {
 
 #titlecontato {
   text-align: center;
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
 }
 
 #titlecontato h2 {
@@ -310,18 +309,13 @@ hr {
   background: white;
 }
 
-#texto-contato {
-  padding: 1rem;
-  border: 1px solid #ddd;
-  border-radius: 10px;
+#textcontato {
   font-size: 1rem;
   transition: all 0.3s ease;
   background: white;
 } /* antes */
 
-#texto-contato:focus {
-  padding: 1rem;
-  padding-bottom: 5rem;
+#textcontato:focus {
   border: 1px solid #ddd;
   border-radius: 10px;
   font-size: 1rem;
@@ -329,7 +323,7 @@ hr {
   background: white;
 } /* depois */
 
-#texto-contato::placeholder {
+#textcontato::placeholder {
   text-align: left;
   vertical-align: top;
 }
@@ -340,9 +334,110 @@ hr {
   box-shadow: 0 0 0 3px rgba(30, 136, 229, 0.1);
 }
 
+
 /* Seção linhasPesquisa v2 */
 
+#linhasPesquisa {
+  width: 100%;
+  height: auto;
+}
+
+#linhasPesquisa h2 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 32px;
+  color: white;
+  font-weight: 500;
+  position: absolute;
+  z-index: 2;
+  padding-left: 35px;
+  padding-top: 25px;
+}
+
+.swiper-pesquisa .swiper-slide {
+  background: #fff;
+  height: 75vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-pesquisa {
+  height: auto;
+  width: 100%;
+  position: relative;
+  box-sizing: content-box;
+}
+
+.slidePesquisa {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+#filtro {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #01689173;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.slidePesquisa img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Garante que preencha sem distorcer */
+  display: block;
+}
+
+.slidePesquisa a {
+  text-decoration: none;
+}
+
+.slidePesquisa .caixaLink {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.slidePesquisa h3 {
+  position: relative;
+  bottom: 100px;
+  font-size: 24px;
+  right: 50px;
+  color: white;
+  padding: 10px 20px;
+  z-index: 2;
+}
+
+
+.swiper-pesquisa .swiper-pagination-bullet {
+  background: white !important;
+  opacity: 1 !important;
+  width: 16px;
+  height: 6px;
+  border-radius: 12px;
+  transition: all 0.3s ease;
+}
+
+.swiper-pesquisa .swiper-pagination-bullet-active {
+  background: #06335a !important;
+}
+
+
 /* Seção de publicações (livros) v2 */
+
+#publicacoes {
+  width: 100%;
+  height: 680px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
 
 #publicacoes h2 {
   font-family: "Montserrat", sans-serif;
@@ -353,19 +448,7 @@ hr {
   margin-top: 50px;
 }
 
-.galeria-livros {
-  /* não tá no ideal, a IA disse que ele tá dependendo do swiper pra conseguir o tamanho certo, mas eu não vou refatorar agora porque já tá funcionando */
-}
-
-#publicacoes {
-  margin-top: 50px;
-  width: 100%;
-  height: 680px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
+/* a galerialivros não tá no ideal, a IA disse que ele tá dependendo do swiper pra conseguir o tamanho certo, mas eu não vou refatorar agora porque já tá funcionando */
 
 .galeria-livros .swiper-slide {
   /* ele não aplica os atributos às duas classes ao mesmo tempo aqui, ele aplica à classe swiperslide de dentro do galeria livros */
