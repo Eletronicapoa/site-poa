@@ -122,15 +122,12 @@ body {
   animation: fadeInLeft 1s ease-out;
 }
 
-
-
 .hero-title {
   font-family: "Outfit", sans-serif;
   font-size: clamp(2rem, 4vw, 3rem);
   font-weight: 400;
   line-height: 1;
   margin-bottom: 1.5rem;
-  margin-top: 8rem;
   color: #0b5d9c;
 }
 
@@ -288,7 +285,7 @@ body {
   position: absolute;
   top: 0;
   left: 0;
-  background-color: #01689173;
+  background-color: #02569779;
   width: 100%;
   height: 100%;
   z-index: 2;
@@ -459,7 +456,7 @@ body {
 
 .timeline li {
   position: relative;
-  width: 420px;
+  width: 320px;
   flex-shrink: 0;
 }
 
@@ -592,137 +589,76 @@ body {
 }
 
 /* Seção Coordenador */
-#coordenador {
-  padding: 6rem 0;
+#coordenacao {
+  padding: 50px;
+  margin-bottom: 192px;
+  width: 100%;
+  height: 90vh;
   background: white;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-#coordenador h1 {
+#coordenacao h1 {
   font-family: "Outfit", sans-serif;
   font-size: clamp(2rem, 4vw, 3rem);
   color: #0b5d9c;
   font-weight: 400;
-  margin-bottom: 4rem;
+  margin-bottom: 50px;
 }
 
-#img-container {
+#coordenador {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 2rem;
-  max-width: 1200px;
-  margin: 0 auto 3rem;
-  padding: 0 20px;
-  justify-items: center;
-  align-items: stretch;
-}
-
-.membro {
-  background: #fff;
-  border-radius: 12px;
-  border: #004b7d 1px solid;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-  padding: 1.5rem;
-  width: 220px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  transition: transform 0.3s;
-}
-
-.membroC {
-  background: #fff;
-  border-radius: 12px;
-  border: #004b7d 1px solid;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
-  padding: 1.5rem;
-  width: 580px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  transition: transform 0.3s;
-}
-
-.membro:hover {
-  transform: translateY(-8px) scale(1.03);
-}
-
-[id^="perfil"] {
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
-  margin-bottom: 1rem;
-  background: linear-gradient(135deg, #e0e0e0 0%, #f5f5f5 100%);
-  display: block;
-}
-
-[id^="perfil"] img {
+  grid-template-columns: auto 1fr;
+  grid-template-rows: repeat(3, auto);
+  row-gap: 10px;
+  column-gap: 20px;
+  align-items: start;
   width: 100%;
-  height: 100%;
-  border-radius: 50%;
+  height: auto;
+  max-height: 80%;
+}
+
+#perfil-img {
+  grid-column: 1;
+  grid-row: 1 / span 3;
+  width: 256px;
+}
+
+#perfil-img img {
   object-fit: cover;
-  object-position: 80% 15%;
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 32px;
 }
 
 .nome {
-  height: 60px;
+  grid-column: 2;
+  grid-row: 1;
 }
 
-.nome h3 {
-  margin: 0 0 0.5rem 0;
-  color: #1a1a1a;
-  font-size: 1.15rem;
-  font-weight: 600;
-  text-align: center;
+.descricao-coordenador {
+  grid-column: 2;
+  grid-row: 2;
 }
 
-.cargo p {
-  margin: 0 0 1rem 0;
-  color: #555;
-  font-size: 1rem;
-  text-align: center;
-}
-
-.membro-buttons {
-  display: flex;
-  gap: 0.5rem;
-  justify-content: center;
-  margin-top: 1rem;
-}
-.membroC .membro-buttons {
-  display: flex;
-  gap: 0.5rem;
-  justify-content: center;
-  margin-top: 4.3rem;
-}
-
-.btn-membro {
-  width: 36px;
-  height: 36px;
-  padding: 0;
-  border-radius: 6px;
-  background: #2ecc71;
-  color: #fff;
-  text-decoration: none;
-  font-weight: 500;
-  font-size: 1.2rem;
-  transition: background 0.2s, box-shadow 0.2s, transform 0.2s;
-  border: none;
-  cursor: pointer;
+.links-externos-coordenador {
+  grid-column: 2;
+  grid-row: 3;
   display: flex;
   align-items: center;
-  justify-content: center;
-  box-shadow: 0 2px 6px rgba(44, 204, 113, 0.08);
+  justify-content: flex-start;
 }
 
-.btn-membro:last-child {
-  background: #3498db;
+.links-externos-coordenador h5 {
+  margin-right: 16px;
 }
 
-.btn-membro:hover {
-  background: #1e88e5;
-  box-shadow: 0 4px 12px rgba(30, 136, 229, 0.15);
-  transform: scale(1.12) rotate(-6deg);
+.links-externos-coordenador a {
+  text-decoration: none;
+  color: #1e88e5;
 }
 
 .btn-membro svg {
@@ -732,6 +668,13 @@ body {
 }
 
 #nossosmembros {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 92px;
+}
+
+#nossosmembros a {
   font-weight: bold;
   font-size: 1.3rem;
   color: #1e88e5;
