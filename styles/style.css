@@ -473,6 +473,17 @@ body {
   margin: 0;
 }
 
+.timeline-publi h2 {
+  font-family: "Outfit", sans-serif;
+  font-size: 32px;
+  color: white;
+  font-weight: 500;
+  position: absolute;
+  z-index: 2;
+  padding-left: 35px;
+  top: 20px;
+}
+
 /* Configuração comum da haste */
 .timeline li::before {
   content: "";
@@ -597,8 +608,10 @@ body {
   background: white;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: start;
+  scroll-margin-top: 80px;
 }
+
 
 #coordenacao h1 {
   font-family: "Outfit", sans-serif;
@@ -670,7 +683,7 @@ body {
 #nossosmembros {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: start;
   margin-top: 92px;
 }
 
