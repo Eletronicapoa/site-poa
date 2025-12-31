@@ -49,7 +49,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem;
+  padding: 1rem 2rem;
 }
 
 .logo {
@@ -61,6 +61,56 @@ body {
   display: flex;
   list-style: none;
   gap: 2rem;
+}
+
+/* 1. Prepara o item pai para segurar a gaveta */
+.menu li {
+  position: relative; /* Importante: torna o pai a referência */
+}
+
+/* 2. Estilo inicial da Gaveta (Escondida) */
+.dropdown-gaveta {
+  position: absolute;
+  top: 100%; /* Posiciona logo abaixo do pai */
+  left: 0;
+  margin-left: -15px;
+  width: 140%; /* Largura da gaveta */
+  background: white;
+  padding: 10px 0;
+  list-style: none;
+  z-index: 1000;
+  
+  /* Efeito de sumir/aparecer suave */
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px); /* Começa um pouco descida para animar subindo */
+  transition: all 0.3s ease;
+}
+
+/* 3. Estilo dos links dentro da gaveta */
+.dropdown-gaveta li a {
+  display: block;
+  padding: 10px 20px;
+  color: #333;
+  font-size: 0.8rem;
+  white-space: nowrap; /* Impede que o texto quebre linha */
+}
+
+.dropdown-gaveta li a:hover {
+  background-color: #f5f7ff;
+  color: #1e88e5;
+}
+
+/* Removemos a linha colorida inferior padrão dos links do menu principal para os itens da gaveta, se quiser */
+.dropdown-gaveta li a::after {
+  display: none; 
+}
+
+/* 4. A AÇÃO: Quando passar o mouse no Pai, mostra a Gaveta */
+.menu li:hover .dropdown-gaveta {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0); /* A gaveta vai para a posição original */
 }
 
 .menu a {
@@ -342,6 +392,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  scroll-margin-top: 40px;
 }
 
 #publicacoes h2 {
@@ -426,6 +477,10 @@ body {
 /* timelinev3 */
 :root {
   --primary-color: #c4c5c7;
+}
+
+#timeline {
+  scroll-margin-top: 100px;
 }
 
 .timeline-publi {

@@ -28,9 +28,33 @@
             <ul class="menu">
               <li><a href="#">Início</a></li>
               <li><a href="#contato-index">Contato</a></li>
-              <li><a href="#linhasPesquisa">Pesquisas</a></li>
-              <li><a href="#publicacoes">Publicações</a></li>
-              <li><a href="#coordenacao">Coordenação</a></li>
+
+              <li class="dropdown-pai">
+                <a href="#linhasPesquisa">Pesquisas</a>
+
+                <ul class="dropdown-gaveta">
+                  <li><a href="labpoa.html">LabPOA</a></li>
+                  <li><a href="lat.html">LAT</a></li>
+                  <li><a href="lanagua.html">Lanágua</a></li>
+                  <li><a href="labcroma.html">LabCroma</a></li>
+                </ul>
+              </li>
+
+              <li class="dropdown-pai">
+                <a href="#publicacoes">Publicações</a>
+                <ul class="dropdown-gaveta">
+                  <li><a href="#publicacoes">Livros</a></li>
+                  <li><a href="#timeline">Outros</a></li>
+                </ul>
+              </li>
+
+              <li class="dropdown-pai">
+                <a href="#coordenacao">Membros</a>
+                <ul class="dropdown-gaveta">
+                  <li><a href="#coordenacao">Coordenação</a></li>
+                  <li><a href="equipe.html">Outros</a></li>
+                </ul>
+              </li>
             </ul>
           </div>
         </div>
@@ -61,7 +85,7 @@
               role="presentation"
               id="headerdownarrow"
             />
-          <h3>Saiba mais</h3>
+            <h3>Saiba mais</h3>
           </a>
         </div>
         <div class="hero-img">
@@ -76,9 +100,9 @@
       </div>
       <div id="textcontato">
         <p>
-          Email: laboratoriopoaufc@ufc.com.br <br/>
-          Departamento de Química Analítica e Físico-Química <br/>
-          Campus do Pici - Bloco 939 <br/>
+          Email: laboratoriopoaufc@ufc.com.br <br />
+          Departamento de Química Analítica e Físico-Química <br />
+          Campus do Pici - Bloco 939 <br />
           CEP: 60440-900 Fortaleza-CE Brasil
         </p>
         <p class="maps">
@@ -190,19 +214,20 @@
           <div class="swiper-button-prev"></div>
           <div class="swiper-button-next"></div>
         </div>
-
       </div>
-      
-      <div id="linkRepositorio"><a href=""><h4>Veja nossos livros e adquira gratuitamente</h4></a></div>
-    
+
+      <div id="linkRepositorio">
+        <a href=""><h4>Veja nossos livros e adquira gratuitamente</h4></a>
+      </div>
     </section>
 
     <!-- seção timeline -->
-    <section class="timeline-publi">
+    <section class="timeline-publi" id="timeline">
       <h2>Outros</h2>
       <ul class="timeline">
         <li data-date="2025">
-          <h6></h6><div class="title">Tese</div>
+          <h6></h6>
+          <div class="title">Tese</div>
           <div class="data">
             <h3>2025</h3>
             <p>
@@ -213,7 +238,8 @@
           </div>
         </li>
         <li data-date="2024">
-          <h6></h6><div class="title">Artigo de Periódico</div>
+          <h6></h6>
+          <div class="title">Artigo de Periódico</div>
           <div class="data">
             <h3>2024</h3>
             <p>
@@ -224,7 +250,8 @@
           </div>
         </li>
         <li data-date="2023">
-          <h6></h6><div class="title">Artigo de Periódico</div>
+          <h6></h6>
+          <div class="title">Artigo de Periódico</div>
           <div class="data">
             <h3>2023</h3>
             <p>
@@ -234,7 +261,8 @@
           </div>
         </li>
         <li data-date="2022">
-          <h6></h6><div class="title">Artigo de Periódico</div>
+          <h6></h6>
+          <div class="title">Artigo de Periódico</div>
           <div class="data">
             <h3>2022</h3>
             <p>
@@ -244,7 +272,8 @@
           </div>
         </li>
         <li data-date="2021">
-          <h6></h6><div class="title">Artigo de Periódico</div>
+          <h6></h6>
+          <div class="title">Artigo de Periódico</div>
           <div class="data">
             <h3>2021</h3>
             <p>
@@ -256,14 +285,16 @@
           </div>
         </li>
         <li data-date="2020">
-          <h6></h6><div class="title">Livro</div>
+          <h6></h6>
+          <div class="title">Livro</div>
           <div class="data">
             <h3>2020</h3>
             <p>Adsorção: aspectos teóricos e aplicações ambientais</p>
           </div>
         </li>
         <li data-date="2019">
-          <h6></h6><div class="title">Artigo de Periódico</div>
+          <h6></h6>
+          <div class="title">Artigo de Periódico</div>
           <div class="data">
             <h3>2019</h3>
             <p>
@@ -273,7 +304,8 @@
           </div>
         </li>
         <li data-date="2018">
-          <h6></h6><div class="title">Artigo de Evento</div>
+          <h6></h6>
+          <div class="title">Artigo de Evento</div>
           <div class="data">
             <h3>2018</h3>
             <p>
@@ -283,7 +315,8 @@
           </div>
         </li>
         <li data-date="2017">
-          <h6></h6><div class="title">Artigo de Periódico</div>
+          <h6></h6>
+          <div class="title">Artigo de Periódico</div>
           <div class="data">
             <h3>2017</h3>
             <p>
@@ -293,7 +326,8 @@
           </div>
         </li>
         <li data-date="2016">
-          <h6></h6><div class="title">Artigo de Evento</div>
+          <h6></h6>
+          <div class="title">Artigo de Evento</div>
           <div class="data">
             <h3>2016</h3>
             <p>
@@ -303,7 +337,8 @@
           </div>
         </li>
         <li data-date="2015">
-          <h6></h6><div class="title">Artigo de Periódico</div>
+          <h6></h6>
+          <div class="title">Artigo de Periódico</div>
           <div class="data">
             <h3>2015</h3>
             <p>
@@ -326,49 +361,47 @@
 
     <section id="coordenacao">
       <div><h1>Coordenação</h1></div>
-        <div id="coordenador">
-          <div id="perfil-img">
-            <img
-              src="assets/img/ronaldo.jpg"
-              alt="Foto de Ronaldo Ferreira do Nascimento"
-            />
-          </div>
-
-          <div class="nome"><h2>Ronaldo Ferreira do Nascimento</h2></div>
-          <div class="descricao-coordenador">
-            <h4>
-              Coordenador do Laboratório de Processos Oxidativos Avançados
-              (LabPOA); Laboratório de Análise de Traços (LAT); Laboratório de
-              Análise de Água (Lanágua); Laboratório de Cromatografia
-              (LabCroma).
-            </h4>
-            <p>
-              Formado em Química Industrial pela Universidade Federal do
-              Maranhão (UFMA, 1991), doutor em Química Analítica pela
-              Universidade de São Paulo (USP, 1997), Instituto de Química de São
-              Carlos (IQSC). Atualmente é professor titular da Universidade
-              Federal do Ceará (UFC). Publicou artigos (186) em periódicos
-              científicos, capítulos de livros (20) e livros (09). Possui
-              experiência na área de Química Analítica, com ênfase no
-              Desenvolvimento de Métodos Cromatográficos (análise de resíduos de
-              pesticidas em água e alimentos); Química Ambiental (análises de
-              traços); Adsorção (remoção de poluentes de efluentes aquosos
-              utilizando adsorventes naturais); Processos Oxidativos Avançados
-              (tratamento de água e efluentes).
-            </p>
-          </div>
-          <div class="links-externos-coordenador">
-            <a href="mailto:ronaldo@email.com">
-              <h5>Envie um email</h5>
-            </a>
-            <h5>|</h5>
-            <a href="lattes" target="_blank">
-              <h5>Currículo Lattes</h5>
-            </a>
-          </div>
+      <div id="coordenador">
+        <div id="perfil-img">
+          <img
+            src="assets/img/ronaldo.jpg"
+            alt="Foto de Ronaldo Ferreira do Nascimento"
+          />
         </div>
+
+        <div class="nome"><h2>Ronaldo Ferreira do Nascimento</h2></div>
+        <div class="descricao-coordenador">
+          <h4>
+            Coordenador do Laboratório de Processos Oxidativos Avançados
+            (LabPOA); Laboratório de Análise de Traços (LAT); Laboratório de
+            Análise de Água (Lanágua); Laboratório de Cromatografia (LabCroma).
+          </h4>
+          <p>
+            Formado em Química Industrial pela Universidade Federal do Maranhão
+            (UFMA, 1991), doutor em Química Analítica pela Universidade de São
+            Paulo (USP, 1997), Instituto de Química de São Carlos (IQSC).
+            Atualmente é professor titular da Universidade Federal do Ceará
+            (UFC). Publicou artigos (186) em periódicos científicos, capítulos
+            de livros (20) e livros (09). Possui experiência na área de Química
+            Analítica, com ênfase no Desenvolvimento de Métodos Cromatográficos
+            (análise de resíduos de pesticidas em água e alimentos); Química
+            Ambiental (análises de traços); Adsorção (remoção de poluentes de
+            efluentes aquosos utilizando adsorventes naturais); Processos
+            Oxidativos Avançados (tratamento de água e efluentes).
+          </p>
+        </div>
+        <div class="links-externos-coordenador">
+          <a href="mailto:ronaldo@email.com">
+            <h5>Envie um email</h5>
+          </a>
+          <h5>|</h5>
+          <a href="lattes" target="_blank">
+            <h5>Currículo Lattes</h5>
+          </a>
+        </div>
+      </div>
       <div>
-        <div  id="nossosmembros">
+        <div id="nossosmembros">
           <a href="equipe.html"
             >Saiba mais sobre nossos membros
             <div id="seta-membros">
@@ -381,7 +414,7 @@
     <footer>
       <div id="footer-div">
         <div class="footer-container">
-          <img src="assets/img/Logotipo v2.svg" alt=""/>
+          <img src="assets/img/Logotipo v2.svg" alt="" />
         </div>
         <!-- logo grupo -->
         <div class="footer-container"><p>Todos os direitos reservados</p></div>
