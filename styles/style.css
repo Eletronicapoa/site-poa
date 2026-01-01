@@ -967,7 +967,7 @@ footer p {
   margin-bottom: 3rem;
 }
 
-.section-title {
+.section-titlealara {
   font-family: "Outfit", sans-serif;
   font-size: clamp(2rem, 4vw, 3rem);
   color: #0b5d9c;
@@ -987,80 +987,58 @@ footer p {
   margin-top: 0;
 }
 
-/* Grids de membros */
+/* Listas de membros */
 .c-grid,
 .p-grid,
 .d-grid,
 .m-grid,
 .ic-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
   margin-bottom: 3rem;
   padding: 0 20px;
-}
-
-.c-grid {
-  grid-template-columns: repeat(3, 1fr);
-}
-
-.p-grid {
-  grid-template-columns: repeat(3, 1fr);
-}
-
-.d-grid {
-  grid-template-columns: repeat(3, 1fr);
-}
-
-.m-grid {
-  grid-template-columns: repeat(3, 1fr);
-}
-
-.ic-grid {
-  grid-template-columns: repeat(3, 1fr);
+  list-style: none;
 }
 
 /* Card de membro */
 .member-card {
   position: relative;
   background: white;
-  border-radius: 12px;
+  border-radius: 8px;
   overflow: hidden;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
   transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  border: 1px solid rgba(30, 136, 229, 0.08);
+  border-left: 4px solid #1e88e5;
   display: flex;
-  flex-direction: column;
-  height: 100%;
+  gap: 1.5rem;
+  padding: 1.5rem;
+  align-items: flex-start;
 }
 
 .member-card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 12px 30px rgba(30, 136, 229, 0.15);
-  border-color: rgba(30, 136, 229, 0.2);
+  transform: translateX(5px);
+  box-shadow: 0 6px 20px rgba(30, 136, 229, 0.12);
 }
 
 .member-photo {
-  width: 100%;
-  height: 380px;
+  width: 100px;
+  height: 100px;
+  min-width: 100px;
   background: linear-gradient(135deg, #1e88e5 0%, #42a5f5 100%);
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
   position: relative;
+  border-radius: 8px;
 }
 
 .member-photo img {
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  object-fit: cover;
   object-position: center;
-  transition: transform 0.3s ease;
-}
-
-.member-card:hover .member-photo img {
-  transform: scale(1.05);
 }
 
 .member-photo::before {
@@ -1079,7 +1057,7 @@ footer p {
 }
 
 .member-info {
-  padding: 1.5rem;
+  padding: 0;
   flex-grow: 1;
   display: flex;
   flex-direction: column;
@@ -1215,6 +1193,13 @@ footer p {
   color: #999;
 }
 
+.info-grid .member-contact {
+  display: flex;
+  gap: 0.6rem;
+  align-items: center;
+  margin-top: 0.75rem;
+}
+
 /* Animações de membros */
 @keyframes fadeInUp {
   from {
@@ -1257,7 +1242,7 @@ footer p {
   .d-grid,
   .m-grid,
   .ic-grid {
-    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
   }
 }
 
@@ -1275,13 +1260,25 @@ footer p {
   .d-grid,
   .m-grid,
   .ic-grid {
-    grid-template-columns: 1fr;
     gap: 1.5rem;
     padding: 0 10px;
   }
 
+  .member-card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 1.5rem;
+  }
+
   .member-photo {
-    height: 280px;
+    width: 120px;
+    height: 120px;
+    min-width: 120px;
+  }
+
+  .member-contact {
+    justify-content: center;
   }
 
   .info-grid {
