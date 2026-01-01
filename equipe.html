@@ -8,7 +8,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <link rel="icon" href="assets/img/Frame 1.svg" />
     <script src="scripts/script.js"></script>
-    <link rel="stylesheet" href="styles/style-equipe.css" />
   </head>
 <body>
     <!-- Header -->
@@ -61,7 +60,7 @@
     </header>
     <!-- Seção de Membros -->
     <section class="members-section">
-        <h1 class="section-title">Nossos membros</h1>
+        <div class="sectionTitle"><h1 class="section-title" >Nossos membros</h1></div>
         
         <!-- Coordenadores -->
         <h2 class="category-title" id="Coordenadores">Coordenadores</h2>
@@ -536,7 +535,7 @@
             </li>
         </ul>
         <br>
-        <h1 class="section-title" id="Alumni">Alumni</h1>
+        <div class="sectionTitle"><h1 class="section-title" >Alumni</h1></div>
         <ul class="alumni-grid">
             <div class="al-dout">
                 <h2 class="category-title" id="Iniciação Científica">Doutorado</h2>
@@ -842,13 +841,25 @@
         </ul>
     </section>
     
-    <!-- Footer -->
     <footer>
-        <div class="footer-content">
-            <img src="assets/img/Logotipo v2.svg" alt="" class="logo">
-            <span class="footer-text">Todos os direitos reservados.</span>
-            <img src="assets/img/ufc_logo.svg" alt="Universidade Federal do Ceará" class="logo">
+      <div id="footer-div">
+        <div class="footer-container">
+          <img src="assets/img/Logotipo v2.svg" alt="" />
         </div>
+        <!-- logo grupo -->
+        <div class="footer-container"><p>Todos os direitos reservados</p></div>
+        <div class="footer-container">
+          <img src="assets/img/ufc_logo.svg" alt="" />
+        </div>
+        <!-- logo ufc -->
+      </div>
     </footer>
+
+    <!-- botão flutuante de ir para o header -->
+    <div>
+      <a href="#" class="devolta" aria-label="Retornar ao início da página">
+        <img src="assets/img/arrow-down.svg" alt="" />
+      </a>
+    </div>
 </body>
 </html>
