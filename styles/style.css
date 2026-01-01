@@ -1319,3 +1319,133 @@ footer p {
     padding: 0.8rem 1rem;
   }
 }
+
+/* ==================== SEÇÃO DE PESQUISA E EQUIPAMENTOS (Labs) ==================== */
+
+.research-section {
+  padding: 4rem 2rem;
+  background: white;
+  scroll-margin-top: 80px;
+}
+
+.research-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: start;
+  margin-top: 3rem;
+}
+
+.research-text {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.research-text p {
+  font-size: 1.05rem;
+  color: var(--text-medium);
+  line-height: 1.8;
+  margin: 0;
+}
+
+.research-text strong {
+  color: var(--primary-dark);
+  font-weight: 600;
+}
+
+.research-highlights {
+  padding: 2rem;
+  background: linear-gradient(135deg, var(--bg-light) 0%, white 100%);
+  border-left: 4px solid var(--primary);
+  border-radius: 8px;
+}
+
+.research-highlights h3 {
+  font-family: "Outfit", sans-serif;
+  font-size: 1.4rem;
+  color: var(--primary-dark);
+  margin-bottom: 1.5rem;
+  font-weight: 500;
+}
+
+.highlights-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+.highlight-card {
+  padding: 1.5rem;
+  background: white;
+  border-radius: 6px;
+  border-top: 3px solid var(--primary);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  transition: all 0.3s ease;
+}
+
+.highlight-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+}
+
+.highlight-card h4 {
+  font-family: "Outfit", sans-serif;
+  color: var(--primary);
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  margin-top: 0;
+}
+
+.highlight-card p {
+  font-size: 0.9rem;
+  color: var(--text-medium);
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* Equipamentos Section */
+#linhasPesquisaPainel {
+  padding: 4rem 2rem;
+  background: white;
+  scroll-margin-top: 80px;
+}
+
+#linhasPesquisaPainel .container {
+  margin-bottom: 3rem;
+}
+
+/* Responsividade Research Section */
+@media (max-width: 1024px) {
+  .research-content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .highlights-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .research-section {
+    padding: 2rem 1rem;
+  }
+  
+  .research-content {
+    gap: 1.5rem;
+  }
+  
+  .research-text p {
+    font-size: 1rem;
+  }
+  
+  .research-highlights {
+    padding: 1.5rem;
+  }
+  
+  #linhasPesquisaPainel {
+    padding: 2rem 1rem;
+  }
+}

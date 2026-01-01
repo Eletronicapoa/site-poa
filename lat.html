@@ -1,301 +1,268 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-BR" data-theme="red">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Lat</title>
+    <title>LAT - Laboratório de Análise de Traços</title>
     <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/temas.css" />
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <link rel="icon" href="assets/img/Frame 1.svg" />
-    <script src="scripts/script.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
   </head>
   <body>
     <!-- Header -->
-    <header id="header-content">
+    <header id="header-div">
       <div class="container">
         <div class="header-content">
-          <div>
-            <h1>Lat</h1>
+          <div id="logoHeader">
+            <h1>Logo</h1>
           </div>
           <button class="mobile-menu-btn">☰</button>
-          <ul class="menu">
-            <li><a href="#">Início</a></li>
-            <li><a href="#contato-index">Contato</a></li>
-            <li><a href="#linhasPesquisa">Pesquisas</a></li>
-            <li><a href="#equipe">Equipe</a></li>
-          </ul>
+          <div id="menuHeader">
+            <ul class="menu">
+              <li><a href="index.html">Voltar</a></li>
+              <li><a href="#contato-index">Contato</a></li>
+              <li><a href="#linhasPesquisa">Pesquisa</a></li>
+              <li><a href="#publicacoes">Publicações</a></li>
+              <li><a href="#coordenacao">Equipe</a></li>
+            </ul>
+          </div>
         </div>
       </div>
     </header>
-    <!-- adicionar um border bottom pro efeito de separação e tirar o hr -->
+
     <hr />
 
+    <!-- Hero Section -->
     <section id="hero">
       <div class="hero-container">
         <div class="hero-content">
-          <!-- Título principal -->
           <h1 class="hero-title">
-            Soluções em análises<br /> químicas para detecção de
-            <span class="hero-highlight"> traços</span>
-            <!-- ajusta a cor depois (aquela verde) -->
+            Laboratório de<br />Análise de Traços
+            <span class="hero-highlight">(LAT)</span>
           </h1>
-          <!-- Subtítulo -->
           <p class="ptext">
-            +10 anos de experiência em análises de traços,
-            oferecendo soluções de alta sensibilidade e precisão
-            para detecção de contaminantes em níveis ultrabaixos.
+            Detecção de contaminantes em níveis ultrabaixos com tecnologias especializadas
           </p>
-          <!-- "Link" de scroll ou animação de seta para baixo -->
-          <a
-            href="#linhasPesquisa"
-            class="arrow-scroll"
-            aria-label="Ver linhas de pesquisa"
-          >
-            <img
-              src="assets/img/arrow-down.svg"
-              alt=""
-              role="presentation"
-              id="headerdownarrow"
-            />
+          <a href="#linhasPesquisa" class="arrow-scroll" aria-label="Ver informações">
+            <img src="assets/img/arrow-down.svg" alt="" role="presentation" />
+            <h3>Saiba mais</h3>
           </a>
         </div>
-        <!-- imagem -->
         <div class="hero-img">
-          <img src="assets/img/lab_img.png" alt="" />
+          <img src="assets/img/lab_img.png" alt="Laboratório LAT" />
         </div>
       </div>
     </section>
 
+    <!-- Seção de Contato -->
     <section id="contato-index">
-      <div>
       <div id="titlecontato">
-        <h2 class="titulo-pesquisas">Entre em contato</h2>
+        <h2 class="titulo-pesquisas">Sobre LAT</h2>
       </div>
       <div id="textcontato">
         <p>
-          Email: ronaldo@ufc.br <br>
-          Departamento de Química Analítica e Físico-Química Campus do Pici -
-          Bloco 939 CEP: 60440-900 Fortaleza-CE Brasil
+          Email: lat@ufc.br <br />
+          Departamento de Química Analítica e Físico-Química <br />
+          Campus do Pici - Bloco 939 <br />
+          CEP: 60440-900 Fortaleza-CE Brasil
         </p>
+        <p class="maps">
+          <a href="https://maps.app.goo.gl/mKpCmsMdut5kbHBh7">Veja no Google Maps</a>
+        </p>
+      </div>
     </section>
 
-    <section id="linhasPesquisaPainel">
-
-      <div class="slider">
-
-        <div class="slides">
-          <!-- Radio buttons -->
-           <input type="radio" name="radio-bnt" id="radio1">
-           <input type="radio" name="radio-bnt" id="radio2">
-           <input type="radio" name="radio-bnt" id="radio3">
-           <input type="radio" name="radio-bnt" id="radio4">
-          <!-- Fim Radio buttons -->
-
-          <!-- Slide images -->
-           <div id="slide-letra" class="slide first">
-            <h3>Equipamento</h3>
-              <img src="assets/img/lab_img.png" alt="slideimagem1" />
-            </a>
-           </div>
-           <div id="slide-letra" class="slide">
-            <h3>Equipamento</h3>
-              <img src="assets/img/lab_img.png" alt="slideimagem2" />
-            </a>
-           </div>
-           <div id="slide-letra" class="slide">
-            <h3>Equipamento</h3>
-                <img src="assets/img/lab_img.png" alt="slideimagem3" />
-            </a>
-           </div>
-           <div id="slide-letra" class="slide">
-            <h3>Equipamento</h3>
-              <img src="assets/img/lab_img.png" alt="slideimagem4" />
-            </a>
-           </div>
-           <!-- Fim Slide images -->
-
-           <!-- Navigation auto -->
-            <div class="navigation-auto">
-              <div class="auto-btn1"></div>
-              <div class="auto-btn2"></div>
-              <div class="auto-btn3"></div>
-              <div class="auto-btn4"></div>
+    <!-- Seção de Linhas de Pesquisa -->
+    <section id="linhasPesquisa" class="research-section">
+      <div class="container">
+        <h2 class="titulo-pesquisas">Linhas de Pesquisa</h2>
+        <div class="research-content">
+          <div class="research-text">
+            <p>
+              O Laboratório de Análises de Traços (LAT) especializa-se em <strong>detecção de contaminantes em níveis ultrabaixos</strong> 
+              utilizando técnicas cromatográficas altamente sensíveis. Nosso foco principal é análise de compostos voláteis e 
+              semi-voláteis em matrizes ambientais, com destaque para <strong>emissões veiculares e qualidade do ar</strong>.
+            </p>
+            <p style="margin-top: 1.5rem;">
+              Desenvolvemos metodologias especializadas para determinação de <strong>H₂, CO, CH₄, CO₂ e BTEX</strong> utilizando 
+              cromatografia gasosa com detectores BID e FID de última geração. As pesquisas incluem aplicações em monitoramento 
+              de poluição veicular, controle ambiental e análise de compostos emergentes em níveis de traços.
+            </p>
+          </div>
+          <div class="research-highlights">
+            <h3>Áreas de Atuação</h3>
+            <div class="highlights-grid">
+              <div class="highlight-card">
+                <h4>Análise de Traços</h4>
+                <p>Detecção em níveis ultrabaixos</p>
+              </div>
+              <div class="highlight-card">
+                <h4>Emissões Veiculares</h4>
+                <p>H₂, CO, CH₄, CO₂, BTEX</p>
+              </div>
+              <div class="highlight-card">
+                <h4>Cromatografia Especializada</h4>
+                <p>GC-BID e GC-FID</p>
+              </div>
+              <div class="highlight-card">
+                <h4>Qualidade do Ar</h4>
+                <p>Monitoramento atmosférico</p>
+              </div>
             </div>
-
+          </div>
         </div>
-
-
-        <div class="manual-navigation">
-          <label for="radio1" class="manual-btn"></label>
-          <label for="radio2" class="manual-btn"></label>
-          <label for="radio3" class="manual-btn"></label>
-          <label for="radio4" class="manual-btn"></label>
-        </div>
-
-
       </div>
-
-      <script src="scripts/script.js"></script>
-
     </section>
 
-
-    <!-- <section id="publicacoes">
-      <div id="titlepublicacao"><h1>Publicações</h1></div>
-
-      <div id="container-publicacoes">
-
-      <div class="containerpublicacao">
-        <div class="publicacoes-content" id="publi-title"><h2>Nossos Livros</h2></div>
-        <div class="publicacoes-content" id="publi-subtitle"><h3>POAs, Cromatografia, Adsorção e Processos Eletrolíticos</h3></div>
-        <a href="https://repositorio.ufc.br/bitstream/riufc/32127/1/2017_liv_rfnascimento.pdf"  id="publi-link1"><div class="publicacoes-content">
-          <img src="assets/img/POAs.png" alt="Livro sobre POAs">
-        </div></a>
-        <a href="https://repositorio.ufc.br/bitstream/riufc/39260/1/2018_liv_rfnascimento.pdf" id="publi-link2"><div class="publicacoes-content">
-          <img src="assets/img/Cromatografia.png" alt="Livro sobre Cromatografia">
-        </div></a>
-        <a href="https://repositorio.ufc.br/bitstream/riufc/53271/1/2020_liv_rfnascimento.pdf" id="publi-link3"><div class="publicacoes-content">
-          <img src="assets/img/Adsorção.png" alt="Livro sobre Adsorção">
-        </div></a>
-        <a href="https://repositorio.ufc.br/bitstream/riufc/58652/1/2021_liv_rfnascimento.pdf" id="publi-link4"><div class="publicacoes-content">
-          <img src="assets/img/Processos-eletroliticos.png" alt="Livro sobre Processos Eletrolíticos">
-        </div></a>
-      </div>
-      <span id="linkoutros">
-        <a href="https://repositorio.ufc.br/simple-search?location=&query=Ronaldo+Ferreira+do+Nascimento&filtername=type&filtertype=equals&filterquery=Livro&rpp=10&sort_by=score&order=desc" class="linkexterno">Veja nossos outros livros</a>
-      </span>
-      
-      <div class="containerpublicacao">
-        <div class="publicacoes-content">
-          <h2>Artigos, Teses, Capítulos, Congressos...</h2>
-        </div>
-        <div class="timeline-vertical-section">
-          <div class="timeline-vertical">
-            <div class="timeline-item">
-              <div class="timeline-year">2025</div>
-              <div class="timeline-details">
-                <div class="timeline-title">Emissões veiculares: uma abordagem rápida e eficiente para a determinação de H2, CO, CH4 e CO2 por GC-BID e de BTEX por SPME-GC-BID</div>
-                <a href="https://repositorio.ufc.br/simple-search?location=%2F&query=Ronaldo+Nascimento&rpp=10&sort_by=score&order=desc&filter_field_1=dateIssued&filter_type_1=equals&filter_value_1=2025" class="timeline-btn" id="timeline-btn2025">Veja mais</a>
-              </div>
+    <!-- Seção de Equipamentos -->
+    <section id="publicacoes">
+      <h2 class="titulo-pesquisas">Equipamentos</h2>
+      <div class="swiper galeria-livros">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="card-livro">
+              <img src="assets/img/lab_img.png" alt="GC-BID Shimadzu" />
+              <h4>GC-BID Shimadzu</h4>
             </div>
-            <div class="timeline-item">
-              <div class="timeline-year">2024</div>
-              <div class="timeline-details">
-                <div class="timeline-title">The impact of chronic and acute problems on sea turtles: The consequences of the oil spill and ingestion of anthropogenic debris on the tropical semi-arid coast of Ceará, Brazil</div>
-                <a href="https://repositorio.ufc.br/simple-search?location=%2F&query=Ronaldo+Nascimento&rpp=10&sort_by=score&order=desc&filter_field_1=dateIssued&filter_type_1=equals&filter_value_1=2024" class="timeline-btn" id="timeline-btn2024">Veja mais</a>
-              </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card-livro">
+              <img src="assets/img/lab_img.png" alt="GC-FID Shimadzu" />
+              <h4>GC-FID Shimadzu</h4>
             </div>
-            <div class="timeline-item">
-              <div class="timeline-year">2023</div>
-              <div class="timeline-details">
-                <div class="timeline-title">Climatic regionalization and rainfed agricultural production in the state of Maranhão, Brazil</div>
-                <a href="https://repositorio.ufc.br/simple-search?location=%2F&query=Ronaldo+Nascimento&rpp=10&sort_by=score&order=desc&filter_field_1=dateIssued&filter_type_1=equals&filter_value_1=2023" class="timeline-btn" id="timeline-btn2023">Veja mais</a>
-              </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card-livro">
+              <img src="assets/img/lab_img.png" alt="Sistema SPME-GC" />
+              <h4>SPME-GC</h4>
             </div>
-            <div class="timeline-item">
-              <div class="timeline-year">2022</div>
-              <div class="timeline-details">
-                <div class="timeline-title">A physical study to explain response differences between the BID and FID detectors for PAHs and pesticides</div>
-                <a href="https://repositorio.ufc.br/simple-search?location=%2F&query=Ronaldo+Nascimento&rpp=10&sort_by=score&order=desc&filter_field_1=dateIssued&filter_type_1=equals&filter_value_1=2022" class="timeline-btn" id="timeline-btn2022">Veja mais</a>
-              </div>
-            </div>
-            <div class="timeline-item">
-              <div class="timeline-year">2021</div>
-              <div class="timeline-details">
-                <div class="timeline-title">Integrated UPLC-HRMS, chemometric tools, and metabolomic analysis of forage palm (Opuntia spp. and Nopalea spp.) to define biomarkers associated with non-susceptibility to Carmine Cochineal (Dactylopius opuntiae)</div>
-                <a href="https://repositorio.ufc.br/simple-search?location=%2F&query=Ronaldo+Nascimento&rpp=10&sort_by=score&order=desc&filter_field_1=dateIssued&filter_type_1=equals&filter_value_1=2021" class="timeline-btn" id="timeline-btn2021">Veja mais</a>
-              </div>
-            </div>
-            <div class="timeline-item">
-              <div class="timeline-year">2020</div>
-              <div class="timeline-details">
-                <div class="timeline-title">Adsorção: aspectos teóricos e aplicações ambientais</div>
-                <a href="https://repositorio.ufc.br/simple-search?location=%2F&query=Ronaldo+Nascimento&rpp=10&sort_by=score&order=desc&filter_field_1=dateIssued&filter_type_1=equals&filter_value_1=2020" class="timeline-btn" id="timeline-btn2020">Veja mais</a>
-              </div>
-            </div>
-            <div class="timeline-item">
-              <div class="timeline-year">2019</div>
-              <div class="timeline-details">
-                <div class="timeline-title">Zinc ferrite nanoparticles via coprecipitation modified method: glycerol as structure directing and stabilizing agent</div>
-                <a href="https://repositorio.ufc.br/simple-search?location=%2F&query=Ronaldo+Nascimento&rpp=10&sort_by=score&order=desc&filter_field_1=dateIssued&filter_type_1=equals&filter_value_1=2019" class="timeline-btn" id="timeline-btn2019">Veja mais</a>
-              </div>
-            </div>
-            <div class="timeline-item">
-              <div class="timeline-year">2018</div>
-              <div class="timeline-details">
-                <div class="timeline-title">Remoção de metais tóxicos através dos resíduos de cinzas de lodo de fossa séptica.</div>
-                <a href="https://repositorio.ufc.br/simple-search?location=%2F&query=Ronaldo+Nascimento&rpp=10&sort_by=score&order=desc&filter_field_1=dateIssued&filter_type_1=equals&filter_value_1=2018" class="timeline-btn" id="timeline-btn2018">Veja mais</a>
-              </div>
-            </div>
-            <div class="timeline-item">
-              <div class="timeline-year">2017</div>
-              <div class="timeline-details">
-                <div class="timeline-title">Strategy for correction of matrix effect on the determination of pesticides in water bodies using SPME-GC-FID</div>
-                <a href="https://repositorio.ufc.br/simple-search?location=%2F&query=Ronaldo+Nascimento&rpp=10&sort_by=score&order=desc&filter_field_1=dateIssued&filter_type_1=equals&filter_value_1=2017" class="timeline-btn" id="timeline-btn2017">Veja mais</a>
-              </div>
-            </div>
-            <div class="timeline-item">
-              <div class="timeline-year">2016</div>
-              <div class="timeline-details">
-                <div class="timeline-title">Desenvolvimento e validação de metodologia para determinação de interferentes endócrinos em águas superficiais</div>
-                <a href="https://repositorio.ufc.br/simple-search?location=%2F&query=Ronaldo+Nascimento&rpp=10&sort_by=score&order=desc&filter_field_1=dateIssued&filter_type_1=equals&filter_value_1=2016" class="timeline-btn" id="timeline-btn2016">Veja mais</a>
-              </div>
-            </div>
-            <div class="timeline-item">
-              <div class="timeline-year">2015</div>
-              <div class="timeline-details">
-                <div class="timeline-title">	Carbonyl compounds from urban activities and their associated cancer risks: The influence of seasonality on air quality (Fortaleza-Ce, Brazil)</div>
-                <a href="https://repositorio.ufc.br/simple-search?location=%2F&query=Ronaldo+Nascimento&rpp=10&sort_by=score&order=desc&filter_field_1=dateIssued&filter_type_1=equals&filter_value_1=2015" class="timeline-btn" id="timeline-btn2015">Veja mais</a>
-              </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card-livro">
+              <img src="assets/img/lab_img.png" alt="Espectrômetro de Detecção" />
+              <h4>Espectrômetro Avançado</h4>
             </div>
           </div>
         </div>
-      </div>
-      
-    </section> -->
-
-    <section id="coordenador">
-      <div><h1>Coordenador</h1></div>
-      <div id="img-container">
-        <div id="membroC" class="membroC">
-          <div id="perfilC">
-            <img src="assets/img/ronaldo.jpg" alt="Foto de Ronaldo Ferreira do Nascimento">
-          </div>
-          <div class="nome"><h3>Ronaldo Ferreira do Nascimento</h3></div>
-          <div>
-            <p>Formado em Química Industrial pela Universidade Federal do Maranhão (UFMA, 1991), doutor em Química Analítica pela Universidade de São Paulo (USP, 1997), Instituto de Química de São Carlos (IQSC). Atualmente é professor titular da Universidade Federal do Ceará (UFC). Publicou artigos (186) em periódicos científicos, capítulos de livros (20) e livros (09). Possui experiência na área de Química Analítica, com ênfase no Desenvolvimento de Métodos Cromatográficos (análise de resíduos de pesticidas em água e alimentos); Química Ambiental (análises de traços); Adsorção (remoção de poluentes de efluentes aquosos utilizando adsorventes naturais); Processos Oxidativos Avançados (tratamento de água e efluentes).<p></div>
-            <div class="membro-buttons">
-            <a class="btn-membro" href="mailto:ronaldo@email.com"><span class="material-symbols-outlined">stacked_email</span></a>
-            <a class="btn-membro" href="#"><span class="material-symbols-outlined">book</span></a>
-          </div>
+        <div id="previous-next-livros">
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
         </div>
       </div>
+    </section>
+
+    <!-- Seção de Publicações -->
+    <section class="timeline-publi" id="timeline">
+      <h2 class="titulo-pesquisas">Publicações</h2>
+      <ul class="timeline">
+        <li data-date="2025">
+          <h6></h6>
+          <div class="title">Artigo de Periódico</div>
+          <div class="data">
+            <h3>2025</h3>
+            <p>Emissões veiculares: determinação rápida de H₂, CO, CH₄ e CO₂ por GC-BID</p>
+          </div>
+        </li>
+        <li data-date="2024">
+          <h6></h6>
+          <div class="title">Artigo de Periódico</div>
+          <div class="data">
+            <h3>2024</h3>
+            <p>Análise de BTEX em amostras ambientais por SPME-GC-BID</p>
+          </div>
+        </li>
+        <li data-date="2023">
+          <h6></h6>
+          <div class="title">Artigo de Periódico</div>
+          <div class="data">
+            <h3>2023</h3>
+            <p>Monitoramento de qualidade do ar: detecção de contaminantes traços</p>
+          </div>
+        </li>
+      </ul>
+      <div id="timeline-arrow">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </section>
+
+    <!-- Seção de Coordenação -->
+    <section id="coordenacao">
+      <div><h1 class="titulo-pesquisas">Coordenação</h1></div>
+      <div id="coordenador">
+        <div id="perfil-img">
+          <img
+            src="assets/img/ronaldo.jpg"
+            alt="Foto de Ronaldo Ferreira do Nascimento"
+          />
+        </div>
+
+        <div class="nome"><h2>Ronaldo Ferreira do Nascimento</h2></div>
+        <div class="descricao-coordenador">
+          <h4>
+            Coordenador do Laboratório de Processos Oxidativos Avançados
+            (LabPOA); Laboratório de Análise de Traços (LAT); Laboratório de
+            Análise de Água (Lanágua); Laboratório de Cromatografia (LabCroma).
+          </h4>
+          <p>
+            Formado em Química Industrial pela Universidade Federal do Maranhão
+            (UFMA, 1991), doutor em Química Analítica pela Universidade de São
+            Paulo (USP, 1997), Instituto de Química de São Carlos (IQSC).
+            Atualmente é professor titular da Universidade Federal do Ceará
+            (UFC). Publicou artigos (186) em periódicos científicos, capítulos
+            de livros (20) e livros (09). Possui experiência na área de Química
+            Analítica, com ênfase no Desenvolvimento de Métodos Cromatográficos
+            (análise de resíduos de pesticidas em água e alimentos); Química
+            Ambiental (análises de traços); Adsorção (remoção de poluentes de
+            efluentes aquosos utilizando adsorventes naturais); Processos
+            Oxidativos Avançados (tratamento de água e efluentes).
+          </p>
+        </div>
+        <div class="links-externos-coordenador">
+          <a href="mailto:ronaldo@email.com">
+            <h5>Envie um email</h5>
+          </a>
+          <h5>|</h5>
+          <a href="lattes" target="_blank">
+            <h5>Currículo Lattes</h5>
+          </a>
+        </div>
       </div>
       <div>
-        <span><a href="equipe.html" id="nossosmembros">Saiba mais sobre nossos membros <span id="seta-membros"><img src="assets/img/arrow-down.svg" alt="" /></span></a></span>
-        
+        <div id="nossosmembros">
+          <a href="equipe.html"
+            >Saiba mais sobre nossos membros
+            <div id="seta-membros">
+              <img src="assets/img/arrow-down.svg" alt="" /></div
+          ></a>
+        </div>
       </div>
     </section>
 
     <footer>
-      <div> 
-        <span class="footer-container"><img src="assets/img/Logotipo v2.svg" alt="" class="footer-content" /></span>
-        <!-- logo poa -->
-        <span class="footer-container"><p>Todos os direitos reservados</p></span>
-        <span class="footer-container"><img src="assets/img/ufc_logo.svg" alt="" /></span>
-        <!-- logo ufc -->
+      <div id="footer-div">
+        <div class="footer-container">
+          <img src="assets/img/Logotipo v2.svg" alt="" />
+        </div>
+        <div class="footer-container"><p>Todos os direitos reservados</p></div>
+        <div class="footer-container">
+          <img src="assets/img/ufc_logo.svg" alt="" />
+        </div>
       </div>
     </footer>
 
-    <!-- botão flutuante de ir para o header -->
-    <!-- colocar um border radius -->
+    <!-- Botão flutuante de retorno -->
     <div>
       <a href="#hero" class="devolta" aria-label="Retornar ao início da página">
         <img src="assets/img/arrow-down.svg" alt="" />
       </a>
     </div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script defer src="scripts/script.js"></script>
   </body>
 </html>
-
-
-

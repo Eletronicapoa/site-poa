@@ -1,197 +1,268 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-BR" data-theme="light-blue">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Lanagua</title>
+    <title>LANágua - Laboratório de Análise de Água</title>
     <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/temas.css" />
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <link rel="icon" href="assets/img/Frame 1.svg" />
-    <script src="scripts/script.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
   </head>
-  <body class="lanagua-page"> >
+  <body>
     <!-- Header -->
-    <header id="header-content">
+    <header id="header-div">
       <div class="container">
         <div class="header-content">
-          <div>
-            <h1>Lanagua</h1>
+          <div id="logoHeader">
+            <h1>Logo</h1>
           </div>
           <button class="mobile-menu-btn">☰</button>
-          <ul class="menu">
-            <li><a href="#">Início</a></li>
-            <li><a href="#contato-index">Contato</a></li>
-            <li><a href="#linhasPesquisa">Pesquisas</a></li>
-            <li><a href="#publicacoes">Publicações</a></li>
-            <li><a href="#equipe">Equipe</a></li>
-          </ul>
+          <div id="menuHeader">
+            <ul class="menu">
+              <li><a href="index.html">Voltar</a></li>
+              <li><a href="#contato-index">Contato</a></li>
+              <li><a href="#linhasPesquisa">Pesquisa</a></li>
+              <li><a href="#publicacoes">Publicações</a></li>
+              <li><a href="#coordenacao">Equipe</a></li>
+            </ul>
+          </div>
         </div>
       </div>
     </header>
-    <!-- adicionar um border bottom pro efeito de separação e tirar o hr -->
+
     <hr />
 
+    <!-- Hero Section -->
     <section id="hero">
       <div class="hero-container">
         <div class="hero-content">
-          <!-- Título principal -->
           <h1 class="hero-title">
-            Análises químicas precisas para garantir a qualidade e segurança da
-            <span class="hero-highlight"> água</span>
-            <!-- ajusta a cor depois (aquela verde) -->
+            Laboratório de Análise<br />de Água
+            <span class="hero-highlight">(LANágua)</span>
           </h1>
-          <!-- Subtítulo -->
           <p class="ptext">
-           +10 anos de experiência em análises de água,
-            oferecendo soluções confiáveis e de alta precisão para 
-            monitoramento da qualidade e detecção de 
-            contaminantes em diferentes matrizes.
+            Análises químicas de alta precisão para monitoramento e qualidade de água
           </p>
-          <!-- "Link" de scroll ou animação de seta para baixo -->
-          <a
-            href="#linhasPesquisa"
-            class="arrow-scroll"
-            aria-label="Ver linhas de pesquisa"
-          >
-            <img
-              src="assets/img/arrow-down.svg"
-              alt=""
-              role="presentation"
-              id="headerdownarrow"
-            />
+          <a href="#linhasPesquisa" class="arrow-scroll" aria-label="Ver informações">
+            <img src="assets/img/arrow-down.svg" alt="" role="presentation" />
+            <h3>Saiba mais</h3>
           </a>
         </div>
-        <!-- imagem -->
         <div class="hero-img">
-          <img src="assets/img/adsorçao.png" alt="" />
+          <img src="assets/img/lab_img.png" alt="Laboratório LANágua" />
         </div>
       </div>
     </section>
 
+    <!-- Seção de Contato -->
     <section id="contato-index">
-      <div>
       <div id="titlecontato">
-        <h2 class="titulo-pesquisas">Entre em contato</h2>
+        <h2 class="titulo-pesquisas">Sobre LANágua</h2>
       </div>
       <div id="textcontato">
         <p>
-          Email: ronaldo@ufc.br <br>
-          Departamento de Química Analítica e Físico-Química Campus do Pici -
-          Bloco 939 CEP: 60440-900 Fortaleza-CE Brasil
+          Email: lanagua@ufc.br <br />
+          Departamento de Química Analítica e Físico-Química <br />
+          Campus do Pici - Bloco 939 <br />
+          CEP: 60440-900 Fortaleza-CE Brasil
         </p>
-    </section>
-
-    <section id="linhasPesquisaPainel">
-
-      <div class="slider">
-
-        <div class="slides">
-          <!-- Radio buttons -->
-           <input type="radio" name="radio-bnt" id="radio1">
-           <input type="radio" name="radio-bnt" id="radio2">
-           <input type="radio" name="radio-bnt" id="radio3">
-           <input type="radio" name="radio-bnt" id="radio4">
-          <!-- Fim Radio buttons -->
-
-          <!-- Slide images -->
-           <div id="slide-letra" class="slide first">
-            <h3>Equipamento</h3>
-              <img src="assets/img/lab_img.png" alt="slideimagem1" />
-            </a>
-           </div>
-           <div id="slide-letra" class="slide">
-            <h3>Equipamento</h3>
-              <img src="assets/img/lab_img.png" alt="slideimagem2" />
-            </a>
-           </div>
-           <div id="slide-letra" class="slide">
-            <h3>Equipamento</h3>
-                <img src="assets/img/lab_img.png" alt="slideimagem3" />
-            </a>
-           </div>
-           <div id="slide-letra" class="slide">
-            <h3>Equipamento</h3>
-              <img src="assets/img/lab_img.png" alt="slideimagem4" />
-            </a>
-           </div>
-           <!-- Fim Slide images -->
-
-           <!-- Navigation auto -->
-            <div class="navigation-auto">
-              <div class="auto-btn1"></div>
-              <div class="auto-btn2"></div>
-              <div class="auto-btn3"></div>
-              <div class="auto-btn4"></div>
-            </div>
-
-        </div>
-
-
-        <div class="manual-navigation">
-          <label for="radio1" class="manual-btn"></label>
-          <label for="radio2" class="manual-btn"></label>
-          <label for="radio3" class="manual-btn"></label>
-          <label for="radio4" class="manual-btn"></label>
-        </div>
-
-
+        <p class="maps">
+          <a href="https://maps.app.goo.gl/mKpCmsMdut5kbHBh7">Veja no Google Maps</a>
+        </p>
       </div>
-
-      <script src="scripts/script.js"></script>
-
     </section>
 
-
-    <section id="coordenador">
-      <div><h1>Coordenadores</h1></div>
-      <div id="img-container">
-        <div id="membroC" class="membroC">
-          <div id="perfilC">
-            <img src="assets/img/ronaldo.jpg" alt="Foto de Ronaldo Ferreira do Nascimento">
+    <!-- Seção de Linhas de Pesquisa -->
+    <section id="linhasPesquisa" class="research-section">
+      <div class="container">
+        <h2 class="titulo-pesquisas">Linhas de Pesquisa</h2>
+        <div class="research-content">
+          <div class="research-text">
+            <p>
+              O Laboratório de Análises de Água (LANágua) especializa-se em <strong>análises químicas de alta precisão</strong> 
+              para avaliação da qualidade de água em diversos contextos. Desenvolvemos metodologias avançadas em cromatografia 
+              líquida e gasosa para determinação de contaminantes orgânicos e inorgânicos.
+            </p>
+            <p style="margin-top: 1.5rem;">
+              Nossas pesquisas focam em <strong>métodos cromatográficos validados</strong> para detecção de pesticidas residuais, 
+              poluentes em nível de traços e compostos emergentes. Utilizamos equipamentos de última geração (HPLC e GC) para 
+              assegurar a confiabilidade das análises conforme normas internacionais de qualidade.
+            </p>
           </div>
-          <div class="nome"><h3>Ronaldo Ferreira do Nascimento</h3></div>
-          <div>
-            <p>Formado em Química Industrial pela Universidade Federal do Maranhão (UFMA, 1991), doutor em Química Analítica pela Universidade de São Paulo (USP, 1997), Instituto de Química de São Carlos (IQSC). Atualmente é professor titular da Universidade Federal do Ceará (UFC). Publicou artigos (186) em periódicos científicos, capítulos de livros (20) e livros (09). Possui experiência na área de Química Analítica, com ênfase no Desenvolvimento de Métodos Cromatográficos (análise de resíduos de pesticidas em água e alimentos); Química Ambiental (análises de traços); Adsorção (remoção de poluentes de efluentes aquosos utilizando adsorventes naturais); Processos Oxidativos Avançados (tratamento de água e efluentes).<p></div>
-            <div class="membro-buttons">
-            <a class="btn-membro" href="mailto:ronaldo@email.com"><span class="material-symbols-outlined">stacked_email</span></a>
-            <a class="btn-membro" href="#"><span class="material-symbols-outlined">book</span></a>
+          <div class="research-highlights">
+            <h3>Áreas de Atuação</h3>
+            <div class="highlights-grid">
+              <div class="highlight-card">
+                <h4>Qualidade da Água</h4>
+                <p>Monitoramento de fontes hídricas</p>
+              </div>
+              <div class="highlight-card">
+                <h4>Métodos Cromatográficos</h4>
+                <p>HPLC e GC para análises precisas</p>
+              </div>
+              <div class="highlight-card">
+                <h4>Pesticidas Residuais</h4>
+                <p>Detecção de contaminantes agrícolas</p>
+              </div>
+              <div class="highlight-card">
+                <h4>Análise de Traços</h4>
+                <p>Poluentes em nível ultrabaixo</p>
+              </div>
+            </div>
           </div>
         </div>
+      </div>
+    </section>
 
-        <div id="membroC" class="membroC">
-          <div id="perfilC"></div>
-          <div class="nome"><h3>Francisco Belmino Romero</h3></div>
-          <div class="cargo"><p>Graduado em Química Industrial (1970) e em Engenharia Química (1971) - Universidade Federal do Ceará(UFC). Mestre em Ciência dos Materiais e Engenharia Metalúrgica - Pontifícia Universidade Católica do Rio de Janeiro (1974). Livre Docente em Físico-Química - Universidade Federal do Ceará (2005). Professor de Físico-Química. Pesquisador de corrosão - proteção à corrosão e de processos oxidativos avançados do Laboratório de Processos Oxidativos Avançados-LabPOA no Departamento de Química Analítica e Físico-Química do Centro de Ciências da UFC. Atualmente é Professor Associado IV aposentado e continuando como Professor Voluntário da Universidade Federal do Ceará. </p></div>
-          <div class="membro-buttons">
-            <a class="btn-membro" href="mailto:belmino@email.com"><span class="material-symbols-outlined">stacked_email</span></a>
-            <a class="btn-membro" href="#"><span class="material-symbols-outlined">book</span></a>
+    <!-- Seção de Equipamentos -->
+    <section id="publicacoes">
+      <h2 class="titulo-pesquisas">Equipamentos</h2>
+      <div class="swiper galeria-livros">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="card-livro">
+              <img src="assets/img/lab_img.png" alt="Cromatógrafo HPLC Shimadzu" />
+              <h4>HPLC Shimadzu</h4>
+            </div>
           </div>
+          <div class="swiper-slide">
+            <div class="card-livro">
+              <img src="assets/img/lab_img.png" alt="Cromatógrafo Gasoso GC Shimadzu" />
+              <h4>GC Shimadzu</h4>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card-livro">
+              <img src="assets/img/lab_img.png" alt="Espectrômetro de Detecção" />
+              <h4>Espectrômetro de Detecção</h4>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="card-livro">
+              <img src="assets/img/lab_img.png" alt="Coluna de Adsorção" />
+              <h4>Sistemas de Adsorção</h4>
+            </div>
+          </div>
+        </div>
+        <div id="previous-next-livros">
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Seção de Publicações -->
+    <section class="timeline-publi" id="timeline">
+      <h2 class="titulo-pesquisas">Publicações</h2>
+      <ul class="timeline">
+        <li data-date="2025">
+          <h6></h6>
+          <div class="title">Artigo de Periódico</div>
+          <div class="data">
+            <h3>2025</h3>
+            <p>Metodologia HPLC para monitoramento de qualidade de água potável</p>
+          </div>
+        </li>
+        <li data-date="2024">
+          <h6></h6>
+          <div class="title">Artigo de Periódico</div>
+          <div class="data">
+            <h3>2024</h3>
+            <p>Determinação de pesticidas em amostras de água por GC-FID</p>
+          </div>
+        </li>
+        <li data-date="2023">
+          <h6></h6>
+          <div class="title">Artigo de Periódico</div>
+          <div class="data">
+            <h3>2023</h3>
+            <p>Análise de traços de poluentes emergentes em águas superficiais</p>
+          </div>
+        </li>
+      </ul>
+      <div id="timeline-arrow">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </section>
+
+    <!-- Seção de Coordenação -->
+    <section id="coordenacao">
+      <div><h1 class="titulo-pesquisas">Coordenação</h1></div>
+      <div id="coordenador">
+        <div id="perfil-img">
+          <img
+            src="assets/img/ronaldo.jpg"
+            alt="Foto de Ronaldo Ferreira do Nascimento"
+          />
+        </div>
+
+        <div class="nome"><h2>Ronaldo Ferreira do Nascimento</h2></div>
+        <div class="descricao-coordenador">
+          <h4>
+            Coordenador do Laboratório de Processos Oxidativos Avançados
+            (LabPOA); Laboratório de Análise de Traços (LAT); Laboratório de
+            Análise de Água (Lanágua); Laboratório de Cromatografia (LabCroma).
+          </h4>
+          <p>
+            Formado em Química Industrial pela Universidade Federal do Maranhão
+            (UFMA, 1991), doutor em Química Analítica pela Universidade de São
+            Paulo (USP, 1997), Instituto de Química de São Carlos (IQSC).
+            Atualmente é professor titular da Universidade Federal do Ceará
+            (UFC). Publicou artigos (186) em periódicos científicos, capítulos
+            de livros (20) e livros (09). Possui experiência na área de Química
+            Analítica, com ênfase no Desenvolvimento de Métodos Cromatográficos
+            (análise de resíduos de pesticidas em água e alimentos); Química
+            Ambiental (análises de traços); Adsorção (remoção de poluentes de
+            efluentes aquosos utilizando adsorventes naturais); Processos
+            Oxidativos Avançados (tratamento de água e efluentes).
+          </p>
+        </div>
+        <div class="links-externos-coordenador">
+          <a href="mailto:ronaldo@email.com">
+            <h5>Envie um email</h5>
+          </a>
+          <h5>|</h5>
+          <a href="lattes" target="_blank">
+            <h5>Currículo Lattes</h5>
+          </a>
         </div>
       </div>
       <div>
-          <span><a href="equipe.html" id="nossosmembros">Saiba mais sobre nossos membros <span id="seta-membros"><img src="assets/img/arrow-down.svg" alt="" /></span></a></span>
+        <div id="nossosmembros">
+          <a href="equipe.html"
+            >Saiba mais sobre nossos membros
+            <div id="seta-membros">
+              <img src="assets/img/arrow-down.svg" alt="" /></div
+          ></a>
+        </div>
       </div>
     </section>
 
     <footer>
-      <div> 
-        <span class="footer-container"><img src="assets/img/Logotipo v2.svg" alt="" class="footer-content" /></span>
-        <!-- logo poa -->
-        <span class="footer-container"><p>Todos os direitos reservados</p></span>
-        <span class="footer-container"><img src="assets/img/ufc_logo.svg" alt="" /></span>
-        <!-- logo ufc -->
+      <div id="footer-div">
+        <div class="footer-container">
+          <img src="assets/img/Logotipo v2.svg" alt="" />
+        </div>
+        <div class="footer-container"><p>Todos os direitos reservados</p></div>
+        <div class="footer-container">
+          <img src="assets/img/ufc_logo.svg" alt="" />
+        </div>
       </div>
     </footer>
 
-    <!-- botão flutuante de ir para o header -->
-    <!-- colocar um border radius -->
+    <!-- Botão flutuante de retorno -->
     <div>
       <a href="#hero" class="devolta" aria-label="Retornar ao início da página">
         <img src="assets/img/arrow-down.svg" alt="" />
       </a>
     </div>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script defer src="scripts/script.js"></script>
   </body>
 </html>
-
-
-
