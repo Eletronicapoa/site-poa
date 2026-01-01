@@ -1,0 +1,78 @@
+/* ==================== SISTEMA DE TEMAS CSS ==================== */
+/* Cada tema define variáveis primária, secundária, accent e backgrounds */
+/* Os temas são aplicados via data-theme="" no elemento <html> ou <body> */
+
+/* TEMA 1: AZUL CLARO - LAN ÁGUA */
+:root[data-theme="light-blue"] {
+  --primary: #1e88e5;
+  --primary-dark: #0b5d9c;
+  --primary-darker: #005995;
+  --secondary: #42a5f5;
+  --accent: #00c853;
+  --bg-light: #f5f7ff;
+  --bg-gradient-start: #1e88e5;
+  --bg-gradient-end: #00c853;
+  --text-dark: #333;
+  --text-medium: #666;
+  --border-color: rgba(0, 0, 0, 0.1);
+}
+
+/* TEMA 2: AZUL ESCURO - LABPOA */
+:root[data-theme="dark-blue"] {
+  --primary: #0065a8;
+  --primary-dark: #003d66;
+  --primary-darker: #001f33;
+  --secondary: #0099ff;
+  --accent: #00d084;
+  --bg-light: #e3f2fd;
+  --bg-gradient-start: #0065a8;
+  --bg-gradient-end: #00101b;
+  --text-dark: #1a1a1a;
+  --text-medium: #4a4a4a;
+  --border-color: rgba(0, 0, 0, 0.15);
+}
+
+/* TEMA 3: VERDE - LABITECH */
+:root[data-theme="green"] {
+  --primary: #00c853;
+  --primary-dark: #00a040;
+  --primary-darker: #006e2d;
+  --secondary: #26c485;
+  --accent: #1e88e5;
+  --bg-light: #f1f8f4;
+  --bg-gradient-start: #00c853;
+  --bg-gradient-end: #1e88e5;
+  --text-dark: #1b5e2d;
+  --text-medium: #4a7c5a;
+  --border-color: rgba(0, 100, 50, 0.1);
+}
+
+/* TEMA 4: VERMELHO - LAT */
+:root[data-theme="red"] {
+  --primary: #d32f2f;
+  --primary-dark: #b71c1c;
+  --primary-darker: #7b1010;
+  --secondary: #e57373;
+  --accent: #1e88e5;
+  --bg-light: #ffebee;
+  --bg-gradient-start: #d32f2f;
+  --bg-gradient-end: #7b1010;
+  --text-dark: #5d1a1a;
+  --text-medium: #8b3a3a;
+  --border-color: rgba(200, 50, 50, 0.1);
+}
+
+/* TEMA 5: LARANJA - CROMA */
+:root[data-theme="orange"] {
+  --primary: #ff7043;
+  --primary-dark: #e64a19;
+  --primary-darker: #bf360c;
+  --secondary: #ffab91;
+  --accent: #1e88e5;
+  --bg-light: #ffe0b2;
+  --bg-gradient-start: #ff7043;
+  --bg-gradient-end: #bf360c;
+  --text-dark: #5d2817;
+  --text-medium: #8b5a2b;
+  --border-color: rgba(230, 74, 25, 0.1);
+}
