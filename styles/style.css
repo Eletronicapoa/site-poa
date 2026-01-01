@@ -63,54 +63,53 @@ body {
   gap: 2rem;
 }
 
+/* dropdown menu */
+
 /* 1. Prepara o item pai para segurar a gaveta */
 .menu li {
   position: relative; /* Importante: torna o pai a referência */
 }
 
-/* 2. Estilo inicial da Gaveta (Escondida) */
+
 .dropdown-gaveta {
-  position: absolute;
-  top: 100%; /* Posiciona logo abaixo do pai */
-  left: 0;
-  margin-left: -15px;
-  width: 140%; /* Largura da gaveta */
-  background: white;
-  padding: 10px 0;
-  list-style: none;
-  z-index: 1000;
-  
-  /* Efeito de sumir/aparecer suave */
-  opacity: 0;
-  visibility: hidden;
-  transform: translateY(10px); /* Começa um pouco descida para animar subindo */
-  transition: all 0.3s ease;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: white;
+    list-style: none;
+    min-width: 100px;
+    border-radius: 8px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-10px);
+    transition: all 0.3s ease;
+    margin-top: 0.5rem;
+    padding: 0.5rem 0;
 }
 
-/* 3. Estilo dos links dentro da gaveta */
-.dropdown-gaveta li a {
-  display: block;
-  padding: 10px 20px;
-  color: #333;
-  font-size: 0.8rem;
-  white-space: nowrap; /* Impede que o texto quebre linha */
+.dropdown-pai:hover .dropdown-gaveta {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
 }
 
-.dropdown-gaveta li a:hover {
-  background-color: #f5f7ff;
-  color: #1e88e5;
+.dropdown-gaveta li {
+    padding: 0;
 }
 
-/* Removemos a linha colorida inferior padrão dos links do menu principal para os itens da gaveta, se quiser */
-.dropdown-gaveta li a::after {
-  display: none; 
+.dropdown-gaveta a {
+    display: block;
+    padding: 0.75rem 1.5rem;
+    color: #333;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-weight: 500;
 }
 
-/* 4. A AÇÃO: Quando passar o mouse no Pai, mostra a Gaveta */
-.menu li:hover .dropdown-gaveta {
-  opacity: 1;
-  visibility: visible;
-  transform: translateY(0); /* A gaveta vai para a posição original */
+.dropdown-gaveta a:hover {
+    background-color: #f0f0f0;
+    color: #1e88e5;
 }
 
 .menu a {
