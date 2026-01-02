@@ -1,12 +1,12 @@
-Etapas de desenvolvimento
-[] swipers da página principal
-[] página principal
-[] informações da página principal
-[] menu da página principal
-[] página principal
-[] informações das landingpages
-[] equipamentos das landingpages
-[] swiper das landing pages
-[] logos das landingpages
-[] informações da página de membros
-[] títulos da página de membros
+# Etapas de desenvolvimento
+- [ ] swipers da página principal
+- [ ] página principal
+- [ ] informações da página principal
+- [ ] menu da página principal
+- [ ] página principal
+- [ ] informações das landingpages
+- [ ] equipamentos das landingpages
+- [ ] swiper das landing pages
+- [ ] logos das landingpages
+- [ ] informações da página de membros
+- [ ] títulos da página de membros
