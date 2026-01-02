@@ -194,7 +194,7 @@ body {
   line-height: 1.7;
 }
 
-#headerdownarrow {
+.arrow-scroll {
   width: 32px;
   height: 32px;
   display: inline-block;
@@ -202,11 +202,11 @@ body {
   transition: transform 0.3s ease;
   vertical-align: middle;
   /* color: var(--primary); removido, pois não afeta imagens */
-  filter: invert(37%) sepia(89%) saturate(747%) hue-rotate(181deg)
-  brightness(52%) contrast(92%);
+  /* filter: invert(37%) sepia(89%) saturate(747%) hue-rotate(181deg)
+  brightness(52%) contrast(92%); */
 }
 
-.arrow-scroll {
+.arrow-link {
   display: flex;
   align-items: center;
   text-decoration: none;
@@ -755,9 +755,9 @@ body {
   margin-left: 24px;
   rotate: 270deg;
   vertical-align: middle;
-  /* color: var(--primary); removido, pois não afeta imagens */
+/*   color: var(--primary); removido, pois não afeta imagens
   filter: invert(37%) sepia(89%) saturate(747%) hue-rotate(181deg)
-    brightness(92%) contrast(92%);
+    brightness(92%) contrast(92%); */
 }
 
 #seta-membros img {
