@@ -286,8 +286,6 @@ body {
   vertical-align: top;
 }
 
-
-
 /* Seção linhasPesquisa v2 */
 
 #linhasPesquisa {
@@ -305,6 +303,23 @@ body {
   z-index: 2;
   padding-left: 35px;
   padding-top: 25px;
+}
+
+#research-section {
+  width: 100%;
+  height: auto;
+  scroll-margin-top: 100px;
+}
+
+#research-container {
+  padding: 30px;
+}
+
+#research-section h2 {
+  font-family: "Outfit", sans-serif;
+  font-size: clamp(2rem, 4vw, 3rem);
+  color: var(--primary-dark);
+  font-weight: 400;
 }
 
 .swiper-pesquisa .swiper-slide {
@@ -427,8 +442,8 @@ body {
   width: 100%;
 }
 
-.swiper-button-prev,
-.swiper-button-next {
+.galeria-livros .swiper-button-prev,
+.galeria-livros .swiper-button-next {
   padding: 10px;
   width: 44px;
   height: 44px;
@@ -440,21 +455,21 @@ body {
   transition: all 0.2s;
 }
 
-.swiper-button-prev,
-.swiper-button-next {
+.galeria-livros .swiper-button-prev,
+.galeria-livros .swiper-button-next {
   transition: background 0.2s, box-shadow 0.2s, transform 0.2s;
   transform-origin: center;
   will-change: transform;
 }
 
-.swiper-button-prev:hover,
-.swiper-button-next:hover {
+.galeria-livros .swiper-button-prev:hover,
+.galeria-livros .swiper-button-next:hover {
   background-color: var(--primary);
   color: #ffffff;
 }
 
-.swiper-button-prev::after,
-.swiper-button-next::after {
+.galeria-livros .swiper-button-prev::after,
+.galeria-livros .swiper-button-next::after {
   font-size: 10px;
   color: #111111;
   line-height: 1;
@@ -472,6 +487,29 @@ body {
   text-decoration: none;
   color: var(--primary-dark);
 }
+
+/* Seção equipamentos */
+
+#equipamentos {
+  width: 100%;
+  height: 680px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  scroll-margin-top: 40px;
+}
+
+#equipamentos h2 {
+  font-family: "Outfit", sans-serif;
+  font-size: clamp(2rem, 4vw, 3rem);
+  color: var(--primary-dark);
+  font-weight: 400;
+  padding-bottom: 50px;
+  margin-top: 50px;
+}
+
+
 
 /* timelinev3 */
 :root {
@@ -510,7 +548,7 @@ body {
 
 .timeline li {
   position: relative;
-  width: 320px;
+  width: 420px;
   flex-shrink: 0;
 }
 
