@@ -983,8 +983,7 @@ footer p {
 }
 
 .members-section {
-  padding: 120px 0 60px;
-  background: linear-gradient(135deg, #f8f9fa 0%, #e3f2fd 100%);
+  padding: 120px 0 30px;
 }
 
 .sectionTitle {
@@ -993,13 +992,6 @@ footer p {
 }
 
 .sectionTitle h1 {
-  font-family: "Outfit", sans-serif;
-  font-size: clamp(2rem, 4vw, 3rem);
-  color: var(--primary-dark);
-  font-weight: 400;
-}
-
-.section-titlealara {
   font-family: "Outfit", sans-serif;
   font-size: clamp(2rem, 4vw, 3rem);
   color: var(--primary-dark);
