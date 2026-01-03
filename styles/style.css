@@ -305,23 +305,6 @@ body {
   padding-top: 25px;
 }
 
-#research-section {
-  width: 100%;
-  height: auto;
-  scroll-margin-top: 100px;
-}
-
-#research-container {
-  padding: 30px;
-}
-
-#research-section h2 {
-  font-family: "Outfit", sans-serif;
-  font-size: clamp(2rem, 4vw, 3rem);
-  color: var(--primary-dark);
-  font-weight: 400;
-}
-
 .swiper-pesquisa .swiper-slide {
   background: #fff;
   height: 75vh;
@@ -995,6 +978,10 @@ footer p {
 /* ==================== ESTILIZAÇÃO DE MEMBROS ==================== */
 
 /* Seção principal de membros */
+#Coordenadores, #Pesquisadores, #Doutorando, #Mestrando, #IniciaçãoCientífica, #Alumni {
+  scroll-margin-top: 100px;
+}
+
 .members-section {
   padding: 120px 0 60px;
   background: linear-gradient(135deg, #f8f9fa 0%, #e3f2fd 100%);
@@ -1003,6 +990,13 @@ footer p {
 .sectionTitle {
   text-align: center;
   margin-bottom: 3rem;
+}
+
+.sectionTitle h1 {
+  font-family: "Outfit", sans-serif;
+  font-size: clamp(2rem, 4vw, 3rem);
+  color: var(--primary-dark);
+  font-weight: 400;
 }
 
 .section-titlealara {
@@ -1363,7 +1357,23 @@ footer p {
 .research-section {
   padding: 4rem 2rem;
   background: white;
-  scroll-margin-top: 80px;
+}
+
+#research-section {
+  width: 100%;
+  height: auto;
+  scroll-margin-top: 100px;
+}
+
+#research-container {
+  padding: 30px;
+}
+
+#research-section h2 {
+  font-family: "Outfit", sans-serif;
+  font-size: clamp(2rem, 4vw, 3rem);
+  color: var(--primary-dark);
+  font-weight: 400;
 }
 
 .research-content {
