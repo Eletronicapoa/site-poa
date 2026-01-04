@@ -290,7 +290,7 @@ body {
 
 #linhasPesquisa {
   width: 100%;
-  height: auto;
+  height: 420px;
   scroll-margin-top: 100px;
 }
 
@@ -307,7 +307,8 @@ body {
 
 .swiper-pesquisa .swiper-slide {
   background: #fff;
-  height: 75vh;
+  height: 65vh;
+  max-height: 420px;
   width: 100%;
   display: flex;
   justify-content: center;
