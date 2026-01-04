@@ -21,8 +21,18 @@
           <button class="mobile-menu-btn">☰</button>
           <div id="menuHeader">
             <ul class="menu">
-              <li><a href="index.html">Voltar</a></li>
-              <li><a href="#research-section">Pesquisa</a></li>
+              <li><a href="index.html">Início</a></li>
+             <li class="dropdown-pai">
+                <a href="#research-section">Pesquisas</a>
+
+                <ul class="dropdown-gaveta">
+                  <li><a href="labpoa.html">LabPOA</a></li>
+                  <li><a href="lat.html">LAT</a></li>
+                  <li><a href="lanagua.html">Lanagua</a></li>
+                  <li><a href="croma.html">LabCroma</a></li>
+                  <li><a href="labitech.html">LabItech</a></li>
+                </ul>
+              </li>
               <li><a href="#equipamentos">Equipamentos</a></li>
               <li><a href="#timeline">Publicações</a></li>
               <li class="dropdown-pai">
@@ -105,38 +115,16 @@
     </section>
 
     <!-- Seção de Equipamentos -->
-    <section id="publicacoes">
-      <h2 class="titulo-pesquisas">Equipamentos</h2>
-      <div class="swiper galeria-livros">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <div class="card-livro">
-              <img src="assets/img/lab_img.png" alt="Cromatógrafo HPLC Shimadzu" />
-              <h4>HPLC Shimadzu</h4>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="card-livro">
-              <img src="assets/img/lab_img.png" alt="Cromatógrafo Gasoso GC Shimadzu" />
-              <h4>GC Shimadzu</h4>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="card-livro">
-              <img src="assets/img/lab_img.png" alt="Espectrômetro de Detecção" />
-              <h4>Espectrômetro de Detecção</h4>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <div class="card-livro">
-              <img src="assets/img/lab_img.png" alt="Coluna de Adsorção" />
-              <h4>Sistemas de Adsorção</h4>
-            </div>
-          </div>
+    <section id="equipamentos">
+    <h2 class="titulo-pesquisas">Equipamentos</h2>
+      <div class="lista-equipamentos">
+        <div class="card-equipamentos">
+          <div class="imagem-equipamento"><img src="assets/img/gc-bid2.png" alt="Imagem do BID"></div>
+          <div class="texto-equipamento"><h3>Cromatógrafo BID Shimadzu</h3><p>Lorem impsum resumo sobre o bid e algum comentário sobre o uso na pesquisa</p></div>
         </div>
-        <div id="previous-next-livros">
-          <div class="swiper-button-prev"></div>
-          <div class="swiper-button-next"></div>
+        <div class="card-equipamentos">
+          <div class="imagem-equipamento"><img src="assets/img/gc-ms.png" alt="Imagem do MS"></div>
+          <div class="texto-equipamento"><h3>Cromatógrafo CG-MS</h3><p>Lorem impsum resumo sobre o CG-MS algum comentário sobre o uso na pesquisa</p></div>
         </div>
       </div>
     </section>

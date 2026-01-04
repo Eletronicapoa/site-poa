@@ -475,12 +475,12 @@ body {
 
 #equipamentos {
   width: 100%;
-  height: 680px;
+  height: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   scroll-margin-top: 40px;
+  padding: 30px;
 }
 
 #equipamentos h2 {
@@ -492,7 +492,29 @@ body {
   margin-top: 50px;
 }
 
+.lista-equipamentos {
+  width: 100%;
+  margin: 0;
+}
 
+.card-equipamentos {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 2rem;
+  padding: 30 px;
+  max-width: 1200px;
+  margin: 30px auto;
+}
+
+.imagem-equipamento {
+  width: 100%;
+}
+
+.imagem-equipamento img {
+  width: 100%;
+  border: 3px solid var(--primary);
+  border-radius: 12px;
+}
 
 /* timelinev3 */
 :root {
