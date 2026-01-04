@@ -680,8 +680,8 @@ body {
 
 #timeline-arrow div {
   display: block;
-  width: 1.5vw;
-  height: 1.5vw;
+  width: 1.5rem;
+  height: 1.5rem;
   border-bottom: 5px solid white;
   border-right: 5px solid white;
   transform: rotate(45deg);
@@ -702,7 +702,7 @@ body {
   padding: 50px;
   margin-bottom: 192px;
   width: 100%;
-  height: 90vh;
+  height: 460px;
   background: white;
   display: flex;
   flex-direction: column;
