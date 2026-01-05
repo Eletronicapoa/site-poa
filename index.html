@@ -24,8 +24,8 @@
           <ul class="menu">
             <li><a href="#">Início</a></li>
             <li><a href="#contato-index">Contato</a></li>
-            <li><a href="#linhasPesquisaPainel">Pesquisas</a></li>
-            <li><a href="#publicacoesNovo">Publicações</a></li>
+            <li><a href="#linhasPesquisa">Pesquisas</a></li>
+            <li><a href="#publicacoes">Publicações</a></li>
             <li><a href="#coordenador">Coordenador</a></li>
           </ul>
         </header>
@@ -40,13 +40,13 @@
         <div class="hero-content">
           <h1 class="hero-title">
             Análises poderosas em cromatografia e produção
-            <div class="hero-highlight"> científica </div> de alta qualidade
+            <span class="hero-highlight"> científica </span> de alta qualidade
           </h1>
           <p class="ptext">
             +10 anos produzindo conhecimento e divulgando ciência de ponta.
           </p>
           <a
-          href="#linhasPesquisaPainel"
+          href="#linhasPesquisa"
           class="arrow-scroll"
           aria-label="Ver linhas de pesquisa"
           >
@@ -80,24 +80,34 @@
       </div>
       </section>
 
+
       <!-- Seção de linhas de pesquisa -->
-      
-      <!-- Slider main container -->
-      <div class="swiper-slides">
-        <!-- Additional required wrapper -->
-    <div class="swiper-wrapper">
-      <!-- Slides -->
-      <div class="swiper-slide"><img class="overlay-bg" src="assets/img/gc-ms.png" alt="Linhas de pesquisa — GC-MS">
-        <div class="content-overlay">
-          <h2 class="carousel-title">Linhas de pesquisa</h2></div>
-          <div class="swiper-slide">LAT</div>
-          <div class="swiper-slide">Lanagua</div>
-          <div class="swiper-slide">Croma</div>
+  <section id="linhasPesquisa">
+    <div class="content-overlay">
+      <h2 class="titulo-pesquisas">Linhas de pesquisa</h2>
+    </div>
+      <!-- Slider main container de classe dupla -->
+    <div class="swiper swiper-pesquisa">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide">
+          <div class="slidePesquisa"><div id="filtro"></div><img src="assets/img/gc-ms.png" alt="Linhas de pesquisa — GC-MS"><div class="caixaLink"><a href="croma.html"><h3>Cromatografia</h3></a></div></div>
         </div>
-        <!-- If we need pagination -->
-        <div class="swiper-pagination"></div>
+        <div class="swiper-slide">
+          <div class="slidePesquisa"><div id="filtro"></div><img src="assets/img/toc.png" alt="Linhas de pesquisa — TOC"><div class="caixaLink"><a href="labpoa.html"><h3>POAs</h3></a></div></div>
+        </div>
+        <div class="swiper-slide">
+          <div class="slidePesquisa"><div id="filtro"></div><img src="assets/img/hplc-dad.png" alt="Linhas de pesquisa — HPLC"><div class="caixaLink"><a href="lat.html"><h3>Traços</h3></a></div></div>
+        </div>
+        <div class="swiper-slide">
+          <div class="slidePesquisa"><div id="filtro"></div><img src="assets/img/ics.png" alt="Linhas de pesquisa — Lanagua"><div class="caixaLink"><a href="lanagua.html"><h3>Adsorção</h3></a></div></div>
+        </div>
       </div>
-      
+      <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
+    </div>
+  </section>
   
   <!-- seção publicações (livros) -->
   <section id="publicacoes">
