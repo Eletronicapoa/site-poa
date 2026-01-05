@@ -32,6 +32,7 @@ const swiperPesquisa = new Swiper(".swiper-pesquisa", {
   grabCursor: true,
   centeredSlides: true,
   direction: 'horizontal',
+  loop: true,
   /* Ajuste fino do efeito slide do swiper */
   slidesPerView: 'auto',
   pagination: {
@@ -47,3 +48,10 @@ const swiperPesquisa = new Swiper(".swiper-pesquisa", {
     enable: true,
   }
 });
+
+const timeline = document.querySelectorAll(".timeline li .data");
+      for (const time of timeline) {
+        time.onclick = () => time.classList.toggle("show");
+        {
+        }
+      };

@@ -5,36 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Grupo Cromatografia</title>
     <link rel="stylesheet" href="styles/style.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
     <link rel="icon" href="assets/img/Frame 1.svg" />
     <link
-    rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
     />
   </head>
   <body>
     <!-- Header -->
-    <header id="header-content">
+    <header id="header-div">
       <div class="container">
         <div class="header-content">
-          <div>
-            <h1>Grupo de Cromatografia</h1>
+          <div id="logoHeader">
+            <h1>Logo</h1>
           </div>
           <button class="mobile-menu-btn">☰</button>
-          <ul class="menu">
-            <li><a href="#">Início</a></li>
-            <li><a href="#contato-index">Contato</a></li>
-            <li><a href="#linhasPesquisa">Pesquisas</a></li>
-            <li><a href="#publicacoes">Publicações</a></li>
-            <li><a href="#coordenador">Coordenador</a></li>
-          </ul>
-        </header>
+          <div id="menuHeader">
+            <ul class="menu">
+              <li><a href="#">Início</a></li>
+              <li><a href="#contato-index">Contato</a></li>
+              <li><a href="#linhasPesquisa">Pesquisas</a></li>
+              <li><a href="#publicacoes">Publicações</a></li>
+              <li><a href="#coordenador">Coordenação</a></li>
+            </ul>
+          </div>
+        </div>
       </div>
-    </div>
-    
+    </header>
+
     <!-- adicionar um border bottom pro efeito de separação e tirar o hr -->
     <hr />
-    
+
     <section id="hero">
       <div class="hero-container">
         <div class="hero-content">
@@ -46,269 +51,343 @@
             +10 anos produzindo conhecimento e divulgando ciência de ponta.
           </p>
           <a
-          href="#linhasPesquisa"
-          class="arrow-scroll"
-          aria-label="Ver linhas de pesquisa"
+            href="#linhasPesquisa"
+            class="arrow-scroll"
+            aria-label="Ver linhas de pesquisa"
           >
             <img
               src="assets/img/arrow-down.svg"
               alt=""
               role="presentation"
               id="headerdownarrow"
-              />
-            </a>
-          </div>
-          <div class="hero-img">
-            <img src="assets/img/toc2.png" alt="" />
-          </div>
+            />
+          <h3>Saiba mais</h3>
+          </a>
         </div>
-      </section>
-      
-      <section id="contato-index">
-        <div>
-          <div id="titlecontato">
-            <h2>Entre em contato</h2>
+        <div class="hero-img">
+          <img src="assets/img/gc-bid.png" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <section id="contato-index">
+      <div id="titlecontato">
+        <h2>Entre em contato</h2>
       </div>
       <div id="textcontato">
         <p>
-          Email: laboratoriopoaufc@ufc.com.br <br>
-          Departamento de Química Analítica e Físico-Química <br>
-          Campus do Pici - Bloco 939 <br>
+          Email: laboratoriopoaufc@ufc.com.br <br/>
+          Departamento de Química Analítica e Físico-Química <br/>
+          Campus do Pici - Bloco 939 <br/>
           CEP: 60440-900 Fortaleza-CE Brasil
         </p>
-          <p class="maps"><a href="https://maps.app.goo.gl/mKpCmsMdut5kbHBh7">Veja no Google Maps</a></p>
+        <p class="maps">
+          <a href="https://maps.app.goo.gl/mKpCmsMdut5kbHBh7"
+            >Veja no Google Maps</a
+          >
+        </p>
       </div>
-      </section>
+    </section>
 
-
-      <!-- Seção de linhas de pesquisa -->
-  <section id="linhasPesquisa">
-    <div class="content-overlay">
-      <h2 class="titulo-pesquisas">Linhas de pesquisa</h2>
-    </div>
+    <!-- Seção de linhas de pesquisa -->
+    <section id="linhasPesquisa">
+      <div class="content-overlay">
+        <h2 class="titulo-pesquisas">Linhas de pesquisa</h2>
+      </div>
       <!-- Slider main container de classe dupla -->
-    <div class="swiper swiper-pesquisa">
-      <!-- Additional required wrapper -->
-      <div class="swiper-wrapper">
-        <!-- Slides -->
-        <div class="swiper-slide">
-          <div class="slidePesquisa"><div id="filtro"></div><img src="assets/img/gc-ms.png" alt="Linhas de pesquisa — GC-MS"><div class="caixaLink"><a href="croma.html"><h3>Cromatografia</h3></a></div></div>
+      <div class="swiper swiper-pesquisa">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <div class="slidePesquisa">
+              <div id="filtro"></div>
+              <img
+                src="assets/img/gc-ms.png"
+                alt="Linhas de pesquisa — GC-MS"
+              />
+              <div class="caixaLink">
+                <a href="croma.html"><h3>Ir para LabCroma</h3></a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="slidePesquisa">
+              <div id="filtro"></div>
+              <img src="assets/img/toc.png" alt="Linhas de pesquisa — TOC" />
+              <div class="caixaLink">
+                <a href="labpoa.html"><h3>Ir para LabPOA</h3></a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="slidePesquisa">
+              <div id="filtro"></div>
+              <img
+                src="assets/img/hplc-dad.png"
+                alt="Linhas de pesquisa — HPLC"
+              />
+              <div class="caixaLink">
+                <a href="lat.html"><h3>Ir para LAT</h3></a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="slidePesquisa">
+              <div id="filtro"></div>
+              <img
+                src="assets/img/ics.png"
+                alt="Linhas de pesquisa — Lanagua"
+              />
+              <div class="caixaLink">
+                <a href="lanagua.html"><h3>Ir para Lanagua</h3></a>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="swiper-slide">
-          <div class="slidePesquisa"><div id="filtro"></div><img src="assets/img/toc.png" alt="Linhas de pesquisa — TOC"><div class="caixaLink"><a href="labpoa.html"><h3>POAs</h3></a></div></div>
-        </div>
-        <div class="swiper-slide">
-          <div class="slidePesquisa"><div id="filtro"></div><img src="assets/img/hplc-dad.png" alt="Linhas de pesquisa — HPLC"><div class="caixaLink"><a href="lat.html"><h3>Traços</h3></a></div></div>
-        </div>
-        <div class="swiper-slide">
-          <div class="slidePesquisa"><div id="filtro"></div><img src="assets/img/ics.png" alt="Linhas de pesquisa — Lanagua"><div class="caixaLink"><a href="lanagua.html"><h3>Adsorção</h3></a></div></div>
-        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
       </div>
-      <!-- If we need pagination -->
-      <div class="swiper-pagination"></div>
-    </div>
-  </section>
-  
-  <!-- seção publicações (livros) -->
-  <section id="publicacoes">
+    </section>
+
+    <!-- seção publicações (livros) -->
+    <section id="publicacoes">
       <h2>Nossos Livros</h2>
-      <div class="swiper galeria-livros"> <!-- classe dupla -->
-        <div class="swiper-wrapper"> 
+      <div class="swiper galeria-livros">
+        <!-- classe dupla -->
+        <div class="swiper-wrapper">
           <div class="swiper-slide">
-            <div class="card-livro"><img src="assets/img/POAs.png" alt="Livro sobre POAs"></div>
+            <div class="card-livro">
+              <img src="assets/img/POAs.png" alt="Livro sobre POAs" />
+            </div>
           </div>
           <div class="swiper-slide">
-            <div class="card-livro"><img src="assets/img/Cromatografia.png" alt="Livro sobre Cromatografia"></div>
+            <div class="card-livro">
+              <img
+                src="assets/img/Cromatografia.png"
+                alt="Livro sobre Cromatografia"
+              />
+            </div>
           </div>
           <div class="swiper-slide">
-            <div class="card-livro"><img src="assets/img/Adsorção.png" alt="Livro sobre Adsorção"></div>
+            <div class="card-livro">
+              <img src="assets/img/Adsorção.png" alt="Livro sobre Adsorção" />
+            </div>
           </div>
           <div class="swiper-slide">
-            <div class="card-livro"><img src="assets/img/Processos-eletroliticos.png" alt="Livro sobre Processos Eletrolíticos"></div>
+            <div class="card-livro">
+              <img
+                src="assets/img/Processos-eletroliticos.png"
+                alt="Livro sobre Processos Eletrolíticos"
+              />
+            </div>
           </div>
         </div>
-        
-        <div id="previous-next-livros"> <!-- div por fora pra manter botões embaixo -->
+
+        <div id="previous-next-livros">
+          <!-- div por fora pra manter botões embaixo -->
           <!-- If we need navigation buttons -->
           <div class="swiper-button-prev"></div>
           <div class="swiper-button-next"></div>
         </div>
+
+      </div>
+      
+      <div id="linkRepositorio"><a href=""><h4>Veja nossos livros e adquira gratuitamente</h4></a></div>
+    
+    </section>
+
+    <!-- seção timeline -->
+    <section class="timeline-publi">
+      <ul class="timeline">
+        <li data-date="2025">
+          <h6></h6><div class="title">Tese</div>
+          <div class="data">
+            <h3>2025</h3>
+            <p>
+              Emissões veiculares: uma abordagem rápida e eficiente para a
+              determinação de H2, CO, CH4 e CO2 por GC-BID e de BTEX por
+              SPME-GC-BID
+            </p>
+          </div>
+        </li>
+        <li data-date="2024">
+          <h6></h6><div class="title">Artigo de Periódico</div>
+          <div class="data">
+            <h3>2024</h3>
+            <p>
+              The impact of chronic and acute problems on sea turtles: The
+              consequences of the oil spill and ingestion of anthropogenic
+              debris on the tropical semi-arid coast of Ceará, Brazil
+            </p>
+          </div>
+        </li>
+        <li data-date="2023">
+          <h6></h6><div class="title">Artigo de Periódico</div>
+          <div class="data">
+            <h3>2023</h3>
+            <p>
+              Climatic regionalization and rainfed agricultural production in
+              the state of Maranhão, Brazil
+            </p>
+          </div>
+        </li>
+        <li data-date="2022">
+          <h6></h6><div class="title">Artigo de Periódico</div>
+          <div class="data">
+            <h3>2022</h3>
+            <p>
+              A physical study to explain response differences between the BID
+              and FID detectors for PAHs and pesticides
+            </p>
+          </div>
+        </li>
+        <li data-date="2021">
+          <h6></h6><div class="title">Artigo de Periódico</div>
+          <div class="data">
+            <h3>2021</h3>
+            <p>
+              Integrated UPLC-HRMS, chemometric tools, and metabolomic analysis
+              of forage palm (Opuntia spp. and Nopalea spp.) to define
+              biomarkers associated with non-susceptibility to Carmine Cochineal
+              (Dactylopius opuntiae)
+            </p>
+          </div>
+        </li>
+        <li data-date="2020">
+          <h6></h6><div class="title">Livro</div>
+          <div class="data">
+            <h3>2020</h3>
+            <p>Adsorção: aspectos teóricos e aplicações ambientais</p>
+          </div>
+        </li>
+        <li data-date="2019">
+          <h6></h6><div class="title">Artigo de Periódico</div>
+          <div class="data">
+            <h3>2019</h3>
+            <p>
+              Zinc ferrite nanoparticles via coprecipitation modified method:
+              glycerol as structure directing and stabilizing agent
+            </p>
+          </div>
+        </li>
+        <li data-date="2018">
+          <h6></h6><div class="title">Artigo de Evento</div>
+          <div class="data">
+            <h3>2018</h3>
+            <p>
+              Remoção de metais tóxicos através dos resíduos de cinzas de lodo
+              de fossa séptica
+            </p>
+          </div>
+        </li>
+        <li data-date="2017">
+          <h6></h6><div class="title">Artigo de Periódico</div>
+          <div class="data">
+            <h3>2017</h3>
+            <p>
+              Strategy for correction of matrix effect on the determination of
+              pesticides in water bodies using SPME-GC-FID
+            </p>
+          </div>
+        </li>
+        <li data-date="2016">
+          <h6></h6><div class="title">Artigo de Evento</div>
+          <div class="data">
+            <h3>2016</h3>
+            <p>
+              Desenvolvimento e validação de metodologia para determinação de
+              interferentes endócrinos em águas superficiais
+            </p>
+          </div>
+        </li>
+        <li data-date="2015">
+          <h6></h6><div class="title">Artigo de Periódico</div>
+          <div class="data">
+            <h3>2015</h3>
+            <p>
+              Carbonyl compounds from urban activities and their associated
+              cancer risks: The influence of seasonality on air quality
+              (Fortaleza-Ce, Brazil)
+            </p>
+          </div>
+        </li>
+      </ul>
+      <!-- setinha da timeline usando vanilla css -->
+      <div id="timeline-arrow">
+        <div></div>
+        <div></div>
+        <div></div>
       </div>
     </section>
-    
-<!-- seção timeline -->
-    <section id="timeline-wrapper">
-        <ul  class="timeline">
-          <li data-date="2025">
-            <div class="title">Tese</div>
-            <div class="data">
-                <h3>Principal de 2025</h3>
-                <small>2025</small>
-                <p>Emissões veiculares: uma abordagem rápida e
-                eficiente para a determinação de H2, CO, CH4 e 
-                CO2 por GC-BID e de BTEX por SPME-GC-BID</p>
-                <div class="close">Clique para fechar.</div>
-            </div>
-          </li>
-          <li data-date="2024">
-            <div class="title">Artigo de Periódico</div>
-            <div class="data">
-                <h3>Principal de 2024</h3>
-                <small>2024</small>
-                <p>The impact of chronic and acute problems on 
-                sea turtles: The consequences of the oil spill 
-                and ingestion of anthropogenic debris on the tropical
-                semi-arid coast of Ceará, Brazil</p>
-                <div class="close">Clique para fechar.</div>
-            </div>
-          </li>
-          <li data-date="2023">
-            <div class="title">Artigo de Periódico</div>
-            <div class="data">
-                <h3>Principal de 2023</h3>
-                <small>2023</small>
-                <p>Climatic regionalization and rainfed agricultural
-                production in the state of Maranhão, Brazil</p>
-                <div class="close">Clique para fechar.</div>
-            </div>
-          </li>
-          <li data-date="2022">
-            <div class="title">Artigo de Periódico</div>
-            <div class="data">
-                <h3>Principal de 2022</h3>
-                <small>2022</small>
-                <p>A physical study to explain response differences
-                between the BID and FID detectors for PAHs and pesticides</p>
-                <div class="close">Clique para fechar.</div>
-            </div>
-          </li>
-          <li data-date="2021">
-            <div class="title">Artigo de Periódico</div>
-            <div class="data">
-                <h3>Principal de 2021</h3>
-                <small>2021</small>
-                <p>Integrated UPLC-HRMS, chemometric tools, and
-                metabolomic analysis of forage palm (Opuntia spp. and
-                Nopalea spp.) to define biomarkers associated with
-                non-susceptibility to Carmine Cochineal (Dactylopius opuntiae)</p>
-                <div class="close">Clique para fechar.</div>
-            </div>
-          </li>
-          <li data-date="2020">
-            <div class="title">Livro</div>
-            <div class="data">
-                <h3>Principal de 2020</h3>
-                <small>2020</small>
-                <p>Adsorção: aspectos teóricos e aplicações ambientais</p>
-                <div class="close">Clique para fechar.</div>
-            </div>
-          </li>
-          <li data-date="2019">
-            <div class="title">Artigo de Periódico</div>
-            <div class="data">
-                <h3>Principal de 2019</h3>
-                <small>2019</small>
-                <p>Zinc ferrite nanoparticles via coprecipitation
-                modified method: glycerol as structure directing
-                and stabilizing agent</p>
-                <div class="close">Clique para fechar.</div>
-            </div>
-          </li>
-          <li data-date="2018">
-            <div class="title">Artigo de Evento</div>
-            <div class="data">
-                <h3>Principal de 2018</h3>
-                <small>2018</small>
-                <p>Remoção de metais tóxicos através dos resíduos
-                de cinzas de lodo de fossa séptica</p>
-                <div class="close">Clique para fechar.</div>
-            </div>
-          </li>
-          <li data-date="2017">
-            <div class="title">Artigo de Periódico</div>
-            <div class="data">
-                <h3>Principal de 2017</h3>
-                <small>2017</small>
-                <p>Strategy for correction of matrix effect
-                on the determination of pesticides in water
-                bodies using SPME-GC-FID</p>
-                <div class="close">Clique para fechar.</div>
-            </div>
-          </li>
-          <li data-date="2016">
-            <div class="title">Artigo de Evento</div>
-            <div class="data">
-                <h3>Principal de 2016</h3>
-                <small>2016</small>
-                <p>Desenvolvimento e validação de metodologia
-                para determinação de interferentes endócrinos
-                em águas superficiais</p>
-                <div class="close">Clique para fechar.</div>
-            </div>
-          </li>
-          <li data-date="2015">
-            <div class="title">Artigo de Periódico</div>
-            <div class="data">
-                <h3>Principal de 2015</h3>
-                <small>2015</small>
-                <p>Carbonyl compounds from urban activities and
-                their associated cancer risks: The influence of
-                seasonality on air quality (Fortaleza-Ce, Brazil)</p>
-                <div class="close">Clique para fechar.</div>
-            </div>
-          </li>
-        </ul>
-          <!-- setinha da timeline usando vanilla css -->
-          <div id="timeline-arrow">
-            <div></div>
-            <div></div>
-            <div></div>
-        </div>
-    </section>
 
-    <!-- js da secção timeline -->
-    <script>
-      const timeline = document.querySelectorAll('.timeline li .data');
-      for(const time of timeline) {
-        time.onclick = () => time.classList.toggle('show');{
-
-        }
-      }
-      
-    </script>
-
-    <!-- Seção do coordenador -->
+    <!-- Seção da coordenação -->
 
     <section id="coordenador">
-      <div><h1>Coordenador</h1></div>
+      <div><h1>Coordenação</h1></div>
       <div id="img-container">
         <div id="membroC" class="membroC">
           <div id="perfilC">
-            <img src="assets/img/ronaldo.jpg" alt="Foto de Ronaldo Ferreira do Nascimento">
+            <img
+              src="assets/img/ronaldo.jpg"
+              alt="Foto de Ronaldo Ferreira do Nascimento"
+            />
           </div>
-          
+
           <div class="nome"><h3>Ronaldo Ferreira do Nascimento</h3></div>
-          <div class="cargo"><p>Coordenador do Laboratório de Processos Oxidativos Avançados (LabPOA); Laboratório de Análise de Traços (LAT); Laboratório de Análise de Água (Lanágua); Laboratório de Cromatografia (LabCroma).</p><p>Formado em Química Industrial pela Universidade Federal do Maranhão (UFMA, 1991), doutor em Química Analítica pela Universidade de São Paulo (USP, 1997), Instituto de Química de São Carlos (IQSC). Atualmente é professor titular da Universidade Federal do Ceará (UFC). Publicou artigos (186) em periódicos científicos, capítulos de livros (20) e livros (09). Possui experiência na área de Química Analítica, com ênfase no Desenvolvimento de Métodos Cromatográficos (análise de resíduos de pesticidas em água e alimentos); Química Ambiental (análises de traços); Adsorção (remoção de poluentes de efluentes aquosos utilizando adsorventes naturais); Processos Oxidativos Avançados (tratamento de água e efluentes).</p></div>
+          <div class="cargo">
+            <p>
+              Coordenador do Laboratório de Processos Oxidativos Avançados
+              (LabPOA); Laboratório de Análise de Traços (LAT); Laboratório de
+              Análise de Água (Lanágua); Laboratório de Cromatografia
+              (LabCroma).
+            </p>
+            <p>
+              Formado em Química Industrial pela Universidade Federal do
+              Maranhão (UFMA, 1991), doutor em Química Analítica pela
+              Universidade de São Paulo (USP, 1997), Instituto de Química de São
+              Carlos (IQSC). Atualmente é professor titular da Universidade
+              Federal do Ceará (UFC). Publicou artigos (186) em periódicos
+              científicos, capítulos de livros (20) e livros (09). Possui
+              experiência na área de Química Analítica, com ênfase no
+              Desenvolvimento de Métodos Cromatográficos (análise de resíduos de
+              pesticidas em água e alimentos); Química Ambiental (análises de
+              traços); Adsorção (remoção de poluentes de efluentes aquosos
+              utilizando adsorventes naturais); Processos Oxidativos Avançados
+              (tratamento de água e efluentes).
+            </p>
+          </div>
           <div class="membro-buttons">
-          <a class="btn-membro" href="mailto:ronaldo@email.com">
-          <div  class="material-symbols-outlined">stacked_email</div></a>
-            <a class="btn-membro" href="#"><div class="material-symbols-outlined">book</div></a>
+            <a class="btn-membro" href="mailto:ronaldo@email.com">
+              <div class="material-symbols-outlined">stacked_email</div></a
+            >
+            <a class="btn-membro" href="#"
+              ><div class="material-symbols-outlined">book</div></a
+            >
           </div>
         </div>
       </div>
       <div>
-        <div><a href="equipe.html" id="nossosmembros">Saiba mais sobre nossos membros <div id="seta-membros"><img src="assets/img/arrow-down.svg" alt="" /></div></a></div>
-        
+        <div>
+          <a href="equipe.html" id="nossosmembros"
+            >Saiba mais sobre nossos membros
+            <div id="seta-membros">
+              <img src="assets/img/arrow-down.svg" alt="" /></div
+          ></a>
+        </div>
       </div>
     </section>
 
-
     <footer>
-      <div> 
-        <div class="footer-container"><img src="assets/img/Logotipo v2.svg" alt="" class="footer-content" /></div>
-        <!-- logo poa -->
+      <div id="footer-div">
+        <div class="footer-container">
+          <img src="assets/img/Logotipo v2.svg" alt=""/>
+        </div>
+        <!-- logo grupo -->
         <div class="footer-container"><p>Todos os direitos reservados</p></div>
-        <div class="footer-container"><img src="assets/img/ufc_logo.svg" alt="" /></div>
+        <div class="footer-container">
+          <img src="assets/img/ufc_logo.svg" alt="" />
+        </div>
         <!-- logo ufc -->
       </div>
     </footer>
@@ -325,6 +404,3 @@
     <script defer src="scripts/script.js"></script>
   </body>
 </html>
-
-
-
