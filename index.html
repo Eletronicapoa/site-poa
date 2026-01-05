@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-BR" data-theme="dark-blue">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Grupo Cromatografia</title>
     <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="styles/temas.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
       rel="stylesheet"
@@ -12,7 +13,7 @@
     <link rel="icon" href="assets/img/Frame 1.svg" />
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+      href="styles/swiper-bundle.min.css"
     />
   </head>
   <body>
@@ -28,17 +29,39 @@
             <ul class="menu">
               <li><a href="#">Início</a></li>
               <li><a href="#contato-index">Contato</a></li>
-              <li><a href="#linhasPesquisa">Pesquisas</a></li>
-              <li><a href="#publicacoes">Publicações</a></li>
-              <li><a href="#coordenador">Coordenação</a></li>
+
+              <li class="dropdown-pai">
+                <a href="#linhasPesquisa">Pesquisas</a>
+
+                <ul class="dropdown-gaveta">
+                  <li><a href="labpoa.html">LabPOA</a></li>
+                  <li><a href="lat.html">LAT</a></li>
+                  <li><a href="lanagua.html">Lanagua</a></li>
+                  <li><a href="croma.html">LabCroma</a></li>
+                  <li><a href="labitech.html">LabItech</a></li>
+                </ul>
+              </li>
+
+              <li class="dropdown-pai">
+                <a href="#publicacoes">Publicações</a>
+                <ul class="dropdown-gaveta">
+                  <li><a href="#publicacoes">Livros</a></li>
+                  <li><a href="#timeline">Outros</a></li>
+                </ul>
+              </li>
+
+              <li class="dropdown-pai">
+                <a href="#coordenacao">Membros</a>
+                <ul class="dropdown-gaveta">
+                  <li><a href="#coordenacao">Coordenação</a></li>
+                  <li><a href="equipe.html">Outros</a></li>
+                </ul>
+              </li>
             </ul>
           </div>
         </div>
       </div>
     </header>
-
-    <!-- adicionar um border bottom pro efeito de separação e tirar o hr -->
-    <hr />
 
     <section id="hero">
       <div class="hero-container">
@@ -52,16 +75,16 @@
           </p>
           <a
             href="#linhasPesquisa"
-            class="arrow-scroll"
+            class="arrow-link"
             aria-label="Ver linhas de pesquisa"
           >
             <img
               src="assets/img/arrow-down.svg"
               alt=""
               role="presentation"
-              id="headerdownarrow"
+              class="arrow-scroll"
             />
-          <h3>Saiba mais</h3>
+            <h3>Saiba mais</h3>
           </a>
         </div>
         <div class="hero-img">
@@ -72,13 +95,13 @@
 
     <section id="contato-index">
       <div id="titlecontato">
-        <h2>Entre em contato</h2>
+        <h2 class="titulo-pesquisas">Entre em contato</h2>
       </div>
       <div id="textcontato">
         <p>
-          Email: laboratoriopoaufc@ufc.com.br <br/>
-          Departamento de Química Analítica e Físico-Química <br/>
-          Campus do Pici - Bloco 939 <br/>
+          Email: laboratoriopoaufc@ufc.com.br <br />
+          Departamento de Química Analítica e Físico-Química <br />
+          Campus do Pici - Bloco 939 <br />
           CEP: 60440-900 Fortaleza-CE Brasil
         </p>
         <p class="maps">
@@ -144,6 +167,18 @@
               </div>
             </div>
           </div>
+          <div class="swiper-slide">
+            <div class="slidePesquisa">
+              <div id="filtro"></div>
+              <img
+                src="assets/img/lab_img.png"
+                alt="Linhas de pesquisa — LabItech"
+              />
+              <div class="caixaLink">
+                <a href="labitech.html"><h3>Ir para LabItech</h3></a>
+              </div>
+            </div>
+          </div>
         </div>
         <!-- If we need pagination -->
         <div class="swiper-pagination"></div>
@@ -152,7 +187,7 @@
 
     <!-- seção publicações (livros) -->
     <section id="publicacoes">
-      <h2>Nossos Livros</h2>
+      <h2 class="titulo-pesquisas">Nossos Livros</h2>
       <div class="swiper galeria-livros">
         <!-- classe dupla -->
         <div class="swiper-wrapper">
@@ -190,18 +225,20 @@
           <div class="swiper-button-prev"></div>
           <div class="swiper-button-next"></div>
         </div>
-
       </div>
-      
-      <div id="linkRepositorio"><a href=""><h4>Veja nossos livros e adquira gratuitamente</h4></a></div>
-    
+
+      <div id="linkRepositorio">
+        <a href=""><h4>Veja nossos livros e adquira gratuitamente</h4></a>
+      </div>
     </section>
 
     <!-- seção timeline -->
-    <section class="timeline-publi">
+    <section class="timeline-publi" id="timeline">
+      <h2 class="titulo-pesquisas">Publicações</h2>
       <ul class="timeline">
         <li data-date="2025">
-          <h6></h6><div class="title">Tese</div>
+          <h6></h6>
+          <div class="title">Tese</div>
           <div class="data">
             <h3>2025</h3>
             <p>
@@ -212,7 +249,8 @@
           </div>
         </li>
         <li data-date="2024">
-          <h6></h6><div class="title">Artigo de Periódico</div>
+          <h6></h6>
+          <div class="title">Artigo de Periódico</div>
           <div class="data">
             <h3>2024</h3>
             <p>
@@ -223,7 +261,8 @@
           </div>
         </li>
         <li data-date="2023">
-          <h6></h6><div class="title">Artigo de Periódico</div>
+          <h6></h6>
+          <div class="title">Artigo de Periódico</div>
           <div class="data">
             <h3>2023</h3>
             <p>
@@ -233,7 +272,8 @@
           </div>
         </li>
         <li data-date="2022">
-          <h6></h6><div class="title">Artigo de Periódico</div>
+          <h6></h6>
+          <div class="title">Artigo de Periódico</div>
           <div class="data">
             <h3>2022</h3>
             <p>
@@ -243,7 +283,8 @@
           </div>
         </li>
         <li data-date="2021">
-          <h6></h6><div class="title">Artigo de Periódico</div>
+          <h6></h6>
+          <div class="title">Artigo de Periódico</div>
           <div class="data">
             <h3>2021</h3>
             <p>
@@ -255,14 +296,16 @@
           </div>
         </li>
         <li data-date="2020">
-          <h6></h6><div class="title">Livro</div>
+          <h6></h6>
+          <div class="title">Livro</div>
           <div class="data">
             <h3>2020</h3>
             <p>Adsorção: aspectos teóricos e aplicações ambientais</p>
           </div>
         </li>
         <li data-date="2019">
-          <h6></h6><div class="title">Artigo de Periódico</div>
+          <h6></h6>
+          <div class="title">Artigo de Periódico</div>
           <div class="data">
             <h3>2019</h3>
             <p>
@@ -272,7 +315,8 @@
           </div>
         </li>
         <li data-date="2018">
-          <h6></h6><div class="title">Artigo de Evento</div>
+          <h6></h6>
+          <div class="title">Artigo de Evento</div>
           <div class="data">
             <h3>2018</h3>
             <p>
@@ -282,7 +326,8 @@
           </div>
         </li>
         <li data-date="2017">
-          <h6></h6><div class="title">Artigo de Periódico</div>
+          <h6></h6>
+          <div class="title">Artigo de Periódico</div>
           <div class="data">
             <h3>2017</h3>
             <p>
@@ -292,7 +337,8 @@
           </div>
         </li>
         <li data-date="2016">
-          <h6></h6><div class="title">Artigo de Evento</div>
+          <h6></h6>
+          <div class="title">Artigo de Evento</div>
           <div class="data">
             <h3>2016</h3>
             <p>
@@ -302,7 +348,8 @@
           </div>
         </li>
         <li data-date="2015">
-          <h6></h6><div class="title">Artigo de Periódico</div>
+          <h6></h6>
+          <div class="title">Artigo de Periódico</div>
           <div class="data">
             <h3>2015</h3>
             <p>
@@ -323,53 +370,50 @@
 
     <!-- Seção da coordenação -->
 
-    <section id="coordenador">
-      <div><h1>Coordenação</h1></div>
-      <div id="img-container">
-        <div id="membroC" class="membroC">
-          <div id="perfilC">
-            <img
-              src="assets/img/ronaldo.jpg"
-              alt="Foto de Ronaldo Ferreira do Nascimento"
-            />
-          </div>
+    <section id="coordenacao">
+      <div><h1 class="titulo-pesquisas">Coordenação</h1></div>
+      <div id="coordenador">
+        <div id="perfil-img">
+          <img
+            src="assets/img/ronaldo.jpg"
+            alt="Foto de Ronaldo Ferreira do Nascimento"
+          />
+        </div>
 
-          <div class="nome"><h3>Ronaldo Ferreira do Nascimento</h3></div>
-          <div class="cargo">
-            <p>
-              Coordenador do Laboratório de Processos Oxidativos Avançados
-              (LabPOA); Laboratório de Análise de Traços (LAT); Laboratório de
-              Análise de Água (Lanágua); Laboratório de Cromatografia
-              (LabCroma).
-            </p>
-            <p>
-              Formado em Química Industrial pela Universidade Federal do
-              Maranhão (UFMA, 1991), doutor em Química Analítica pela
-              Universidade de São Paulo (USP, 1997), Instituto de Química de São
-              Carlos (IQSC). Atualmente é professor titular da Universidade
-              Federal do Ceará (UFC). Publicou artigos (186) em periódicos
-              científicos, capítulos de livros (20) e livros (09). Possui
-              experiência na área de Química Analítica, com ênfase no
-              Desenvolvimento de Métodos Cromatográficos (análise de resíduos de
-              pesticidas em água e alimentos); Química Ambiental (análises de
-              traços); Adsorção (remoção de poluentes de efluentes aquosos
-              utilizando adsorventes naturais); Processos Oxidativos Avançados
-              (tratamento de água e efluentes).
-            </p>
-          </div>
-          <div class="membro-buttons">
-            <a class="btn-membro" href="mailto:ronaldo@email.com">
-              <div class="material-symbols-outlined">stacked_email</div></a
-            >
-            <a class="btn-membro" href="#"
-              ><div class="material-symbols-outlined">book</div></a
-            >
-          </div>
+        <div class="nome"><h2>Ronaldo Ferreira do Nascimento</h2></div>
+        <div class="descricao-coordenador">
+          <h4>
+            Coordenador do Laboratório de Processos Oxidativos Avançados
+            (LabPOA); Laboratório de Análise de Traços (LAT); Laboratório de
+            Análise de Água (Lanágua); Laboratório de Cromatografia (LabCroma).
+          </h4>
+          <p>
+            Formado em Química Industrial pela Universidade Federal do Maranhão
+            (UFMA, 1991), doutor em Química Analítica pela Universidade de São
+            Paulo (USP, 1997), Instituto de Química de São Carlos (IQSC).
+            Atualmente é professor titular da Universidade Federal do Ceará
+            (UFC). Publicou artigos (186) em periódicos científicos, capítulos
+            de livros (20) e livros (09). Possui experiência na área de Química
+            Analítica, com ênfase no Desenvolvimento de Métodos Cromatográficos
+            (análise de resíduos de pesticidas em água e alimentos); Química
+            Ambiental (análises de traços); Adsorção (remoção de poluentes de
+            efluentes aquosos utilizando adsorventes naturais); Processos
+            Oxidativos Avançados (tratamento de água e efluentes).
+          </p>
+        </div>
+        <div class="links-externos-coordenador">
+          <a href="mailto:ronaldo@email.com">
+            <h5>Envie um email</h5>
+          </a>
+          <h5>|</h5>
+          <a href="lattes" target="_blank">
+            <h5>Currículo Lattes</h5>
+          </a>
         </div>
       </div>
       <div>
-        <div>
-          <a href="equipe.html" id="nossosmembros"
+        <div id="nossosmembros">
+          <a href="equipe.html"
             >Saiba mais sobre nossos membros
             <div id="seta-membros">
               <img src="assets/img/arrow-down.svg" alt="" /></div
@@ -381,7 +425,7 @@
     <footer>
       <div id="footer-div">
         <div class="footer-container">
-          <img src="assets/img/Logotipo v2.svg" alt=""/>
+          <img src="assets/img/Logotipo v2.svg" alt="" />
         </div>
         <!-- logo grupo -->
         <div class="footer-container"><p>Todos os direitos reservados</p></div>
@@ -400,7 +444,7 @@
     </div>
 
     <!-- Script do swiper e da página -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="scripts/swiper-bundle.min.js"></script>
     <script defer src="scripts/script.js"></script>
   </body>
 </html>
