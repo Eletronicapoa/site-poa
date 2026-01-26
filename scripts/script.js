@@ -7,6 +7,9 @@ const swiperLivros = new Swiper(".galeria-livros", {
   /* Ajuste fino do efeito coverflow do swiper */
   slidesPerView: 'auto',
   navigation: {
+    // Como os botões estão fora, é mais seguro usar classes únicas ou IDs
+    // Mas o padrão abaixo deve funcionar se não houver outros swipers na tela
+    // sealgo relacionado aos botões quebrar em outro momento, lembre de checar aqui
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },

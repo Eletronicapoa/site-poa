@@ -425,8 +425,35 @@ body {
   width: 100%;
 }
 
-.galeria-livros .swiper-button-prev,
-.galeria-livros .swiper-button-next {
+#previous-next-livros .swiper-button-prev,
+#previous-next-livros .swiper-button-next {
+  transition: background 0.2s, box-shadow 0.2s, transform 0.2s;
+  transform-origin: center;
+  will-change: transform;
+}
+
+/* Container que alinha os botões lado a lado */
+#previous-next-livros {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  top: 20px;
+  width: 100%;
+  position: relative; /* Garante que apareça */
+}
+
+/* Estilo dos botões (note que tirei o .galeria-livros do começo) */
+#previous-next-livros .swiper-button-prev,
+#previous-next-livros .swiper-button-next {
+  position: relative !important; /* Desliga o absoluto do Swiper */
+  left: auto !important;
+  right: auto !important;
+  top: auto !important;
+  bottom: auto !important;
+  margin: 0 !important;
+  
+  /* Seu estilo visual */
   padding: 10px;
   width: 44px;
   height: 44px;
@@ -434,26 +461,21 @@ body {
   border: 1px solid var(--primary);
   background: #ffffff;
   color: #000000;
-  cursor: pointer;
-  transition: all 0.2s;
+  display: flex; /* Centraliza a setinha dentro da bola */
+  justify-content: center;
+  align-items: center;
 }
 
-.galeria-livros .swiper-button-prev,
-.galeria-livros .swiper-button-next {
-  transition: background 0.2s, box-shadow 0.2s, transform 0.2s;
-  transform-origin: center;
-  will-change: transform;
-}
-
-.galeria-livros .swiper-button-prev:hover,
-.galeria-livros .swiper-button-next:hover {
+/* Hover */
+#previous-next-livros .swiper-button-prev:hover,
+#previous-next-livros .swiper-button-next:hover {
   background-color: var(--primary);
   color: #ffffff;
 }
 
-.galeria-livros .swiper-button-prev::after,
-.galeria-livros .swiper-button-next::after {
-  font-size: 10px;
+/* Ajuste das setinhas (ícones) */
+#previous-next-livros .swiper-button-prev::after,
+#previous-next-livros .swiper-button-next::after {
   color: #111111;
   line-height: 1;
 }
@@ -708,18 +730,20 @@ body {
 }
 
 /* Seção Coordenador */
+
 #coordenacao {
   padding: 50px;
   margin-bottom: 192px;
   width: 100%;
-  height: 520px;
+  /* Height fixa pode ser perigosa em responsividade, 
+     mas mantive conforme seu original */
+  height: 520px; 
   background: white;
   display: flex;
   flex-direction: column;
   align-items: start;
   scroll-margin-top: 80px;
 }
-
 
 #coordenacao h1 {
   font-family: "Outfit", sans-serif;
@@ -729,22 +753,20 @@ body {
   margin-bottom: 50px;
 }
 
+/* --- MUDANÇA PRINCIPAL AQUI --- */
 #coordenador {
-  display: grid;
-  grid-template-columns: auto 1fr;
-  grid-template-rows: repeat(3, auto);
-  row-gap: 10px;
-  column-gap: 20px;
-  align-items: start;
+  display: flex;
+  flex-direction: row; /* Coloca Imagem e Texto lado a lado */
+  gap: 20px; /* Substitui o column-gap do Grid */
+  align-items: flex-start; /* Alinha no topo */
   width: 100%;
   height: auto;
   max-height: 80%;
 }
 
 #perfil-img {
-  grid-column: 1;
-  grid-row: 1 / span 3;
   width: 256px;
+  flex-shrink: 0; /* IMPEDIR que a imagem esmague se a tela diminuir */
 }
 
 #perfil-img img {
@@ -755,33 +777,28 @@ body {
   border-radius: 32px;
 }
 
-.nome {
-  grid-column: 2;
-  grid-row: 1;
-}
-
-.descricao-coordenador {
-  grid-column: 2;
-  grid-row: 2;
+/* Nova classe para a coluna da direita */
+.info-container {
+  display: flex;
+  flex-direction: column; /* Empilha os textos verticalmente */
+  gap: 10px; /* Substitui o row-gap do Grid */
+  flex-grow: 1; /* Ocupa todo o espaço restante à direita */
 }
 
 .links-externos-coordenador {
-  grid-column: 2;
-  grid-row: 3;
   display: flex;
   align-items: center;
   justify-content: flex-start;
+  /* margin-top pode ser usado aqui se quiser afastar mais do texto */
 }
 
-.links-externos-coordenador h5 {
-  margin-right: 16px;
-  text-decoration: none;
+.links-externos-coordenador p {
   color: var(--primary);
 }
 
 .links-externos-coordenador a {
-  text-decoration: none;
   color: var(--primary);
+  text-decoration: none;
 }
 
 .btn-membro svg {
