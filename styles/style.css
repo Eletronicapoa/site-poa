@@ -231,6 +231,7 @@ body {
 /* Seção Notícias */
 
 #noticias {
+  scroll-margin-top: 100px;
   padding: 3rem;
   width: 100%;
 }
