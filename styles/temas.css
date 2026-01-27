@@ -15,6 +15,10 @@
   --text-dark: #333;
   --text-medium: #666;
   --border-color: rgba(0, 0, 0, 0.1);
+  --border-radius: 8px;
+  --spacing-medium: 1.5rem;
+  --spacing-small: 0.75rem;
+  --line-height-medium: 1.6;
 }
 
 /* TEMA 2: AZUL ESCURO - LABPOA */
@@ -31,6 +35,10 @@
   --text-dark: #1a1a1a;
   --text-medium: #4a4a4a;
   --border-color: rgba(0, 0, 0, 0.15);
+  --border-radius: 8px;
+  --spacing-medium: 1.5rem;
+  --spacing-small: 0.75rem;
+  --line-height-medium: 1.6;
 }
 
 /* TEMA 3: VERDE - LABITECH */
@@ -46,6 +54,10 @@
   --text-dark: #1b5e2d;
   --text-medium: #4a7c5a;
   --border-color: rgba(0, 100, 50, 0.1);
+  --border-radius: 8px;
+  --spacing-medium: 1.5rem;
+  --spacing-small: 0.75rem;
+  --line-height-medium: 1.6;
 }
 
 /* TEMA 4: VERMELHO - LAT */
@@ -61,6 +73,10 @@
   --text-dark: #5d1a1a;
   --text-medium: #8b3a3a;
   --border-color: rgba(200, 50, 50, 0.1);
+  --border-radius: 8px;
+  --spacing-medium: 1.5rem;
+  --spacing-small: 0.75rem;
+  --line-height-medium: 1.6;
 }
 
 /* TEMA 5: LARANJA - CROMA */
@@ -76,4 +92,8 @@
   --text-dark: #5d2817;
   --text-medium: #8b5a2b;
   --border-color: rgba(230, 74, 25, 0.1);
+  --border-radius: 8px;
+  --spacing-medium: 1.5rem;
+  --spacing-small: 0.75rem;
+  --line-height-medium: 1.6;
 }
