@@ -228,6 +228,32 @@ body {
   object-position: left center;
 }
 
+/* Seção Sobre Nós */
+
+#sobre-nos {
+  width: 100%;
+  padding: 4rem 3rem;
+  background-color: #f9f9f9;
+  scroll-margin-top: 100px;
+}
+
+.sobre-nos-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.sobre-nos-content {
+  margin-top: 2rem;
+}
+
+.sobre-nos-texto {
+  font-size: 1.05rem;
+  color: var(--text-medium);
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+  text-align: justify;
+}
+
 /* Seção Notícias */
 
 #noticias {
