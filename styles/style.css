@@ -1,7 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&display=swap");
 
 .material-symbols-outlined {
-  font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+  font-variation-settings:
+    "FILL" 0,
+    "wght" 400,
+    "GRAD" 0,
+    "opsz" 24;
 }
 
 /* Reset e configurações básicas */
@@ -69,47 +73,46 @@ body {
   position: relative; /* Importante: torna o pai a referência */
 }
 
-
 .dropdown-gaveta {
-    position: absolute;
-    top: 100%;
-    right: 0;
-    background: white;
-    list-style: none;
-    min-width: 100px;
-    border-radius: 8px;
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
-    opacity: 0;
-    visibility: hidden;
-    transform: translateY(-10px);
-    transition: all 0.3s ease;
-    margin-top: 0.5rem;
-    padding: 0.5rem 0;
-    z-index: 1002;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  background: white;
+  list-style: none;
+  min-width: 100px;
+  border-radius: 8px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-10px);
+  transition: all 0.3s ease;
+  margin-top: 0.5rem;
+  padding: 0.5rem 0;
+  z-index: 1002;
 }
 
 .dropdown-pai:hover .dropdown-gaveta {
-    opacity: 1;
-    visibility: visible;
-    transform: translateY(0);
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
 }
 
 .dropdown-gaveta li {
-    padding: 0;
+  padding: 0;
 }
 
 .dropdown-gaveta a {
-    display: block;
-    padding: 0.75rem 1.5rem;
-    color: var(--text-dark);
-    text-decoration: none;
-    transition: all 0.3s ease;
-    font-weight: 500;
+  display: block;
+  padding: 0.75rem 1.5rem;
+  color: var(--text-dark);
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-weight: 500;
 }
 
 .dropdown-gaveta a:hover {
-    background-color: var(--bg-light);
-    color: var(--primary);
+  background-color: var(--bg-light);
+  color: var(--primary);
 }
 
 .menu a {
@@ -146,7 +149,6 @@ body {
   font-size: 1.5rem;
   cursor: pointer;
 }
-
 
 /* Hero Section */
 #hero {
@@ -367,32 +369,30 @@ body {
 }
 
 .noticia-card h3 {
-    color: var(--primary-dark);
-    margin-bottom: var(--spacing-small);
+  color: var(--primary-dark);
+  margin-bottom: var(--spacing-small);
 }
 
 .noticia-card p {
-    color: var(--text-medium);
-    line-height: var(--line-height-medium);
+  color: var(--text-medium);
+  line-height: var(--line-height-medium);
 }
 
 .noticia-card a {
-    color: var(--primary-dark);
-    text-decoration: none;
-    font-weight: bold;
+  color: var(--primary-dark);
+  text-decoration: none;
+  font-weight: bold;
 }
-
 
 #noticias-veja-mais {
   margin-top: 20px;
 }
 
 #noticias-veja-mais a {
-    color: var(--primary-dark);
-    text-decoration: none;
-    font-weight: bold;
+  color: var(--primary-dark);
+  text-decoration: none;
+  font-weight: bold;
 }
-
 
 /* Estilos para seções de ano nas notícias */
 .noticia-year-section {
@@ -450,7 +450,6 @@ body {
   color: var(--primary-dark);
   font-weight: 400;
 }
-
 
 #textcontato p {
   color: var(--text-medium);
@@ -529,7 +528,7 @@ body {
 }
 
 #filtro {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -566,7 +565,6 @@ body {
   z-index: 2;
 }
 
-
 .swiper-pesquisa .swiper-pagination-bullet {
   background: white !important;
   opacity: 1 !important;
@@ -579,7 +577,6 @@ body {
 .swiper-pesquisa .swiper-pagination-bullet-active {
   background: #06335a !important;
 }
-
 
 /* Seção de publicações (livros) v2 */
 
@@ -630,7 +627,10 @@ body {
 
 #previous-next-livros .swiper-button-prev,
 #previous-next-livros .swiper-button-next {
-  transition: background 0.2s, box-shadow 0.2s, transform 0.2s;
+  transition:
+    background 0.2s,
+    box-shadow 0.2s,
+    transform 0.2s;
   transform-origin: center;
   will-change: transform;
 }
@@ -655,7 +655,7 @@ body {
   top: auto !important;
   bottom: auto !important;
   margin: 0 !important;
-  
+
   /* Seu estilo visual */
   padding: 10px;
   width: 44px;
@@ -752,7 +752,11 @@ body {
 
 .timeline-publi {
   position: relative;
-  background-image: linear-gradient(180deg, var(--bg-gradient-start), var(--bg-gradient-end));
+  background-image: linear-gradient(
+    180deg,
+    var(--bg-gradient-start),
+    var(--bg-gradient-end)
+  );
   width: 100%;
   height: auto;
   min-height: 500px;
@@ -829,7 +833,6 @@ body {
   bottom: auto;
 }
 
-
 /* conteúdo de cada li */
 
 /* Título logo abaixo ou acima da haste */
@@ -865,8 +868,6 @@ body {
   white-space: nowrap;
 }
 
-
-
 .data {
   position: absolute;
   text-align: left;
@@ -881,17 +882,15 @@ body {
 }
 
 .data a {
-  color: inherit;          
-  text-decoration: none;   
-  cursor: pointer;         
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
 }
-
 
 .data a:hover {
   text-decoration: underline;
   opacity: 0.9;
 }
-
 
 /* setinha da timeline */
 
@@ -1029,7 +1028,7 @@ body {
   margin-left: 24px;
   rotate: 270deg;
   vertical-align: middle;
-/*   color: var(--primary); removido, pois não afeta imagens
+  /*   color: var(--primary); removido, pois não afeta imagens
   filter: invert(37%) sepia(89%) saturate(747%) hue-rotate(181deg)
     brightness(92%) contrast(92%); */
 }
@@ -1835,7 +1834,7 @@ footer {
   margin-top: 4rem;
 }
 
-#footer-div{
+#footer-div {
   width: 80%;
   height: auto;
   display: flex;
@@ -1875,7 +1874,9 @@ footer p {
   justify-content: center;
   align-items: center;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
-  transition: background-color 0.3s, transform 0.3s;
+  transition:
+    background-color 0.3s,
+    transform 0.3s;
   z-index: 1000;
 }
 
@@ -1894,7 +1895,12 @@ footer p {
 /* ==================== ESTILIZAÇÃO DE MEMBROS ==================== */
 
 /* Seção principal de membros */
-#Coordenadores, #Pesquisadores, #Doutorando, #Mestrando, #IniciaçãoCientífica, #Alumni {
+#Coordenadores,
+#Pesquisadores,
+#Doutorando,
+#Mestrando,
+#IniciaçãoCientífica,
+#Alumni {
   scroll-margin-top: 100px;
 }
 
@@ -2378,7 +2384,7 @@ footer p {
     grid-template-columns: 1fr;
     gap: 2rem;
   }
-  
+
   .highlights-grid {
     grid-template-columns: 1fr;
   }
@@ -2388,11 +2394,11 @@ footer p {
   .research-section {
     padding: 2rem 1rem;
   }
-  
+
   .research-content {
     gap: 1.5rem;
   }
-  
+
   .research-text p {
     font-size: 0.95rem;
   }
@@ -2460,4 +2466,5 @@ footer p {
   .info-grid .member-description {
     font-size: 0.8rem;
     margin: 0;
+  }
 }
