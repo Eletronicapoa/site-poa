@@ -85,6 +85,7 @@ body {
     transition: all 0.3s ease;
     margin-top: 0.5rem;
     padding: 0.5rem 0;
+    z-index: 1002;
 }
 
 .dropdown-pai:hover .dropdown-gaveta {
@@ -162,11 +163,12 @@ body {
   grid-template-columns: 1fr 1fr;
   gap: 4rem;
   align-items: center;
-  height: 720px;
+  min-height: 720px;
+  height: auto;
 }
 
 .hero-content {
-  min-width: 500px;
+  min-width: 0;
   animation: fadeInLeft 1s ease-out;
 }
 
@@ -310,6 +312,10 @@ body {
 
 .noticias-scroll::-webkit-scrollbar-thumb:hover {
   background: var(--primary-dark);
+}
+
+.noticias-scroll::-webkit-scrollbar {
+  display: none;
 }
 
 /* Grid de Notícias - Página de Notícias */
@@ -483,7 +489,8 @@ body {
 
 #linhasPesquisa {
   width: 100%;
-  height: 520px;
+  min-height: 520px;
+  height: auto;
   scroll-margin-top: 100px;
 }
 
@@ -578,12 +585,14 @@ body {
 
 #publicacoes {
   width: 100%;
-  height: 680px;
+  min-height: 680px;
+  height: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   scroll-margin-top: 40px;
+  padding: 4rem 2rem;
 }
 
 #publicacoes h2 {
@@ -717,7 +726,7 @@ body {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   column-gap: 2rem;
-  padding: 30 px;
+  padding: 30px;
   max-width: 1200px;
   margin: 30px auto;
 }
@@ -927,11 +936,9 @@ body {
 
 #coordenacao {
   padding: 50px;
-  margin-bottom: 192px;
+  margin-bottom: 0;
   width: 100%;
-  /* Height fixa pode ser perigosa em responsividade, 
-     mas mantive conforme seu original */
-  height: 520px; 
+  height: 620px;
   background: white;
   display: flex;
   flex-direction: column;
@@ -950,12 +957,11 @@ body {
 /* --- MUDANÇA PRINCIPAL AQUI --- */
 #coordenador {
   display: flex;
-  flex-direction: row; /* Coloca Imagem e Texto lado a lado */
-  gap: 20px; /* Substitui o column-gap do Grid */
-  align-items: flex-start; /* Alinha no topo */
+  flex-direction: row;
+  gap: 20px;
+  align-items: flex-start;
   width: 100%;
   height: auto;
-  max-height: 80%;
 }
 
 #perfil-img {
@@ -1006,6 +1012,7 @@ body {
   align-items: center;
   justify-content: start;
   padding: 90px 0;
+  height: 120px;
 }
 
 #nossosmembros a {
@@ -1072,6 +1079,71 @@ body {
 }
 
 /* Responsividade */
+
+/* BREAKPOINT: 1024px (tablets landscape e desktops pequenos) */
+@media (max-width: 1024px) {
+  .noticias-scroll {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    overflow-x: visible;
+    scrollbar-width: auto;
+  }
+
+  .noticias-scroll .noticia-card {
+    width: 100%;
+  }
+
+  .dropdown-gaveta {
+    right: auto;
+    left: 0;
+  }
+
+  .hero-container {
+    gap: 2rem;
+    padding-left: 20px;
+    min-height: 650px;
+  }
+
+  .hero-content {
+    min-width: 0;
+  }
+
+  .hero-title {
+    font-size: clamp(1.8rem, 3vw, 2.5rem);
+  }
+
+  .ptext {
+    font-size: 1rem;
+  }
+
+  .noticias-scroll {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  #coordenador {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  #perfil-img {
+    width: 200px;
+  }
+
+  .card-equipamentos {
+    grid-template-columns: 1fr;
+  }
+
+  .research-content {
+    grid-template-columns: 1fr;
+  }
+
+  .highlights-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* BREAKPOINT: 768px (tablets portrait e acima) */
 @media (max-width: 768px) {
   .mobile-menu-btn {
     display: block;
@@ -1085,6 +1157,158 @@ body {
     grid-template-columns: 1fr;
     gap: 2rem;
     text-align: center;
+    padding-left: 20px;
+    padding-right: 20px;
+    min-height: auto;
+  }
+
+  .hero-content {
+    min-width: 0;
+  }
+
+  .hero-img {
+    max-height: 300px;
+  }
+
+  .hero-img img {
+    height: 300px;
+    object-position: center;
+  }
+
+  .titulo-pesquisas {
+    font-size: 2rem;
+  }
+
+  .noticias-scroll {
+    grid-template-columns: 1fr;
+    overflow-x: visible;
+  }
+
+  .noticias-scroll .noticia-card {
+    width: 100%;
+  }
+
+  .sobre-nos-texto {
+    font-size: 1rem;
+    text-align: left;
+  }
+
+  #sobre-nos {
+    padding: 3rem 1.5rem;
+  }
+
+  #contato-index {
+    padding: 3rem 1rem;
+  }
+
+  #titlecontato h2 {
+    font-size: clamp(1.8rem, 3vw, 2rem);
+  }
+
+  #coordenacao {
+    padding: 30px;
+    min-height: auto;
+  }
+
+  #coordenador {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+  }
+
+  #perfil-img {
+    width: 180px;
+  }
+
+  .info-container {
+    text-align: center;
+  }
+
+  .links-externos-coordenador {
+    justify-content: center;
+  }
+
+  #nossosmembros {
+    justify-content: center;
+  }
+
+  .swiper-pesquisa .swiper-slide {
+    height: 50vh;
+    max-height: 400px;
+  }
+
+  #linhasPesquisa h2 {
+    font-size: 24px;
+    padding-left: 20px;
+  }
+
+  .slidePesquisa h3 {
+    bottom: 50px;
+    right: 30px;
+    font-size: 18px;
+  }
+
+  #publicacoes {
+    padding: 3rem 1.5rem;
+    min-height: auto;
+  }
+
+  #publicacoes h2 {
+    padding-bottom: 30px;
+    margin-top: 20px;
+  }
+
+  .galeria-livros .swiper-slide {
+    height: 280px;
+    width: 200px;
+  }
+
+  #previous-next-livros {
+    gap: 15px;
+    top: 10px;
+  }
+
+  .timeline-publi {
+    padding: 60px 0;
+  }
+
+  .timeline {
+    padding: 0 40px;
+    height: 1px;
+  }
+
+  .timeline li {
+    width: 400px;
+  }
+
+  .timeline li::before {
+    height: 80px;
+  }
+
+  .timeline-publi h2 {
+    font-size: 24px;
+    padding-left: 20px;
+  }
+
+  .swiper-pesquisa .swiper-pagination {
+    bottom: 10px;
+  }
+
+  #equipamentos {
+    padding: 20px;
+  }
+
+  #equipamentos h2 {
+    font-size: 2rem;
+    padding-bottom: 30px;
+    margin-top: 20px;
+  }
+
+  .card-equipamentos {
+    grid-template-columns: 1fr;
+    padding: 20px;
+    margin: 20px 0;
   }
 
   .containerpublicacao {
@@ -1117,11 +1341,409 @@ body {
     flex-direction: column;
     gap: 1rem;
   }
+
+  #footer-div {
+    width: 90%;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .footer-container {
+    width: 100%;
+  }
+
+  .research-content {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .research-highlights {
+    padding: 1.5rem;
+  }
+
+  .highlights-grid {
+    grid-template-columns: 1fr;
+  }
 }
 
-@media (max-width: 480px) {
+/* BREAKPOINT: 640px (celulares médios) */
+@media (max-width: 640px) {
+  .hero-container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
   .hero-title {
-    font-size: 2rem;
+    font-size: clamp(1.5rem, 2.5vw, 1.8rem);
+    margin-bottom: 1rem;
+  }
+
+  .ptext {
+    font-size: 0.95rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .arrow-link h3 {
+    font-size: 1rem;
+  }
+
+  .hero-img {
+    max-height: 250px;
+  }
+
+  .hero-img img {
+    height: 250px;
+  }
+
+  .noticias-container {
+    padding: 0 15px;
+  }
+
+  .noticias-scroll {
+    gap: 1.5rem;
+    padding: 1.5rem 0;
+  }
+
+  .noticia-card {
+    border-radius: 8px;
+  }
+
+  .noticia-card h3 {
+    font-size: 1.1rem;
+  }
+
+  .noticia-card p {
+    font-size: 0.95rem;
+  }
+
+  .sobre-nos-container {
+    padding: 0 15px;
+  }
+
+  .sobre-nos-texto {
+    font-size: 0.95rem;
+    margin-bottom: 1rem;
+  }
+
+  #coordenacao {
+    padding: 20px 15px;
+  }
+
+  #coordenador {
+    gap: 15px;
+  }
+
+  #perfil-img {
+    width: 150px;
+  }
+
+  .info-container {
+    gap: 8px;
+  }
+
+  #coordenacao h1,
+  #equipamentos h2,
+  #publicacoes h2 {
+    font-size: 1.8rem;
+  }
+
+  .titulo-pesquisas {
+    font-size: 1.7rem;
+  }
+
+  .swiper-pesquisa .swiper-slide {
+    height: 45vh;
+    max-height: 350px;
+  }
+
+  .timeline-publi {
+    padding: 40px 0;
+  }
+
+  .timeline {
+    padding: 0 20px;
+  }
+
+  .timeline li {
+    width: 300px;
+  }
+
+  .timeline li::before {
+    height: 60px;
+  }
+
+  .timeline .title {
+    font-size: 14px;
+  }
+
+  .data h3 {
+    font-size: 14px;
+  }
+
+  .data p {
+    font-size: 12px;
+  }
+
+  .galeria-livros .swiper-slide {
+    height: 240px;
+    width: 170px;
+  }
+
+  #previous-next-livros .swiper-button-prev,
+  #previous-next-livros .swiper-button-next {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+/* BREAKPOINT: 480px (celulares pequenos) */
+@media (max-width: 480px) {
+  html {
+    font-size: 14px;
+  }
+
+  .hero-title {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .hero-container {
+    padding-left: 15px;
+    padding-right: 15px;
+    min-height: auto;
+  }
+
+  .hero-content {
+    min-width: 0;
+  }
+
+  .ptext {
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .arrow-link {
+    gap: 0.5rem;
+  }
+
+  .arrow-scroll {
+    width: 24px;
+    height: 24px;
+  }
+
+  .hero-img {
+    max-height: 200px;
+    margin-top: 1rem;
+  }
+
+  .hero-img img {
+    height: 200px;
+  }
+
+  .titulo-pesquisas {
+    font-size: 1.5rem;
+  }
+
+  #noticias {
+    padding: 2rem 0.5rem;
+  }
+
+  .noticias-container {
+    padding: 0 10px;
+  }
+
+  .noticias-scroll {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 1rem 0;
+  }
+
+  .noticia-card h3 {
+    font-size: 1rem;
+  }
+
+  .noticia-card p {
+    font-size: 0.9rem;
+  }
+
+  #sobre-nos {
+    padding: 2rem 1rem;
+  }
+
+  .sobre-nos-texto {
+    font-size: 0.9rem;
+    text-align: left;
+    margin-bottom: 0.8rem;
+    line-height: 1.6;
+  }
+
+  #contato-index {
+    padding: 2rem 1rem;
+  }
+
+  #textcontato {
+    max-width: 100%;
+    padding: 0 10px;
+  }
+
+  #textcontato p {
+    font-size: 0.9rem;
+  }
+
+  #coordenacao {
+    padding: 20px 1rem;
+  }
+
+  #coordenacao h1 {
+    font-size: 1.5rem;
+  }
+
+  #coordenador {
+    gap: 15px;
+  }
+
+  #perfil-img {
+    width: 130px;
+  }
+
+  #perfil-img img {
+    border-radius: 20px;
+  }
+
+  .info-container {
+    gap: 8px;
+  }
+
+  .nome h2 {
+    font-size: 1.2rem;
+  }
+
+  .descricao-coordenador h4 {
+    font-size: 0.95rem;
+  }
+
+  .descricao-coordenador p {
+    font-size: 0.85rem;
+  }
+
+  .links-externos-coordenador {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .links-externos-coordenador p {
+    font-size: 0.9rem;
+  }
+
+  #nossosmembros {
+    padding: 60px 0 0 0;
+  }
+
+  #nossosmembros a {
+    font-size: 1rem;
+  }
+
+  #seta-membros {
+    margin-left: 12px;
+  }
+
+  #seta-membros img {
+    width: 24px;
+  }
+
+  #equipamentos h2 {
+    font-size: 1.5rem;
+    padding-bottom: 20px;
+    margin-top: 10px;
+  }
+
+  .imagem-equipamento img {
+    border-width: 2px;
+  }
+
+  .swiper-pesquisa .swiper-slide {
+    height: 40vh;
+    max-height: 300px;
+  }
+
+  #linhasPesquisa h2 {
+    font-size: 18px;
+    padding-left: 15px;
+  }
+
+  .slidePesquisa h3 {
+    bottom: 40px;
+    right: 20px;
+    font-size: 14px;
+  }
+
+  #publicacoes {
+    padding: 2rem 1rem;
+    min-height: auto;
+  }
+
+  #publicacoes h2 {
+    font-size: 1.5rem;
+    padding-bottom: 20px;
+    margin-top: 10px;
+  }
+
+  .galeria-livros .swiper-slide {
+    height: 200px;
+    width: 140px;
+  }
+
+  #previous-next-livros {
+    gap: 10px;
+  }
+
+  #previous-next-livros .swiper-button-prev,
+  #previous-next-livros .swiper-button-next {
+    width: 36px;
+    height: 36px;
+    padding: 6px;
+  }
+
+  #linkRepositorio {
+    padding: 30px 1rem;
+  }
+
+  #linkRepositorio h4 {
+    font-size: 0.95rem;
+  }
+
+  .timeline-publi {
+    padding: 30px 0;
+  }
+
+  .timeline-publi h2 {
+    font-size: 18px;
+    padding-left: 15px;
+  }
+
+  .timeline {
+    padding: 0 15px;
+  }
+
+  .timeline li {
+    width: 250px;
+  }
+
+  .timeline li::before {
+    height: 50px;
+  }
+
+  .timeline .title {
+    font-size: 12px;
+  }
+
+  .data h3 {
+    font-size: 12px;
+  }
+
+  .data p {
+    font-size: 11px;
+    padding: 10px;
   }
 
   .container,
@@ -1130,7 +1752,55 @@ body {
   }
 
   section {
-    padding: 4rem 0;
+    padding: 2rem 0;
+  }
+
+  footer {
+    padding: 1rem 0;
+  }
+
+  #footer-div {
+    width: 95%;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1.5rem;
+  }
+
+  footer img {
+    height: 2rem;
+  }
+
+  footer p {
+    margin: 0;
+    font-size: 0.85rem;
+  }
+
+  .devolta {
+    bottom: 20px;
+    right: 20px;
+    width: 45px;
+    height: 45px;
+  }
+
+  .devolta img {
+    width: 18px;
+    height: 18px;
+  }
+
+  .research-text p {
+    font-size: 0.95rem;
+  }
+
+  .research-highlights h3 {
+    font-size: 1.1rem;
+  }
+
+  .highlight-card h4 {
+    font-size: 0.9rem;
+  }
+
+  .highlight-card p {
+    font-size: 0.85rem;
   }
 }
 
@@ -1724,14 +2394,70 @@ footer p {
   }
   
   .research-text p {
-    font-size: 1rem;
+    font-size: 0.95rem;
   }
-  
+
   .research-highlights {
     padding: 1.5rem;
   }
-  
+
   #linhasPesquisaPainel {
     padding: 2rem 1rem;
   }
+
+  .c-grid,
+  .p-grid,
+  .d-grid,
+  .m-grid,
+  .ic-grid {
+    padding: 0 10px;
+  }
+
+  .member-card {
+    gap: 1rem;
+    padding: 1rem;
+  }
+
+  .member-photo {
+    width: 80px;
+    height: 80px;
+    min-width: 80px;
+  }
+
+  .member-name {
+    font-size: 1rem;
+  }
+
+  .member-description {
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+  }
+
+  .member-contact {
+    gap: 0.6rem;
+  }
+
+  .contact-icon {
+    width: 28px;
+    height: 28px;
+  }
+
+  .info-grid {
+    padding: 1rem;
+    gap: 1rem;
+  }
+
+  .info-grid .member-photo {
+    width: 50px;
+    height: 50px;
+    min-width: 50px;
+  }
+
+  .info-grid .member-name {
+    font-size: 0.95rem;
+  }
+
+  .info-grid .member-description {
+    font-size: 0.8rem;
+    margin: 0;
 }
