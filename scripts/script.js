@@ -1,4 +1,4 @@
-/* js da seçao publicações (livros) */
+/* js da seção publicações (livros) */
 const swiperLivros = new Swiper(".galeria-livros", {
   effect: 'coverflow',
   grabCursor: true,
@@ -7,9 +7,6 @@ const swiperLivros = new Swiper(".galeria-livros", {
   /* Ajuste fino do efeito coverflow do swiper */
   slidesPerView: 'auto',
   navigation: {
-    // Como os botões estão fora, é mais seguro usar classes únicas ou IDs
-    // Mas o padrão abaixo deve funcionar se não houver outros swipers na tela
-    // sealgo relacionado aos botões quebrar em outro momento, lembre de checar aqui
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
@@ -28,6 +25,26 @@ const swiperLivros = new Swiper(".galeria-livros", {
     enable: true,
   },
 });
+
+/* Mobile Menu Toggle */
+const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+const menuHeader = document.querySelector('#menuHeader');
+const menuLinks = document.querySelectorAll('#menuHeader a');
+
+if (mobileMenuBtn) {
+  mobileMenuBtn.addEventListener('click', () => {
+    if (menuHeader) menuHeader.classList.toggle('mobile-menu-active');
+  });
+}
+
+// Fechar menu ao clicar em um link
+if (menuLinks && menuLinks.length) {
+  menuLinks.forEach(link => {
+    link.addEventListener('click', () => {
+      if (menuHeader) menuHeader.classList.remove('mobile-menu-active');
+    });
+  });
+}
 
 /* js da seção linhas de pesquisa */
 const swiperPesquisa = new Swiper(".swiper-pesquisa", {
@@ -107,8 +124,21 @@ if (defaultFilter) {
 }
 
 const timeline = document.querySelectorAll(".timeline li .data");
-      for (const time of timeline) {
-        time.onclick = () => time.classList.toggle("show");
-        {
-        }
-      };
+for (const time of timeline) {
+  time.onclick = () => time.classList.toggle("show");
+}
+
+/* --- Header height handling to avoid content hidden behind fixed header --- */
+function updateHeaderHeight() {
+  const header = document.getElementById('header-div');
+  if (!header) return;
+  const h = header.offsetHeight;
+  document.documentElement.style.setProperty('--header-height', h + 'px');
+  // Also add body padding so content doesn't get covered
+  document.body.style.paddingTop = h + 'px';
+}
+
+window.addEventListener('load', updateHeaderHeight);
+window.addEventListener('resize', updateHeaderHeight);
+// fallback run
+setTimeout(updateHeaderHeight, 50);
