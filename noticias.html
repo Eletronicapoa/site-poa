@@ -4,16 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Notícias - Grupo Cromatografia</title>
-    <link rel="stylesheet" href="styles/style.css" />
-    <link rel="stylesheet" href="styles/temas.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/temas.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
       rel="stylesheet"
     />
-    <link rel="icon" href="assets/img/Frame 1.svg" />
+    <link rel="icon" href="assets/img/brand/favicon.svg" />
     <link
       rel="stylesheet"
-      href="styles/swiper-bundle.min.css"
+      href="css/swiper-bundle.min.css"
     />
   </head>
   <body>
@@ -28,7 +28,6 @@
           <div id="menuHeader">
             <ul class="menu">
               <li><a href="index.html">Início</a></li>
-              <li><a href="#contato-index">Contato</a></li>
 
               <li class="dropdown-pai">
                 <a href="#">Data</a>
@@ -47,14 +46,14 @@
     <!-- Seção de Notícias -->
     <section id="noticias" style="padding-top: 6rem;">
       <div class="noticias-container">
-        <h2 class="titulo-pesquisas">Notícias</h2>
+        <h2 class="titulo-noticias">Notícias</h2>
         
         <!-- Seção 2025 -->
         <h3 class="noticia-year-section" data-year="2025">2025</h3>
         <div class="noticias-content" data-year="2025">
           <div class="noticia-card" data-year="2025">
             <div class="noticia-imagem">
-              <img src="assets/img/toc.png" alt="Colaboração internacional" />
+              <img src="assets/img/labs/toc.png" alt="Colaboração internacional" />
             </div>
             <h3>Nova Parceria com Universidade Europeia</h3>
             <p>
@@ -76,7 +75,7 @@
         <div class="noticias-content" data-year="2024">
           <div class="noticia-card" data-year="2024">
             <div class="noticia-imagem">
-              <img src="assets/img/gc-bid.png" alt="Cromatografia gasosa com detector BID" />
+              <img src="assets/img/labs/gc-bid.png" alt="Cromatografia gasosa com detector BID" />
             </div>
             <h3>Publicação de Artigo em Periódico Internacional</h3>
             <p>
@@ -94,7 +93,7 @@
 
           <div class="noticia-card" data-year="2024">
             <div class="noticia-imagem">
-              <img src="assets/img/toc.png" alt="Analisador TOC" />
+              <img src="assets/img/labs/toc.png" alt="Analisador TOC" />
             </div>
             <h3>Lançamento de Novo Livro sobre Adsorção</h3>
             <p>
@@ -112,7 +111,7 @@
 
           <div class="noticia-card" data-year="2024">
             <div class="noticia-imagem">
-              <img src="assets/img/POAs.png" alt="Processos Oxidativos Avançados" />
+              <img src="assets/img/books/poas.png" alt="Processos Oxidativos Avançados" />
             </div>
             <h3>Avanços em Processos Oxidativos Avançados</h3>
             <p>
@@ -130,7 +129,7 @@
 
           <div class="noticia-card" data-year="2024">
             <div class="noticia-imagem">
-              <img src="assets/img/Adsorção.png" alt="Materiais de Adsorção" />
+              <img src="assets/img/books/adsorcao.png" alt="Materiais de Adsorção" />
             </div>
             <h3>Desenvolvimento de Novos Adsorventes</h3>
             <p>
@@ -148,7 +147,7 @@
 
           <div class="noticia-card" data-year="2024">
             <div class="noticia-imagem">
-              <img src="assets/img/gc-bid.png" alt="Conferência científica" />
+              <img src="assets/img/labs/gc-bid.png" alt="Conferência científica" />
             </div>
             <h3>Participação em Conferência Internacional</h3>
             <p>
@@ -170,12 +169,12 @@
     <footer>
       <div id="footer-div">
         <div class="footer-container">
-          <img src="assets/img/Logotipo v2.svg" alt="" />
+          <img src="assets/img/brand/logotipo-v2.svg" alt="" />
         </div>
         <!-- logo grupo -->
         <div class="footer-container"><p>Todos os direitos reservados</p></div>
         <div class="footer-container">
-          <img src="assets/img/ufc_logo.svg" alt="" />
+          <img src="assets/img/brand/ufc-logo.svg" alt="" />
         </div>
         <!-- logo ufc -->
       </div>
@@ -184,12 +183,14 @@
     <!-- botão flutuante de ir para o header -->
     <div>
       <a href="#hero" class="devolta" aria-label="Retornar ao início da página">
-        <img src="assets/img/arrow-down.svg" alt="" />
+        <img src="assets/img/icons/arrow-down.svg" alt="" />
       </a>
     </div>
 
     <!-- Script do swiper e da página -->
-    <script src="scripts/swiper-bundle.min.js"></script>
-    <script defer src="scripts/script.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script defer src="js/script.js"></script>
+    <script defer src="js/script-menu.js"></script>
+ 
   </body>
 </html>
